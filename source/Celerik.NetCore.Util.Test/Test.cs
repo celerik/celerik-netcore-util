@@ -6,7 +6,7 @@ namespace Celerik.NetCore.Util.Test
     public class Test
     {
         [TestMethod]
-        public void Test_1_Equals_1()
+        public void Test_Assert()
         {
             Assert.AreEqual(1, 1);
         }
