@@ -30,7 +30,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-     name: Pack nuget Packae
+    - name: Pack nuget Packae
       run: dotnet pack --configuration Release
 
     - name: Push nuget Packae
