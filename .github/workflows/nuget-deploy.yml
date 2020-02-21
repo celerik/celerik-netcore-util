@@ -29,8 +29,11 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+    
+     name: Pack nuget Packae
+      run: dotnet pack --configuration Release
 
-    - name: Pack nuget Packae
+    - name: Push nuget Packae
       run: dotnet nuget push **/*.nupkg
            --api-key ${{ secrets.CELERIK_NUGET_API_KEY }}}
            --source https://api.nuget.org/v3/index.json
