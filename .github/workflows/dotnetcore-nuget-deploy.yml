@@ -1,7 +1,7 @@
 name: Nuget Package Deploy
 
 on:
-  merge:
+  push:
     branches:
       - master
 
