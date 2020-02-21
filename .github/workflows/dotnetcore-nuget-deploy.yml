@@ -1,7 +1,7 @@
 name: Nuget Package Deploy
 
 on:
-  push:
+  merge:
     branches:
       - master
 
@@ -24,8 +24,7 @@ jobs:
       run: dotnet test ./source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj
 
   deploy:
-    - needs: build
-    
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
