@@ -16,4 +16,4 @@ jobs:
     - name: Build with dotnet
       run: dotnet build ./source/Celerik.NetCore.sln --configuration Release
     - name: Run unit tests
-        run: dotnet test ./source/Celerik.NetCore.Util.Test.csproj
+      run: dotnet test ./source/Celerik.NetCore.Util.Test.csproj
