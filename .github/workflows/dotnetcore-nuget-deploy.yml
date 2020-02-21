@@ -23,7 +23,7 @@ jobs:
     - name: Run unit tests
       run: dotnet test ./source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj
 
-  desploy:
+  deploy:
     - needs: build
     
     runs-on: ubuntu-latest
