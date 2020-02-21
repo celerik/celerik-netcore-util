@@ -1,19 +1,21 @@
-name: .NET Core
+name: .NET Core Build
 
 on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.100
+
     - name: Build with dotnet
       run: dotnet build ./source/Celerik.NetCore.sln --configuration Release
+
     - name: Run unit tests
       run: dotnet test ./source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj
