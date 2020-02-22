@@ -1,15 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <PackageId>Celerik.NetCore.Util</PackageId>
-    <Version>0.0.1</Version>
     <Authors>Juan Cuartas</Authors>
     <Company>Celerik (IDlink S.A.S.)</Company>
-    <PackageTags>common, utilities</PackageTags>
+    <Copyright>Celerik (©) 2020 (MIT)</Copyright>
+    <Description>Provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, exceptions, files, json, pagination, resources, testing, convertions, crypto, enums, queries, stack trace, strings, validations.</Description>
     <IncludeSymbols>true</IncludeSymbols>
+    <LangVersion>latest</LangVersion>
+    <PackageIconUrl>https://celerik.com/wp-content/uploads/2019/09/cropped-favicon-32x32.png</PackageIconUrl>
+    <PackageId>Celerik.NetCore.Util</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/celerik/net-core-baseline</PackageProjectUrl>
+    <PackageReleaseNotes>Added nuget package information</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageTags>common, utilities</PackageTags>
+    <RepositoryType>Git</RepositoryType>
+    <RepositoryUrl>https://github.com/celerik/net-core-baseline</RepositoryUrl>
+    <Summary>Provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, exceptions, files, json, pagination, resources, testing, convertions, crypto, enums, queries, stack trace, strings, validations.</Summary>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Title>Celerik.NetCore.Util</Title>
+    <Version>0.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
