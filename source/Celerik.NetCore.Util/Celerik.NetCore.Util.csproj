@@ -21,6 +21,14 @@
     <Title>Celerik.NetCore.Util</Title>
     <Version>0.0.2</Version>
     <PackageIcon>Celerik.png</PackageIcon>
+    <SignAssembly>false</SignAssembly>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn />
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
   </PropertyGroup>
 
   <ItemGroup>
