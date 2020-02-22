@@ -6,12 +6,50 @@
     <IsPackable>false</IsPackable>
 
     <LangVersion>latest</LangVersion>
+
+    <Version>0.0.2</Version>
+
+    <Authors>Juan Cuartas</Authors>
+
+    <Company>Celerik (IDlink S.A.S.)</Company>
+
+    <Description>Test project for Celerik.NetCore.Util</Description>
+
+    <Copyright>Celerik (©) 2020 (MIT)</Copyright>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <PackageProjectUrl>https://github.com/celerik/net-core-baseline</PackageProjectUrl>
+
+    <PackageIcon>Celerik.png</PackageIcon>
+
+    <PackageIconUrl />
+
+    <RepositoryUrl>https://github.com/celerik/net-core-baseline</RepositoryUrl>
+
+    <RepositoryType>Git</RepositoryType>
+
+    <PackageTags>common, utilities, test</PackageTags>
+
+    <PackageReleaseNotes>Modified project properties</PackageReleaseNotes>
+
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn />
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Files\**" />
     <EmbeddedResource Remove="Files\**" />
     <None Remove="Files\**" />
+    <None Include="..\Celerik.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
