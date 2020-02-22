@@ -12,3 +12,6 @@ GitHub Actions — Automate Nuget Package Deployments:
 
 Adding license details to NuGet packages:
  - https://www.flexlabs.org/2019/05/adding-license-details-to-nuget-packages
+
+Suppress CA2007 ConfigureAwait warning in ASP.NET Core:
+ - https://alexlvovich.com/blog/suppress-ca2007-configureawait-warning-in-asp
