@@ -7,6 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celerik.NetCore.Util", "Cel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celerik.NetCore.Util.Test", "Celerik.NetCore.Util.Test\Celerik.NetCore.Util.Test.csproj", "{5FB1CB24-9FAD-47B4-B6FC-AFA69D014AAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{FF747CDF-CCEF-45CF-B729-9639E580EAAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{B0B06644-28E9-4162-8E50-5E79CE823B83}"
+	ProjectSection(SolutionItems) = preProject
+		Celerik.png = Celerik.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +31,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12572276-9058-41E4-9C4B-B2D01B48812B} = {FF747CDF-CCEF-45CF-B729-9639E580EAAE}
+		{5FB1CB24-9FAD-47B4-B6FC-AFA69D014AAA} = {FF747CDF-CCEF-45CF-B729-9639E580EAAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FB33C03-A542-45BB-A210-34F243A24F92}
