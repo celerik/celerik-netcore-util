@@ -9,3 +9,6 @@ Create and publish a package (dotnet CLI):
  
 GitHub Actions — Automate Nuget Package Deployments:
  - https://medium.com/@wajahataliabid/github-actions-automate-nuget-package-deployment-1533b11d2be1
+
+Adding license details to NuGet packages:
+ - https://www.flexlabs.org/2019/05/adding-license-details-to-nuget-packages
