@@ -26,7 +26,7 @@ namespace Celerik.NetCore.Util
         /// <param name="arguments">The values to format the string with.</param>
         /// <returns>The formatted string resource as a LocalizedString.</returns>
         public LocalizedString this[string name, params object[] arguments] =>
-             new LocalizedString(name, string.Format(name, arguments));
+             new LocalizedString(name, string.Format(CultureInfo.InvariantCulture, name, arguments));
 
         /// <summary>
         /// Gets all string resources.

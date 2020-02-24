@@ -129,4 +129,13 @@
   <data name="PaginationRequest.InvalidSortKey" xml:space="preserve">
     <value>La 'Columna de Ordenamiento' debe ser uno de los siguientes valores: '{0}'</value>
   </data>
+  <data name="QueryUtility.OrderBy.NullQuery" xml:space="preserve">
+    <value>'Query' no puede ser nulo</value>
+  </data>
+  <data name="QueryUtility.OrderBy.PropName" xml:space="preserve">
+    <value>'Prop Name' no puede ser nulo</value>
+  </data>
+  <data name="TestUtility.AssertThrows.NullFunc" xml:space="preserve">
+    <value>La función a testear no puede ser nula</value>
+  </data>
 </root>

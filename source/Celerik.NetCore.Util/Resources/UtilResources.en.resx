@@ -129,4 +129,13 @@
   <data name="PaginationRequest.InvalidSortKey" xml:space="preserve">
     <value>'Sort Key' must be one of following values: '{0}'</value>
   </data>
+  <data name="QueryUtility.OrderBy.NullQuery" xml:space="preserve">
+    <value>'Query' can not be null</value>
+  </data>
+  <data name="QueryUtility.OrderBy.PropName" xml:space="preserve">
+    <value>'Prop Name' can not be null</value>
+  </data>
+  <data name="TestUtility.AssertThrows.NullFunc" xml:space="preserve">
+    <value>The function to test can not be null</value>
+  </data>
 </root>

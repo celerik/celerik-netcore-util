@@ -17,7 +17,7 @@ namespace Celerik.NetCore.Util
         {
             if (func == null)
             {
-                throw new ArgumentException("The function to test is null");
+                throw new ArgumentException(UtilResources.Get("TestUtility.AssertThrows.NullFunc"));
             }
 
             var exceptionThrown = false;
