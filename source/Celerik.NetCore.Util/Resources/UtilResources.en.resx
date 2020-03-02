@@ -123,6 +123,9 @@
   <data name="EmbeddedFileUtility.ReadJson.Exception" xml:space="preserve">
     <value>Failed to convert JSON file '{0}' to type: '{1}'</value>
   </data>
+  <data name="EnumDescriptionJsonConverter.WriteJson.NullWriter" xml:space="preserve">
+    <value>'writter' can not be null</value>
+  </data>
   <data name="EnumUtility.GetValue.NullValue" xml:space="preserve">
     <value>'value' can not be null</value>
   </data>

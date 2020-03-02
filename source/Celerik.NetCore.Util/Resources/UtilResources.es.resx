@@ -123,6 +123,9 @@
   <data name="EmbeddedFileUtility.ReadJson.Exception" xml:space="preserve">
     <value>Error al convertir el archivo JSON '{0}' al tipo: '{1}'</value>
   </data>
+  <data name="EnumDescriptionJsonConverter.WriteJson.NullWriter" xml:space="preserve">
+    <value>'writter' no puede ser nulo</value>
+  </data>
   <data name="EnumUtility.GetValue.NotAnEnum" xml:space="preserve">
     <value>'{0}' no es una enumeración</value>
   </data>
