@@ -41,7 +41,7 @@ namespace Celerik.NetCore.Util
             catch
             {
                 throw new FileNotFoundException(UtilResources.Get(
-                    "EmbeddedFileUtility.ReadFileException", name
+                    "EmbeddedFileUtility.ReadFile.Exception", name
                 ));
             }
         }
@@ -88,7 +88,7 @@ namespace Celerik.NetCore.Util
             catch
             {
                 throw new FileLoadException(UtilResources.Get(
-                    "EmbeddedFileUtility.ReadJsonException", name, typeof(TOutputType)
+                    "EmbeddedFileUtility.ReadJson.Exception", name, typeof(TOutputType)
                 ));
             }
         }
