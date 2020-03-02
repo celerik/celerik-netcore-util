@@ -147,6 +147,9 @@
   <data name="QueryUtility.OrderBy.PropName" xml:space="preserve">
     <value>'propName' no puede ser nulo</value>
   </data>
+  <data name="StackTraceUtility.GetMethodName.NullStackTrace" xml:space="preserve">
+    <value>'stackTrace' no puede ser nulo</value>
+  </data>
   <data name="TestUtility.AssertThrows.NoThrown" xml:space="preserve">
     <value>Se esperaba una excepción de tipo '{0}' pero no fue lanzada</value>
   </data>
