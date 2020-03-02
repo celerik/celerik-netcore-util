@@ -126,19 +126,19 @@
   <data name="EnumDescriptionJsonConverter.WriteJson.NullWriter" xml:space="preserve">
     <value>'writter' no puede ser nulo</value>
   </data>
-  <data name="EnumUtility.GetValue.NotAnEnum" xml:space="preserve">
-    <value>'{0}' no es una enumeración</value>
-  </data>
   <data name="EnumUtility.GetValue.NullValue" xml:space="preserve">
     <value>'value' no puede ser nulo</value>
   </data>
   <data name="EnumUtility.NotAnEnum" xml:space="preserve">
     <value>'{0}' no es una enumeración</value>
   </data>
-  <data name="PaginationRequest.InvalidSortDirection" xml:space="preserve">
+  <data name="PaginationExtensions.Paginate.NullRequest" xml:space="preserve">
+    <value>'request' no puede ser nulo</value>
+  </data>
+  <data name="PaginationRequestValidator.Constructor.InvalidSortDirection" xml:space="preserve">
     <value>'SortDirection' debe ser 'asc' o 'desc'</value>
   </data>
-  <data name="PaginationRequest.InvalidSortKey" xml:space="preserve">
+  <data name="PaginationRequestValidator.Constructor.InvalidSortKey" xml:space="preserve">
     <value>La 'SortKey' debe ser uno de los siguientes valores: '{0}'</value>
   </data>
   <data name="QueryUtility.OrderBy.NullQuery" xml:space="preserve">

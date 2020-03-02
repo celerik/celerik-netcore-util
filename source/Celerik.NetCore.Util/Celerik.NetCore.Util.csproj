@@ -10,7 +10,7 @@
     <PackageId>Celerik.NetCore.Util</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/net-core-baseline</PackageProjectUrl>
-    <PackageReleaseNotes>Added convertion utilities</PackageReleaseNotes>
+    <PackageReleaseNotes>Added pagination utilities</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>common, utilities</PackageTags>
     <RepositoryType>Git</RepositoryType>

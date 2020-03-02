@@ -132,10 +132,13 @@
   <data name="EnumUtility.NotAnEnum" xml:space="preserve">
     <value>'{0}' is not an enum</value>
   </data>
-  <data name="PaginationRequest.InvalidSortDirection" xml:space="preserve">
+  <data name="PaginationExtensions.Paginate.NullRequest" xml:space="preserve">
+    <value>'request' can not be null</value>
+  </data>
+  <data name="PaginationRequestValidator.Constructor.InvalidSortDirection" xml:space="preserve">
     <value>'SortDirection' must be 'asc' or 'desc'</value>
   </data>
-  <data name="PaginationRequest.InvalidSortKey" xml:space="preserve">
+  <data name="PaginationRequestValidator.Constructor.InvalidSortKey" xml:space="preserve">
     <value>'SortKey' must be one of following values: '{0}'</value>
   </data>
   <data name="QueryUtility.OrderBy.NullQuery" xml:space="preserve">
