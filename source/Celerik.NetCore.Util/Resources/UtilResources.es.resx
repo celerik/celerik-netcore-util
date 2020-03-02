@@ -117,23 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="EmbeddedFileUtility.ReadFileException" xml:space="preserve">
+  <data name="EmbeddedFileUtility.ReadFile.Exception" xml:space="preserve">
     <value>Error al leer el archivo incrustado: '{0}'</value>
   </data>
-  <data name="EmbeddedFileUtility.ReadJsonException" xml:space="preserve">
+  <data name="EmbeddedFileUtility.ReadJson.Exception" xml:space="preserve">
     <value>Error al convertir el archivo JSON '{0}' al tipo: '{1}'</value>
   </data>
+  <data name="EnumUtility.GetValue.NotAnEnum" xml:space="preserve">
+    <value>'{0}' no es una enumeración</value>
+  </data>
+  <data name="EnumUtility.GetValue.NullValue" xml:space="preserve">
+    <value>'value' no puede ser nulo</value>
+  </data>
+  <data name="EnumUtility.NotAnEnum" xml:space="preserve">
+    <value>'{0}' no es una enumeración</value>
+  </data>
   <data name="PaginationRequest.InvalidSortDirection" xml:space="preserve">
-    <value>La 'Dirección de Ordenamiento' debe ser 'asc' o 'desc'</value>
+    <value>'SortDirection' debe ser 'asc' o 'desc'</value>
   </data>
   <data name="PaginationRequest.InvalidSortKey" xml:space="preserve">
-    <value>La 'Columna de Ordenamiento' debe ser uno de los siguientes valores: '{0}'</value>
+    <value>La 'SortKey' debe ser uno de los siguientes valores: '{0}'</value>
   </data>
   <data name="QueryUtility.OrderBy.NullQuery" xml:space="preserve">
-    <value>'Query' no puede ser nulo</value>
+    <value>'query' no puede ser nulo</value>
   </data>
   <data name="QueryUtility.OrderBy.PropName" xml:space="preserve">
-    <value>'Prop Name' no puede ser nulo</value>
+    <value>'propName' no puede ser nulo</value>
+  </data>
+  <data name="TestUtility.AssertThrows.NoThrown" xml:space="preserve">
+    <value>Se esperaba una excepción de tipo '{0}' pero no fue lanzada</value>
   </data>
   <data name="TestUtility.AssertThrows.NullFunc" xml:space="preserve">
     <value>La función a testear no puede ser nula</value>
