@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    if: contains('[release]', github.event.commits[0].message)
     runs-on: ubuntu-latest
 
     steps:
