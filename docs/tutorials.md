@@ -15,3 +15,7 @@ Adding license details to NuGet packages:
 
 Suppress CA2007 ConfigureAwait warning in ASP.NET Core:
  - https://alexlvovich.com/blog/suppress-ca2007-configureawait-warning-in-asp
+ 
+Github Release On Push Action
+ - https://github.com/marketplace/actions/tag-release-on-push-action
+ 
