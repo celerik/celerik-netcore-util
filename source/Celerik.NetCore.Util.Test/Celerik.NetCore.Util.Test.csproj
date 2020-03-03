@@ -7,7 +7,7 @@
 
     <LangVersion>latest</LangVersion>
 
-    <Version>0.0.2</Version>
+    <Version>0.0.16</Version>
 
     <Authors>Juan Cuartas</Authors>
 
@@ -31,7 +31,7 @@
 
     <PackageTags>common, utilities, test</PackageTags>
 
-    <PackageReleaseNotes>Modified project properties</PackageReleaseNotes>
+    <PackageReleaseNotes>Added pagination utilities</PackageReleaseNotes>
 
     <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
