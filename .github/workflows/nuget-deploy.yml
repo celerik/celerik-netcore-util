@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: if: contains('[release]', github.event.pull_request.title)
+    if: contains('[release]', toJson(github.event.pull_request))
     runs-on: ubuntu-latest
 
     steps:
