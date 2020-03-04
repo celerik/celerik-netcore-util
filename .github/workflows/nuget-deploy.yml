@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    if: contains('[release]', '${{ toJson(github) }}')
     runs-on: ubuntu-latest
 
     steps:
