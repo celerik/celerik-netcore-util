@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace Celerik.NetCore.Util.Test
 {
-    public enum Feeling
+    public enum FeelingType
     {
         [System.ComponentModel.Description(":(")]
         Sad = 1,
@@ -16,7 +16,7 @@ namespace Celerik.NetCore.Util.Test
     public class Employee
     {
         [JsonConverter(typeof(EnumDescriptionJsonConverter))]
-        public Feeling? Feeling { get; set; }
+        public FeelingType? Feeling { get; set; }
     }
 
     [TestClass]
@@ -25,7 +25,7 @@ namespace Celerik.NetCore.Util.Test
         [TestMethod]
         public void SerializeSettedValue()
         {
-            var me = new Employee { Feeling = Feeling.Sad };
+            var me = new Employee { Feeling = FeelingType.Sad };
             var meSerialized = JsonConvert.SerializeObject(me);
 
             Assert.AreEqual(true, meSerialized.Contains(":(", StringComparison.InvariantCulture));
