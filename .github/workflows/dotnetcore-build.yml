@@ -7,6 +7,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Print GitHub Info
+      env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
+      
+    - name: Print Env Info
+      env:
+          ENV_CONTEXT: ${{ toJson(env) }}
+      run: echo "$ENV_CONTEXT"
+      
+    - name: Print Job Info
+      env:
+          JOB_CONTEXT: ${{ toJson(job) }}
+      run: echo "$JOB_CONTEXT"
+      
+    - name: Print Runner Info
+      env:
+          RUNNER_CONTEXT: ${{ toJson(runner) }}
+      run: echo "$RUNNER_CONTEXT"
+      
     - uses: actions/checkout@v2
 
     - name: Setup .NET Core
