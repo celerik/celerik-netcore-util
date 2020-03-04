@@ -27,7 +27,7 @@ namespace Celerik.NetCore.Util
                 .Substring(1)
                 .ToLowerInvariant();
 
-            var newStr = $"${firstUpper}${restLower}";
+            var newStr = $"{firstUpper}{restLower}";
             return newStr;
         }
     }
