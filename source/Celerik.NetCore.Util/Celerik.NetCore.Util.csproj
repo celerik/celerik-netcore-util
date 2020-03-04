@@ -50,9 +50,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewtonSoft\" />
-    <Folder Include="Utilities\" />
-  </ItemGroup>
-
 </Project>
