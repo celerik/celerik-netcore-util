@@ -33,7 +33,7 @@ namespace Celerik.NetCore.Util
         [JsonIgnore]
         public bool IsAscending =>
             SortDirection?.ToLowerInvariant() !=
-            Util.SortDirection.Desc.GetDescription().ToLowerInvariant();
+            Util.SortDirectionType.Desc.GetDescription().ToLowerInvariant();
     }
 
     /// <summary>
