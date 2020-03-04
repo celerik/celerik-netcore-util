@@ -16,5 +16,6 @@ Adding license details to NuGet packages:
 Suppress CA2007 ConfigureAwait warning in ASP.NET Core:
  - https://alexlvovich.com/blog/suppress-ca2007-configureawait-warning-in-asp
  
-How to skip GitHub Actions job on push event?
- - https://stackoverflow.com/questions/59759921/how-to-skip-github-actions-job-on-push-event
+Context and expression syntax for GitHub Actions:
+ - https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions
+ 
