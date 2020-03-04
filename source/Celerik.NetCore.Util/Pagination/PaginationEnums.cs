@@ -2,7 +2,7 @@
 
 namespace Celerik.NetCore.Util
 {
-    public enum SortDirection
+    public enum SortDirectionType
     {
         [Description("asc")]
         Asc = 1,
