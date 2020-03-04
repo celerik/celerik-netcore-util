@@ -24,8 +24,8 @@ namespace Celerik.NetCore.Util
 
             RuleFor(payload => payload.SortDirection)
                 .Must(payload =>
-                    payload.ToLowerInvariant() == SortDirection.Asc.GetDescription().ToLowerInvariant() ||
-                    payload.ToLowerInvariant() == SortDirection.Desc.GetDescription().ToLowerInvariant())
+                    payload.ToLowerInvariant() == SortDirectionType.Asc.GetDescription().ToLowerInvariant() ||
+                    payload.ToLowerInvariant() == SortDirectionType.Desc.GetDescription().ToLowerInvariant())
                 .When(payload => !string.IsNullOrEmpty(payload.SortDirection))
                 .WithMessage(UtilResources.Get("PaginationRequestValidator.Constructor.InvalidSortDirection"));
         }
