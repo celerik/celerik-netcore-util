@@ -4,11 +4,10 @@ on: [push]
 
 jobs:
   build:
+    if: contains('[release]', '${{ github.event.head_commit.message }}')
     runs-on: ubuntu-latest
 
     steps:
-    if: contains('[release]', '${{ github.event.head_commit.message }}')
-    
     - uses: actions/checkout@v2
 
     - name: Setup .NET Core
