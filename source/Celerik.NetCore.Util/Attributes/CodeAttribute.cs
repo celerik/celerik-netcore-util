@@ -5,7 +5,7 @@ namespace Celerik.NetCore.Util
     /// <summary>
     /// Defines a custom Code attribute.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Enum)]
+    [AttributeUsage(AttributeTargets.Field)]
     public class CodeAttribute : Attribute
     {
         /// <summary>

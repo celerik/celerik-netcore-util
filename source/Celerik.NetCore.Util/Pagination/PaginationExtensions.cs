@@ -40,8 +40,8 @@ namespace Celerik.NetCore.Util
             var items = isAsync ? await query.ToListAsync() : query.ToList();
 
             var sorDirection = request.IsAscending
-                ? SortDirection.Asc.GetDescription()
-                : SortDirection.Desc.GetDescription();
+                ? SortDirectionType.Asc.GetDescription()
+                : SortDirectionType.Desc.GetDescription();
 
             var pageCount = (int)Math.Ceiling(count / (double)request.PageSize);
 
