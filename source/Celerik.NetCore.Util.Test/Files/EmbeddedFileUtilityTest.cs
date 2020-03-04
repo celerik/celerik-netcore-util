@@ -30,9 +30,9 @@ namespace Celerik.NetCore.Util.Test
         {
             var movies = EmbeddedFileUtility.ReadFile("Files.Movies.json");
 
-            Assert.AreEqual(true, movies.Contains("{ \"id\": 1, \"name\": \"Enter the Dragon\" }", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, movies.Contains("{ \"id\": 2, \"name\": \"Kill Bill\" }", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, movies.Contains("{ \"id\": 3, \"name\": \"Terminator 2\" }", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, movies.Contains("Enter the Dragon", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, movies.Contains("Kill Bill", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, movies.Contains("Terminator", StringComparison.InvariantCulture));
         }
 
         [TestMethod]
