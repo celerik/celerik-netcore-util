@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Print Contextual Info
       env:
-          GITHUB_CONTEXT: ${{ toJson(job) }}
+          GITHUB_CONTEXT: ${{ toJson(env) }}
       run: echo "$GITHUB_CONTEXT"
       
     - uses: actions/checkout@v2
