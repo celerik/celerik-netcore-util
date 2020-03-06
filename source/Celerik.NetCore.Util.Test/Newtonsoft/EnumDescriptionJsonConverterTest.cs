@@ -48,5 +48,32 @@ namespace Celerik.NetCore.Util.Test
 
             Assert.AreEqual(FeelingType.Happy, deserialized.Feeling);
         }
+
+        [TestMethod]
+        public void WriteJsonNullWritter()
+        {
+            var converter = new EnumDescriptionJsonConverter();
+
+            TestUtility.AssertThrows<ArgumentException>(() => {
+                converter.WriteJson(null, "{}", new JsonSerializer());
+            });
+
+        }
+
+        [TestMethod]
+        public void CanRead()
+        {
+            var converter = new EnumDescriptionJsonConverter();
+            Assert.AreEqual(false, converter.CanRead);
+        }
+
+        [TestMethod]
+        public void CanConvert()
+        {
+            var obj = "";
+            var converter = new EnumDescriptionJsonConverter();
+
+            Assert.AreEqual(false, converter.CanConvert(obj.GetType()));
+        }
     }
 }
