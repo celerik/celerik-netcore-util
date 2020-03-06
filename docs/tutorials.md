@@ -19,3 +19,6 @@ Suppress CA2007 ConfigureAwait warning in ASP.NET Core:
 Context and expression syntax for GitHub Actions:
  - https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions
  
+Code Coverage in .NET Core Projects
+ - https://codeburst.io/code-coverage-in-net-core-projects-c3d6536fd7d7
+ 
