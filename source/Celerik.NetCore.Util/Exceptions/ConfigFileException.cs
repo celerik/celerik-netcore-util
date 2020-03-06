@@ -39,7 +39,8 @@ namespace Celerik.NetCore.Util
         /// <summary>
         /// Initializes a new ConfigFileException.
         /// </summary>
-        /// <param name="message">The message that describes the error.</param>
+        /// <param name="info">The System.Runtime.Serialization.SerializationInfo that
+        /// holds the serialized object data about the exception being thrown.</param>
         /// <param name="context">The StreamingContext that contains contextual
         /// information about the source or destination.</param>
         protected ConfigFileException(SerializationInfo info, StreamingContext context)
