@@ -61,6 +61,14 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
+        public void ReadJson()
+        {
+            var converter = new EnumDescriptionJsonConverter();
+            Assert.AreEqual(null, converter.ReadJson(null, null, null, null));
+
+        }
+
+        [TestMethod]
         public void CanRead()
         {
             var converter = new EnumDescriptionJsonConverter();
