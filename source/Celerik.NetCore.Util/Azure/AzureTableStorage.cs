@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
@@ -9,6 +10,7 @@ namespace Celerik.NetCore.Util
     /// Provides functions to read data from and write data to an Azure Table Storage.
     /// </summary>
     /// <typeparam name="TElement">The type of table entity.</typeparam>
+    [ExcludeFromCodeCoverage]
     public class AzureTableStorage<TElement> where TElement : ITableEntity, new()
     {
         /// <summary>
