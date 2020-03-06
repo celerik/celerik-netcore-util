@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -11,7 +12,21 @@ namespace Celerik.NetCore.Util.Test
     public class PaginationExtensionsTest : UtilBaseTest
     {
         [TestMethod]
-        public async Task Paginate()
+        public void PaginateNullRequest()
+        {
+            var items = new List<Cat> {
+                new Cat { Name = "Cosme Felinito" },
+                new Cat { Name = "Michi Naranjoso del Monte" },
+                new Cat { Name = "Brad Michi" }
+            }.AsQueryable();
+
+            TestUtility.AssertThrows<ArgumentException>(async () => {
+                await items.Paginate(null, isAsync: false);
+            });
+        }
+
+        [TestMethod]
+        public async Task PaginateOk()
         {
             var request = new PaginationRequest
             {
