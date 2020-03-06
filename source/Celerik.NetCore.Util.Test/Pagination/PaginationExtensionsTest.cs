@@ -19,10 +19,9 @@ namespace Celerik.NetCore.Util.Test
                 new Cat { Name = "Michi Naranjoso del Monte" },
                 new Cat { Name = "Brad Michi" }
             }.AsQueryable();
-
-            TestUtility.AssertThrows<ArgumentException>(async () => {
-                await items.Paginate(null, isAsync: false);
-            });
+            
+            var taskResult = items.Paginate(null, isAsync: false);
+            Assert.AreNotEqual(null, taskResult.Exception);
         }
 
         [TestMethod]
