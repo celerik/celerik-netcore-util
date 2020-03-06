@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 3.1.100
 
     - name: Build with dotnet
-      run: dotnet build ./source/Celerik.NetCore.sln --configuration Release
+      run: dotnet build ./source/Celerik.NetCore.Util.sln --configuration Release
 
     - name: Run unit tests
       run: dotnet test ./source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj
@@ -32,7 +32,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Pack nuget Package
-      run: dotnet pack ./source/Celerik.NetCore.sln --configuration Release
+      run: dotnet pack ./source/Celerik.NetCore.Util.sln --configuration Release
 
     - name: Push nuget Package
       run: dotnet nuget push **/*.nupkg
