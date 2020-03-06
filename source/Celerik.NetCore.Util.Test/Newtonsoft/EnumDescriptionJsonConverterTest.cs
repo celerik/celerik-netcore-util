@@ -39,5 +39,14 @@ namespace Celerik.NetCore.Util.Test
 
             Assert.AreEqual(true, meSerialized.Contains("null", StringComparison.InvariantCulture));
         }
+
+        [TestMethod]
+        public void Deserialize()
+        {
+            var json = "{ Feeling: 2 }";
+            var deserialized = JsonConvert.DeserializeObject<Employee>(json);
+
+            Assert.AreEqual(FeelingType.Happy, deserialized.Feeling);
+        }
     }
 }
