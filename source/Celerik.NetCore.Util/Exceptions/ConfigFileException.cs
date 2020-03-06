@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 
 namespace Celerik.NetCore.Util
@@ -43,6 +44,7 @@ namespace Celerik.NetCore.Util
         /// holds the serialized object data about the exception being thrown.</param>
         /// <param name="context">The StreamingContext that contains contextual
         /// information about the source or destination.</param>
+        [ExcludeFromCodeCoverage]
         protected ConfigFileException(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
