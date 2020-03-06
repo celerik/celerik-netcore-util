@@ -23,6 +23,17 @@ jobs:
 
     - name: Run unit tests
       run: dotnet test ./source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj
+      
+    - name: Generate coverage report
+      run: |
+        cd ./source/Celerik.NetCore.Util.Test/
+        dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+
+    - name: Publish coverage report to coveralls.io
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: ./source/Celerik.NetCore.Util.Test/TestResults/coverage.info
 
   deploy:
     needs: build
