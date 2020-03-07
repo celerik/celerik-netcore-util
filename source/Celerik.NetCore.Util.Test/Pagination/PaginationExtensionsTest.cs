@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -20,7 +19,7 @@ namespace Celerik.NetCore.Util.Test
                 new Cat { Name = "Brad Michi" }
             }.AsQueryable();
             
-            var taskResult = items.Paginate(null, isAsync: false);
+            var taskResult = items.Paginate(null);
             Assert.AreNotEqual(null, taskResult.Exception);
         }
 
@@ -41,7 +40,7 @@ namespace Celerik.NetCore.Util.Test
                 new Cat { Name = "Brad Michi" }
             }.AsQueryable();
 
-            var pagination = await items.Paginate(request, isAsync: false);
+            var pagination = await items.Paginate(request);
 
             Assert.AreEqual(true, pagination.IsAscending);
             Assert.AreEqual(items.ElementAt(2).Name, pagination.Items.ElementAt(0).Name);
@@ -71,7 +70,7 @@ namespace Celerik.NetCore.Util.Test
                 new Cat { Name = "Brad Michi" }
             }.AsQueryable();
 
-            var pagination = await items.Paginate(request, isAsync: false);
+            var pagination = await items.Paginate(request);
 
             Assert.AreEqual(false, pagination.IsAscending);
             Assert.AreEqual(items.ElementAt(1).Name, pagination.Items.ElementAt(0).Name);
