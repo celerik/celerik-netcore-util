@@ -9,27 +9,27 @@
 
 *Celerik.NetCore.Util* provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, exceptions, files, json, pagination, resources, testing, convertions, crypto, enums, queries, stack trace, strings, validations.
 
-## What's next
-
-Check out the road map of *Celerik.NetCore.Util* [here](ROADMAP.md).
-
 ## Quick Start
 
 ```
 PM > Install-Package Celerik.NetCore.Util
 ```
 
-## How to Contribute
-Check out the contributing guide [here](CONTRIBUTING.md).
+## Blog and examples
+
+Check out Celerik's website [here](http://celerik.com).
+
+## What's next
+
+Check out the road map of *Celerik.NetCore.Util* [here](ROADMAP.md).
 
 ## License
 
 *Celerik.NetCore.Util* is licensed under the [MIT license](LICENSE).
 
-## Celerik.NetCore.Util project
+## How to Contribute
+Check out the contributing guide [here](CONTRIBUTING.md).
 
 `master` is the default branch accepting Pull Requests. It releases a package everytime the `head_commit.message` contains the word `[release]`.
 
-## Blog and examples
 
-Check out Celerik's website [here](http://celerik.com).
