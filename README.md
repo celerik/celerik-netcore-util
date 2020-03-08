@@ -1,7 +1,7 @@
 # .NET Core Utility Library: *Celerik.NetCore.Util*
 
-![build](https://github.com/celerik/celerik-netcore-util/workflows/.NET%20Core%20Build/badge.svg?branch=master&event=push)
-![deploy](https://github.com/celerik/celerik-netcore-util/workflows/Nuget%20Package%20Deploy/badge.svg)
+![build](https://github.com/celerik/celerik-netcore-util/workflows/build/badge.svg?branch=master&event=push)
+![deploy](https://github.com/celerik/celerik-netcore-util/workflows/deploy/badge.svg)
 ![Coverage Status](https://coveralls.io/repos/github/celerik/celerik-netcore-util/badge.svg?branch=master)](https://coveralls.io/github/celerik/celerik-netcore-util?branch=master)
 [![NuGet](https://img.shields.io/nuget/v/Celerik.NetCore.Util.svg)](http://www.nuget.org/packages/Celerik.NetCore.Util/)
 
