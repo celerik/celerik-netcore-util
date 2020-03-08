@@ -1,6 +1,6 @@
 # .NET Core Utility Library *Celerik.NetCore.Util*
 
-[![Actions Status](https://github.com/{owner}/{repo}/workflows/{workflow_name}/badge.svg)](https://github.com/{owner}/{repo}/actions)
+[![Actions Status](https://github.com/celerik/celerik-netcore-util/workflows/.NET Core Build/badge.svg)](https://github.com/celerik/celerik-netcore-util/actions)
 
 ## What's it
 
