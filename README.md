@@ -29,7 +29,3 @@ Check out the road map of *Celerik.NetCore.Util* [here](ROADMAP.md).
 
 ## How to Contribute
 Check out the contributing guide [here](CONTRIBUTING.md).
-
-`master` is the default branch accepting Pull Requests. It releases a package everytime the `head_commit.message` contains the word `[release]`.
-
-
