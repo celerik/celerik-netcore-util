@@ -1,4 +1,4 @@
-name: Nuget Package Deploy
+name: nuget-deploy
 
 on:
   push:
