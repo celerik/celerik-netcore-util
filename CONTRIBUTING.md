@@ -76,3 +76,6 @@ The Celerik team will review your PR and let you know if there are any other upd
 
 The maintainers will merge your PR into the master branch once feedback has been applied and your change is approved.
 
+Note: `master` is the default branch accepting Pull Requests. It releases a package everytime the `head_commit.message` contains the word `[release]`.
+
+
