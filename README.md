@@ -16,10 +16,10 @@
 PM > Install-Package Celerik.NetCore.Util
 ```
 
-## Blog and examples
+## API and examples
 
-Check out API's documentation [here](https://celerik.github.io/celerik-netcore-util/api/index.html).
-Check out tutorials on Celerik's blog [here](http://celerik.com). // TODO!
+ - Check out API's documentation [here](https://celerik.github.io/celerik-netcore-util/api/index.html).
+ - Check out tutorials on Celerik's blog [here](http://celerik.com).
 
 ## What's next
 
