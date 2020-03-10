@@ -9,14 +9,16 @@ namespace Celerik.NetCore.Util
     /// Contract resolver to serialize all props in an object not taking into
     /// account the JsonIgnore attribute.
     /// </summary>
-    /// <code>
-    ///     var settings = new JsonSerializerSettings
-    ///     {
-    ///         ContractResolver = new SerializeAllContractResolver()
-    ///     };
-    ///     
-    ///     var json = JsonConvert.SerializeObject(obj, settings);
-    /// </code>
+    /// <example>
+    ///     <code>
+    ///         var settings = new JsonSerializerSettings
+    ///         {
+    ///             ContractResolver = new SerializeAllContractResolver()
+    ///         };
+    ///
+    ///         var json = JsonConvert.SerializeObject(obj, settings);
+    ///     </code>
+    /// </example>
     public class SerializeAllContractResolver : DefaultContractResolver
     {
         /// <summary>
