@@ -6,18 +6,22 @@ namespace Celerik.NetCore.Util
     /// <summary>
     /// Serializes an Enum value to its corresponding DescriptionAttribute.
     /// </summary>
-    /// <code>
-    ///     enum MyEnum
-    ///     {
-    ///         [Description("Some Value")]
-    ///         SomeValue
-    ///     }
-    ///     class MyClass
-    ///     {
-    ///         [JsonConverter(typeof(EnumDescriptionJsonConverter))]
-    ///         public MyEnum MyProp { get; set; }
-    ///     }
-    /// </code>
+    /// <example>
+    ///     <code>
+    ///         enum MyEnum
+    ///         {
+    ///             [Description("Some Value")]
+    ///             SomeValue
+    ///         }
+    ///
+    ///         class MyClass
+    ///         {
+    ///             // MyProp will be serialized to "Some Value".
+    ///             [JsonConverter(typeof(EnumDescriptionJsonConverter))]
+    ///             public MyEnum MyProp { get; set; } = MyEnum.SomeValue;
+    ///         }
+    ///     </code>
+    /// </example>
     public class EnumDescriptionJsonConverter : JsonConverter
     {
         /// <summary>
