@@ -1,4 +1,3 @@
 # Road map
 
- - Automate doc generation
- - Create posts with examples in Celerik's blog
+ - Create articles with examples in Celerik's blog
