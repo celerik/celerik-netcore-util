@@ -22,3 +22,15 @@ Context and expression syntax for GitHub Actions:
 Code Coverage in .NET Core Projects
  - https://codeburst.io/code-coverage-in-net-core-projects-c3d6536fd7d7
  
+Getting Started with DocFX
+ - https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html
+ 
+Use DocFx to document your existing .Net application
+ - https://alexklingenbeck.de/articles/17-06-docfx.html
+ 
+GitHub Action to Deploy Static Assets to GitHub Pages
+ - https://github.com/maxheld83/ghpages
+ 
+A GitHub action to run DocFX and generate a documentation site.
+ - https://github.com/nikeee/docfx-action
+ 
