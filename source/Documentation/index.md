@@ -1,4 +1,9 @@
-# This is the **HOMEPAGE**.
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
-## Quick Start Notes:
-1. Add images to the *images* folder if the file is referencing an image.
+# .NET Core Utility Library
+
+*Celerik.NetCore.Util* provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, exceptions, files, json, pagination, resources, testing, convertions, crypto, enums, queries, stack trace, strings, validations.
+
+## Quick Start
+
+```
+PM > Install-Package Celerik.NetCore.Util
+```
