@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Authors>Juan Cuartas</Authors>
+    <Authors>Celerik.com</Authors>
     <Company>Celerik (IDlink S.A.S.)</Company>
     <Copyright>Celerik (©) 2020 (MIT)</Copyright>
     <Description>Provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, exceptions, files, json, pagination, resources, testing, convertions, crypto, enums, queries, stack trace, strings, validations.</Description>
@@ -13,7 +13,7 @@
     <PackageId>Celerik.NetCore.Util</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/net-core-baseline</PackageProjectUrl>
-    <PackageReleaseNotes>Added initial README.md content</PackageReleaseNotes>
+    <PackageReleaseNotes>Improved documentation</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>common, utilities</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -23,7 +23,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Title>Celerik.NetCore.Util</Title>
-    <Version>0.0.17</Version>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

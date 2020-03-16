@@ -43,26 +43,6 @@ namespace Celerik.NetCore.Util.Test
     public class EnumUtilityTest : UtilBaseTest
     {
         [TestMethod]
-        public void GetValue()
-        {
-            var enumDescription = "Eric Cartman";
-            var enumValue = EnumUtility.GetValue<SouthParkCharacterType>(enumDescription);
-            Assert.AreEqual(SouthParkCharacterType.Cartman, enumValue);
-
-            enumDescription = "Cartman";
-            enumValue = EnumUtility.GetValue<SouthParkCharacterType>(enumDescription);
-            Assert.AreEqual(SouthParkCharacterType.Cartman, enumValue);
-
-            enumDescription = null;
-            enumValue = EnumUtility.GetValue(enumDescription, defaultVal: SouthParkCharacterType.Chef);
-            Assert.AreEqual(SouthParkCharacterType.Chef, enumValue);
-
-            TestUtility.AssertThrows<InvalidOperationException>(() => {
-                EnumUtility.GetValue<int>(null);
-            });
-        }
-
-        [TestMethod]
         public void GetAttribute()
         {
             var enumValue = SouthParkCharacterType.Kenny;
@@ -82,8 +62,8 @@ namespace Celerik.NetCore.Util.Test
             Assert.AreEqual("KB", enumCode);
 
             enumValue = SouthParkCharacterType.Chef;
-            enumCode = enumValue.GetDescription();
-            Assert.AreEqual("Chef", enumCode);
+            enumCode = enumValue.GetCode("CF");
+            Assert.AreEqual("CF", enumCode);
         }
 
         [TestMethod]
@@ -95,11 +75,11 @@ namespace Celerik.NetCore.Util.Test
 
             enumValue = 5;
             enumCode = EnumUtility.GetCode<SouthParkCharacterType>(enumValue);
-            Assert.AreEqual("Chef", enumCode);
+            Assert.AreEqual(null, enumCode);
 
             enumValue = 6;
-            enumCode = EnumUtility.GetCode<SouthParkCharacterType>(enumValue, defaultVal: "Randy");
-            Assert.AreEqual("Randy", enumCode);
+            enumCode = EnumUtility.GetCode<SouthParkCharacterType>(enumValue, defaultVal: "RD");
+            Assert.AreEqual("RD", enumCode);
 
             TestUtility.AssertThrows<InvalidOperationException>(() => {
                 EnumUtility.GetCode<int>(0);
@@ -135,6 +115,46 @@ namespace Celerik.NetCore.Util.Test
 
             TestUtility.AssertThrows<InvalidOperationException>(() => {
                 EnumUtility.GetDescription<int>(0);
+            });
+        }
+
+        [TestMethod]
+        public void GetValueFromCode()
+        {
+            var enumCode = "EC";
+            var enumValue = EnumUtility.GetValueFromCode<SouthParkCharacterType>(enumCode);
+            Assert.AreEqual(SouthParkCharacterType.Cartman, enumValue);
+
+            enumCode = "InvalidCode";
+            enumValue = EnumUtility.GetValueFromCode<SouthParkCharacterType>(enumCode);
+            Assert.AreEqual((SouthParkCharacterType)0, enumValue);
+
+            enumCode = null;
+            enumValue = EnumUtility.GetValueFromCode(enumCode, defaultVal: SouthParkCharacterType.Chef);
+            Assert.AreEqual(SouthParkCharacterType.Chef, enumValue);
+
+            TestUtility.AssertThrows<InvalidOperationException>(() => {
+                EnumUtility.GetValueFromCode<int>(null);
+            });
+        }
+
+        [TestMethod]
+        public void GetValueFromDescription()
+        {
+            var enumDescription = "Eric Cartman";
+            var enumValue = EnumUtility.GetValueFromDescription<SouthParkCharacterType>(enumDescription);
+            Assert.AreEqual(SouthParkCharacterType.Cartman, enumValue);
+
+            enumDescription = "Cartman";
+            enumValue = EnumUtility.GetValueFromDescription<SouthParkCharacterType>(enumDescription);
+            Assert.AreEqual(SouthParkCharacterType.Cartman, enumValue);
+
+            enumDescription = null;
+            enumValue = EnumUtility.GetValueFromDescription(enumDescription, defaultVal: SouthParkCharacterType.Chef);
+            Assert.AreEqual(SouthParkCharacterType.Chef, enumValue);
+
+            TestUtility.AssertThrows<InvalidOperationException>(() => {
+                EnumUtility.GetValueFromDescription<int>(null);
             });
         }
 
