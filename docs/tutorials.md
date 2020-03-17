@@ -33,4 +33,10 @@ GitHub Action to Deploy Static Assets to GitHub Pages
  
 A GitHub action to run DocFX and generate a documentation site.
  - https://github.com/nikeee/docfx-action
+
+Convert PFX Certificate to Base64 String
+ - https://blog.techfabric.io/convert-pfx-certificate-to-base64-string/
+
+Signing nuget package
+ - https://timheuer.com/blog/use-nuget-with-github-actions-github-packages/
  
