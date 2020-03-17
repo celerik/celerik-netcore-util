@@ -69,7 +69,7 @@ jobs:
         encodedString: ${{ secrets.CELERIK_CERTIFICATE }}
         
     - name: Sign nuget package
-      run: nuget sign nupkg\*.nupkg -CertificatePath ${{ steps.certfile.outputs.filePath }} -CertificatePassword -Timestamper http://tsa.starfieldtech.com -NonInteractive
+      run: nuget sign nupkg\*.nupkg -CertificatePath ${{ steps.certfile.outputs.filePath }} -CertificatePassword "" -Timestamper http://tsa.starfieldtech.com -NonInteractive
       
     - name: Push nuget package
       run: dotnet nuget push **/*.nupkg
