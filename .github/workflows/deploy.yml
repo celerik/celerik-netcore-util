@@ -35,18 +35,6 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: ./source/Celerik.NetCore.Util.Test/TestResults/coverage.info
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v2
-    
-    - name: Setup nuget
-      uses: NuGet/setup-nuget@v1.0.2
-      with:
-        nuget-version: latest
-    
     - name: Pack nuget package
       run: dotnet pack ./source/Celerik.NetCore.Util.sln --configuration Release -o finalpackage
       
@@ -55,11 +43,27 @@ jobs:
       with:
         name: nupkg
         path: finalpackage
-        
+
+  deploy:
+    needs: build
+    runs-on: windows-latest # using windows agent due to nuget can't sign on linux yet
+    
+    steps:
+    - name: Setup .net core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.100
+
     - name: Download package artifact
       uses: actions/download-artifact@master
       with:
         name: nupkg
+    
+    - name: Setup nuget
+      uses: NuGet/setup-nuget@v1.0.2
+      with:
+        nuget-version: latest
+    
     
     - name: Get celerik certificate
       id: certfile
@@ -71,7 +75,13 @@ jobs:
     - name: Sign nuget package
       run: nuget sign nupkg\*.nupkg -CertificatePath ${{ steps.certfile.outputs.filePath }} -CertificatePassword "" -Timestamper http://tsa.starfieldtech.com -NonInteractive
       
-    - name: Push nuget package
+    - name: Publish signed package artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: signednupkg
+        path: nupkg
+
+    - name: Push nuget package to nuget.org
       run: dotnet nuget push **/*.nupkg
            --api-key ${{ secrets.CELERIK_NUGET_API_KEY }}
            --source https://api.nuget.org/v3/index.json
