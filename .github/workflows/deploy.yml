@@ -49,6 +49,17 @@ jobs:
     
     - name: Pack nuget package
       run: dotnet pack ./source/Celerik.NetCore.Util.sln --configuration Release
+      
+    - name: Publish package artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: nupkg
+        path: finalpackage
+        
+    - name: Download package artifact
+      uses: actions/download-artifact@master
+      with:
+        name: nupkg
     
     - name: Get celerik certificate
       id: certfile
@@ -58,7 +69,7 @@ jobs:
         encodedString: ${{ secrets.CELERIK_CERTIFICATE }}
         
     - name: Sign nuget package
-      run: nuget sign **/*.nupkg -CertificatePath "${{ steps.certfile.outputs.filePath }}" -Timestamper http://tsa.starfieldtech.com –NonInteractive  
+      run: nuget sign nupkg\*.nupkg -CertificatePath ${{ steps.certfile.outputs.filePath }} -Timestamper http://tsa.starfieldtech.com –NonInteractive  
 
     - name: Push nuget package
       run: dotnet nuget push **/*.nupkg
