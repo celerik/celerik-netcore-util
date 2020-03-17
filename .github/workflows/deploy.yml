@@ -73,7 +73,7 @@ jobs:
         encodedString: ${{ secrets.CELERIK_CERTIFICATE }}
         
     - name: Sign nuget package
-      run: nuget sign nupkg\*.nupkg -CertificatePath ${{ steps.certfile.outputs.filePath }} -Timestamper http://timestamp.digicert.com -NonInteractive
+      run: nuget sign nupkg\*.nupkg -CertificatePath ${{ steps.certfile.outputs.filePath }} -Timestamper http://certs.godaddy.com -NonInteractive
       
     - name: Publish signed package artifact
       uses: actions/upload-artifact@master
