@@ -42,10 +42,20 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Pack nuget Package
+    - name: Pack nuget package
       run: dotnet pack ./source/Celerik.NetCore.Util.sln --configuration Release
+    
+    - name: Get certificate
+      id: certfile
+      uses: timheuer/base64-to-file@master
+      with:
+        fileName: 'certfile.pfx'
+        encodedString: ${{ secrets.CELERIK_CERTIFICATE }}
+        
+    - name: Sign nuget package
+      run: dotnet nuget sign **/*.nupkg -CertificatePath ${{ steps.certfile.outputs.filePath }} -Timestamper http://tsa.starfieldtech.com –NonInteractive  
 
-    - name: Push nuget Package
+    - name: Push nuget package
       run: dotnet nuget push **/*.nupkg
            --api-key ${{ secrets.CELERIK_NUGET_API_KEY }}
            --source https://api.nuget.org/v3/index.json
