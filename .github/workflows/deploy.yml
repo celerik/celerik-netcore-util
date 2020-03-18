@@ -61,10 +61,9 @@ jobs:
     - name: Setup nuget
       uses: NuGet/setup-nuget@v1.0.2
       with:
-        nuget-api-key: ${{ secrets.CELERIK_NUGET_API_KEY }}
         nuget-version: latest
     - name: Push to GitHub Packages
-      run: nuget push **/*.nupkg -source "https://github.com/" -SkipDuplicate
+      run: nuget push **/*.nupkg -source "https://github.com/" -ApiKey ${{ secrets.CELERIK_NUGET_API_KEY }} -SkipDuplicate
 
   release:
     needs: deploy_to_github
