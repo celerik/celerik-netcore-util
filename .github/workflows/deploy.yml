@@ -35,6 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - uses: actions/checkout@v2
     - name: Pack nuget package
       run: dotnet pack ./source/Celerik.NetCore.Util.sln --configuration Release
     - name: Publish package artifact
