@@ -61,10 +61,6 @@ jobs:
       with:
         id: nupkg
         name: nupkg
-    - name: Print nuget package info
-      env:
-        NUGET_CONTEXT: ${{ toJson(steps.nupkg) }}
-      run: echo "$NUGET_CONTEXT"
     - name: Setup nuget
       uses: NuGet/setup-nuget@v1.0.2
       with:
@@ -79,6 +75,10 @@ jobs:
     needs: deploy_to_github
 
     steps:
+      - name: Print context info
+        env:
+          NUGET_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$CONTEXT"
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Create Release
