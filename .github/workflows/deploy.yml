@@ -12,76 +12,36 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
     - name: Setup .net core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.100
-
     - name: Build with dotnet
       run: dotnet build ./source/Celerik.NetCore.Util.sln --configuration Release
-
     - name: Run unit tests
       run: dotnet test ./source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj
-      
     - name: Generate coverage report
       run: |
         cd ./source/Celerik.NetCore.Util.Test/
         dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
-
     - name: Publish coverage report to coveralls.io
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: ./source/Celerik.NetCore.Util.Test/TestResults/coverage.info
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
     - name: Pack nuget package
-      run: dotnet pack ./source/Celerik.NetCore.Util.sln --configuration Release -o finalpackage
-      
+      run: dotnet pack ./source/Celerik.NetCore.Util.sln --configuration Release
     - name: Publish package artifact
       uses: actions/upload-artifact@master
       with:
         name: nupkg
-        path: finalpackage
-
-  deploy:
-    needs: build
-    runs-on: windows-latest # using windows agent due to nuget can't sign on linux yet
-    
-    steps:
-    - name: Setup .net core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1.100
-
-    - name: Download package artifact
-      uses: actions/download-artifact@master
-      with:
-        name: nupkg
-    
-    - name: Setup nuget
-      uses: NuGet/setup-nuget@v1.0.2
-      with:
-        nuget-version: latest
-    
-    
-    - name: Get celerik certificate
-      id: certfile
-      uses: timheuer/base64-to-file@master
-      with:
-        fileName: 'certfile.pfx'
-        encodedString: ${{ secrets.CELERIK_CERTIFICATE }}
-        
-    - name: Sign nuget package
-      run: nuget sign nupkg\*.nupkg -CertificatePath ${{ steps.certfile.outputs.filePath }} -Timestamper http://tsa.starfieldtech.com/ -NonInteractive
-      
-    - name: Publish signed package artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: signednupkg
-        path: nupkg
-
-    - name: Push nuget package to nuget.org
+    - name: Publish package to nuget.org
       run: dotnet nuget push **/*.nupkg
            --api-key ${{ secrets.CELERIK_NUGET_API_KEY }}
            --source https://api.nuget.org/v3/index.json
