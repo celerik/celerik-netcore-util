@@ -62,7 +62,7 @@ jobs:
         id: nupkg
         name: nupkg
     - name: Print nuget package info
-      run: echo {{ toJson(nupkg) }}
+      run: echo {{ steps.nupkg }}
     - name: Setup nuget
       uses: NuGet/setup-nuget@v1.0.2
       with:
