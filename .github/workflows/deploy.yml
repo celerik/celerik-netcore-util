@@ -49,3 +49,14 @@ jobs:
            --source https://api.nuget.org/v3/index.json
     - name: Publish package to github.com
       run: dotnet nuget push **/*.nupkg --source "github"
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+        
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "nupkg"
+        token: ${{ secrets.GITHUB_TOKEN }}
