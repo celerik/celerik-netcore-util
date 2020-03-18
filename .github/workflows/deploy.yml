@@ -75,20 +75,6 @@ jobs:
     needs: deploy_to_github
 
     steps:
-      - name: Print context info
-        env:
-          GITHUB: ${{ toJson(github) }}
-          JOB: ${{ toJson(job) }}
-          STEPS: ${{ toJson(steps) }}
-          RUNNER: ${{ toJson(runner) }}
-          SECRETS: ${{ toJson(secrets) }}
-          MATRIX: ${{ toJson(matrix) }}
-        run: echo "$GITHUB"
-             echo "$JOB"
-             echo "$STEPS"
-             echo "$RUNNER"
-             echo "$SECRETS"
-             echo "$MATRIX"
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Create Release
@@ -97,7 +83,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ github.head_commit.timestamp }}
+          release_name: Release ${{ github.head_commit.timestamp }}
           draft: false
           prerelease: false
