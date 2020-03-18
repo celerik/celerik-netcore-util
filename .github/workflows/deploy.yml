@@ -63,7 +63,7 @@ jobs:
       with:
         nuget-version: latest
     - name: Push to GitHub Packages
-      run: nuget push **/*.nupkg -source "https://github.com/" -ApiKey ${{ secrets.CELERIK_NUGET_API_KEY }} -SkipDuplicate
+      run: nuget push **/*.nupkg -source "https://nuget.pkg.github.com/equisoide/index.json" -ApiKey ${{ secrets.CELERIK_NUGET_API_KEY }} -SkipDuplicate
 
   release:
     needs: deploy_to_github
