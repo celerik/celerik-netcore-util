@@ -77,8 +77,18 @@ jobs:
     steps:
       - name: Print context info
         env:
-          NUGET_CONTEXT: ${{ toJson(steps) }}
-        run: echo "$CONTEXT"
+          GITHUB: ${{ toJson(github) }}
+          JOB: ${{ toJson(job) }}
+          STEPS: ${{ toJson(steps) }}
+          RUNNER: ${{ toJson(runner) }}
+          SECRETS: ${{ toJson(secrets) }}
+          MATRIX: ${{ toJson(matrix) }}
+        run: echo "$GITHUB"
+             echo "$JOB"
+             echo "$STEPS"
+             echo "$RUNNER"
+             echo "$SECRETS"
+             echo "$MATRIX"
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Create Release
