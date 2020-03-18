@@ -30,7 +30,7 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: ./source/Celerik.NetCore.Util.Test/TestResults/coverage.info
 
-  deploy:
+  deploy_to_nuget:
     needs: build
     runs-on: ubuntu-latest
     
@@ -48,11 +48,26 @@ jobs:
            --api-key ${{ secrets.CELERIK_NUGET_API_KEY }}
            --source https://api.nuget.org/v3/index.json
            --skip-duplicate
-    - name: Publish package to github.com
-      run: dotnet nuget push **/*.nupkg --source "github" --skip-duplicate
+
+  deploy_to_github:
+    needs: deploy_to_nuget
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Download package artifact
+      uses: actions/download-artifact@master
+      with:
+        name: nupkg
+    - name: Setup nuget
+      uses: NuGet/setup-nuget@v1.0.2
+      with:
+        nuget-api-key: ${{ secrets.CELERIK_NUGET_API_KEY }}
+        nuget-version: latest
+    - name: Push to GitHub Packages
+      run: nuget push nupkg\*.nupkg -s "https://github.com/" -SkipDuplicate
 
   release:
-    needs: deploy
+    needs: deploy_to_github
     runs-on: ubuntu-latest
         
     steps:
