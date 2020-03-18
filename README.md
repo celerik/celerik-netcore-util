@@ -20,6 +20,9 @@ PM > Install-Package Celerik.NetCore.Util
 
  - Check out API's documentation [here](https://celerik.github.io/celerik-netcore-util/api/index.html).
  - Check out tutorials on Celerik's blog [here](http://celerik.com).
+ 
+ ## Requirements
+  - .NETCoreApp 3.1
 
 ## What's next
 
