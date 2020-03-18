@@ -59,7 +59,10 @@ jobs:
     - name: Download package artifact
       uses: actions/download-artifact@master
       with:
+        id: nupkg
         name: nupkg
+    - name: Print nuget package info
+      run: echo nupkg
     - name: Setup nuget
       uses: NuGet/setup-nuget@v1.0.2
       with:
