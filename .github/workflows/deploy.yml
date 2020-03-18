@@ -64,7 +64,7 @@ jobs:
         nuget-api-key: ${{ secrets.CELERIK_NUGET_API_KEY }}
         nuget-version: latest
     - name: Push to GitHub Packages
-      run: nuget push nupkg\*.nupkg -s "https://github.com/" -SkipDuplicate
+      run: nuget push nupkg\*.nupkg -source "https://github.com/" -SkipDuplicate
 
   release:
     needs: deploy_to_github
