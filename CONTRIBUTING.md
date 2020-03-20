@@ -9,7 +9,7 @@ The document covers the process for contributing to the code that is hosted on t
 
 This repository provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, exceptions, files, json, pagination, resources, testing, convertions, crypto, enums, queries, stack trace, strings, validations.
 
-Issues and tasks for this repository are tracked in [celerik-netcore-util/projects](https://github.com/celerik/celerik-netcore-util/projects/2).
+Issues and tasks for this repository are tracked in [celerik-netcore-util/projects](https://github.com/celerik/celerik-netcore-util/projects).
 
 ## DOs and DON'Ts
 
@@ -54,7 +54,9 @@ Celerik.NetCore.Util
   /Testing
   /Utilities
 Celerik.NetCore.Util.Test
+  /Azure
   /DateTime
+  /Exceptions
   /Files
   /Newtonsoft
   /Pagination
@@ -77,5 +79,3 @@ The Celerik team will review your PR and let you know if there are any other upd
 The maintainers will merge your PR into the master branch once feedback has been applied and your change is approved.
 
 Note: `master` is the default branch accepting Pull Requests. It releases a package everytime the `head_commit.message` contains the word `[release]`.
-
-
