@@ -1,7 +1,18 @@
-.contribution {
+.contribution,
+.navbar,
+.footer {
 	display: none;
 }
 
-.footer {
-    display: none;
+.sidefilter,
+.sideaffix {
+	top: 0;
+}
+
+.article {
+	margin-top: 0;
+}
+
+.sidetoc {
+	top: 62px;
 }
