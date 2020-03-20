@@ -15,16 +15,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{596715D5-FDC3-4433-A6AA-09FF44F279D2}"
 	ProjectSection(SolutionItems) = preProject
 		Documentation\docfx.json = Documentation\docfx.json
-		Documentation\index.md = Documentation\index.md
 		Documentation\templates\custom\styles\main.css = Documentation\templates\custom\styles\main.css
 		Documentation\toc.yml = Documentation\toc.yml
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "articles", "articles", "{C6116574-9618-48BC-B7E0-D99F2E6CAB36}"
-	ProjectSection(SolutionItems) = preProject
-		Documentation\articles\enum-utilities.md = Documentation\articles\enum-utilities.md
-		Documentation\articles\intro.md = Documentation\articles\intro.md
-		Documentation\articles\toc.yml = Documentation\articles\toc.yml
 	EndProjectSection
 EndProject
 Global
@@ -44,9 +36,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{C6116574-9618-48BC-B7E0-D99F2E6CAB36} = {596715D5-FDC3-4433-A6AA-09FF44F279D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FB33C03-A542-45BB-A210-34F243A24F92}
