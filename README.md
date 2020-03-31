@@ -1,3 +1,7 @@
+<div align="center" markdown="1">
+
+<img src="https://celerik.com/wp-content/uploads/2019/12/celerik-1.svg" alt="Celerik" width="300">
+
 # .NET Core Utility Library
 
 [![build](https://github.com/celerik/celerik-netcore-util/workflows/build/badge.svg?branch=master&event=push)](https://github.com/celerik/celerik-netcore-util/actions?query=workflow%3Abuild)
@@ -5,6 +9,8 @@
 [![documentation](https://github.com/celerik/celerik-netcore-util/workflows/documentation/badge.svg)](https://github.com/celerik/celerik-netcore-util/actions?query=workflow%3Adocumentation)
 [![Coverage Status](https://coveralls.io/repos/github/celerik/celerik-netcore-util/badge.svg?branch=master)](https://coveralls.io/github/celerik/celerik-netcore-util?branch=master)
 [![NuGet](https://img.shields.io/nuget/v/Celerik.NetCore.Util.svg)](http://www.nuget.org/packages/Celerik.NetCore.Util/)
+
+</div>
 
 ## What's it
 
