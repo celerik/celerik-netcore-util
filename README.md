@@ -27,8 +27,14 @@ PM > Install-Package Celerik.NetCore.Util
  - Check out API's documentation [here](https://celerik.github.io/celerik-netcore-util/api/Celerik.NetCore.Util.html).
  - Check out tutorials on Celerik's blog [here](http://celerik.com).
  
- ## Requirements
+## Requirements
   - .NETCoreApp 3.1
+  
+## CI/CD pipeline
+
+<div align="center">
+    <img src=".github/workflows/github-cicd-diagram.png" alt="CI/CD Pipeline" width="916" />
+</div>
 
 ## What's next
 
@@ -38,5 +44,5 @@ Check out the road map of *Celerik.NetCore.Util* [here](ROADMAP.md).
 
 *Celerik.NetCore.Util* is licensed under the [MIT license](LICENSE).
 
-## How to Contribute
+## How to contribute
 Check out the contributing guide [here](CONTRIBUTING.md).
