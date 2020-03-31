@@ -23,7 +23,7 @@
     <Summary>Test project for Celerik.NetCore.Util.</Summary>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Title>Celerik.NetCore.Util</Title>
+    <Title>Celerik.NetCore.Util.Test</Title>
     <Version>1.0.2</Version>
   </PropertyGroup>
 
