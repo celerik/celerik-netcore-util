@@ -5,7 +5,7 @@
     <Company>Celerik (IDlink S.A.S.)</Company>
     <Copyright>Celerik (©) 2020 (MIT)</Copyright>
     <Description>Test project for Celerik.NetCore.Util.</Description>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <IsPackable>false</IsPackable>
     <LangVersion>latest</LangVersion>
