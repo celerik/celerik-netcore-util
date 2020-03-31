@@ -139,7 +139,7 @@
     <value>'SortDirection' debe ser 'asc' o 'desc'</value>
   </data>
   <data name="PaginationRequestValidator.Constructor.InvalidSortKey" xml:space="preserve">
-    <value>La 'SortKey' debe ser uno de los siguientes valores: '{0}'</value>
+    <value>'SortKey' debe ser uno de los siguientes valores: '{0}'</value>
   </data>
   <data name="QueryUtility.OrderBy.NullQuery" xml:space="preserve">
     <value>'query' no puede ser nulo</value>
