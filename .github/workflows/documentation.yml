@@ -15,10 +15,10 @@ jobs:
     - uses: nikeee/docfx-action@master
       name: Build Documentation
       with:
-        args: source/Documentation/docfx.json
+        args: docfx/docfx.json
 
     - uses: maxheld83/ghpages@master
       name: Publish Documentation on GitHub Pages
       env:
-        BUILD_DIR: source/Documentation/_site
+        BUILD_DIR: docfx/_site
         GH_PAT: ${{ secrets.GH_PAT }}
