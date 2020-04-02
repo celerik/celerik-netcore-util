@@ -32,7 +32,7 @@ namespace Celerik.NetCore.Util
     }
 
     /// <summary>
-    /// Custom validator for the PaginationRequest(TEntity) payload object.
+    /// Custom validator for the PaginationRequest&lt;TEntity&gt; payload object.
     /// </summary>
     /// <typeparam name="TPayload">The type of the payload object.</typeparam>
     /// <typeparam name="TEntity">The type of the entity against we validate
