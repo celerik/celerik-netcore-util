@@ -1,6 +1,6 @@
 <div align="center" markdown="1">
 
-<img src="https://celerik.com/wp-content/uploads/2019/12/celerik-1.svg" alt="Celerik" width="300">
+<img src="images/celerik.png" alt="Celerik" width="300">
 
 # .NET Core Utility Library
 
@@ -33,7 +33,7 @@ PM > Install-Package Celerik.NetCore.Util
 ## CI/CD pipeline
 
 <div align="center">
-    <img src=".github/workflows/github-cicd-diagram.png" alt="CI/CD Pipeline" width="916" />
+    <img src="images/pipeline.png" alt="CI/CD Pipeline" width="916" />
 </div>
 
 ## What's next
