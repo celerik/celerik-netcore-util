@@ -13,7 +13,7 @@
     <PackageId>Celerik.NetCore.Util</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-util</PackageProjectUrl>
-    <PackageReleaseNotes>Updated XML comments in methods and classes</PackageReleaseNotes>
+    <PackageReleaseNotes>Refactored resource files</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, utility-library, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -23,7 +23,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Title>Celerik.NetCore.Util</Title>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -117,38 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Common.ArgumentCanNotBeNull" xml:space="preserve">
+    <value>'{0}' can not be null</value>
+  </data>
   <data name="EmbeddedFileUtility.ReadFile.Exception" xml:space="preserve">
     <value>Failed to read embedded file: '{0}'</value>
   </data>
   <data name="EmbeddedFileUtility.ReadJson.Exception" xml:space="preserve">
     <value>Failed to convert JSON file '{0}' to type: '{1}'</value>
   </data>
-  <data name="EnumDescriptionJsonConverter.WriteJson.NullWriter" xml:space="preserve">
-    <value>'writter' can not be null</value>
-  </data>
-  <data name="EnumUtility.GetValue.NullValue" xml:space="preserve">
-    <value>'value' can not be null</value>
-  </data>
   <data name="EnumUtility.NotAnEnum" xml:space="preserve">
     <value>'{0}' is not an enum</value>
-  </data>
-  <data name="PaginationExtensions.Paginate.NullRequest" xml:space="preserve">
-    <value>'request' can not be null</value>
   </data>
   <data name="PaginationRequestValidator.Constructor.InvalidSortDirection" xml:space="preserve">
     <value>'SortDirection' must be 'asc' or 'desc'</value>
   </data>
   <data name="PaginationRequestValidator.Constructor.InvalidSortKey" xml:space="preserve">
     <value>'SortKey' must be one of following values: '{0}'</value>
-  </data>
-  <data name="QueryUtility.OrderBy.NullQuery" xml:space="preserve">
-    <value>'query' can not be null</value>
-  </data>
-  <data name="QueryUtility.OrderBy.PropName" xml:space="preserve">
-    <value>'propName' can not be null</value>
-  </data>
-  <data name="StackTraceUtility.GetMethodName.NullStackTrace" xml:space="preserve">
-    <value>'stackTrace' can not be null</value>
   </data>
   <data name="TestUtility.AssertThrows.NoThrown" xml:space="preserve">
     <value>An exception of type '{0}' was expected, but not thrown</value>

@@ -23,7 +23,7 @@ namespace Celerik.NetCore.Util
             where TAttribute : Attribute
         {
             if (value == null)
-                throw new ArgumentException(UtilResources.Get("EnumUtility.GetAttribute.NullValue"));
+                throw new ArgumentException(UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(value)));
 
             var type = typeof(TAttribute);
             var memberInfo = value.GetType().GetMember(value.ToString());
