@@ -8,7 +8,7 @@ namespace Celerik.NetCore.Util.Test
         [TestMethod]
         public void SetAndGet()
         {
-            var config = new DummyIConfiguration();
+            using var config = new DummyIConfiguration();
             config["Almuerzo"] = "Bandeja Paisa";
 
             Assert.AreEqual("Bandeja Paisa", config["Almuerzo"]);
@@ -17,7 +17,7 @@ namespace Celerik.NetCore.Util.Test
         [TestMethod]
         public void InvalidKey()
         {
-            var config = new DummyIConfiguration();
+            using var config = new DummyIConfiguration();
             Assert.AreEqual(null, config["Cena"]);
         }
     }

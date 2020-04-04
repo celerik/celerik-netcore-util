@@ -9,12 +9,34 @@ namespace Celerik.NetCore.Util
     /// Implementation of the IConfiguration interface for testing purposes. With
     /// this implementation we retrieve and store config values in memory.
     /// </summary>
-    public class DummyIConfiguration : IConfiguration
+    public class DummyIConfiguration : IConfiguration, IDisposable
     {
         /// <summary>
-        /// Object to store configuration values in memory.
+        /// Indicates whether Dispose() was already called.
         /// </summary>
-        private readonly IDictionary<string, string> _values = new Dictionary<string, string>();
+        private bool _isDisposed = false;
+
+        /// <summary>
+        /// The root node of the configuration.
+        /// </summary>
+        private readonly ConfigurationRoot _config;
+
+        /// <summary>
+        /// Initializes a new instance of the class.
+        /// </summary>
+        public DummyIConfiguration()
+        {
+            _config = new ConfigurationRoot(new List<IConfigurationProvider> {
+                new DummyConfigurationProvider()
+            });
+        }
+
+        /// <summary>
+        /// Helper class for implementing the IConfigurationProvider interface.
+        /// </summary>
+        private class DummyConfigurationProvider : ConfigurationProvider
+        {
+        }
 
         /// <summary>
         /// Gets or sets a configuration value.
@@ -23,8 +45,8 @@ namespace Celerik.NetCore.Util
         /// <returns>The configuration value.</returns>
         public string this[string key]
         {
-            get => _values.ContainsKey(key) ? _values[key] : null;
-            set => _values[key] = value;
+            get => _config[key];
+            set => _config[key] = value;
         }
 
         /// <summary>
@@ -33,7 +55,7 @@ namespace Celerik.NetCore.Util
         /// <returns>The configuration sub-sections.</returns>
         public IEnumerable<IConfigurationSection> GetChildren()
         {
-            throw new NotImplementedException();
+            return _config.GetChildren();
         }
 
         /// <summary>
@@ -43,7 +65,7 @@ namespace Celerik.NetCore.Util
         /// <returns>A Microsoft.Extensions.Primitives.IChangeToken.</returns>
         public IChangeToken GetReloadToken()
         {
-            throw new NotImplementedException();
+            return _config.GetReloadToken();
         }
 
         /// <summary>
@@ -53,7 +75,33 @@ namespace Celerik.NetCore.Util
         /// <returns>The Microsoft.Extensions.Configuration.IConfigurationSection.</returns>
         public IConfigurationSection GetSection(string key)
         {
-            throw new NotImplementedException();
+            return _config.GetSection(key);
+        }
+
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting
+        /// unmanaged resources.
+        /// </summary>
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting
+        /// unmanaged resources.
+        /// </summary>
+        /// <param name="disposing">Indicates whether it is disposing.</param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_isDisposed)
+                return;
+
+            if (disposing)
+                _config.Dispose();
+
+            _isDisposed = true;
         }
     }
 }

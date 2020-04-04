@@ -30,7 +30,7 @@ namespace Celerik.NetCore.Util
             }
 
             if (!exceptionThrown)
-                throw new AssertFailedException(UtilResources.Get("TestUtility.AssertThrows.NoThrown"));                
+                throw new AssertFailedException(UtilResources.Get("TestUtility.AssertThrows.NoThrown"));
         }
     }
 }

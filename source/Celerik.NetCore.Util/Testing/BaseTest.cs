@@ -25,18 +25,17 @@ namespace Celerik.NetCore.Util
         /// <summary>
         /// Initializes a new instance of the class.
         /// </summary>
-        /// <param name="userClaimKey">The key used to store the user claim.</param>
-        /// <param name="userClaimValue">The value of the user claim.</param>
+        /// <param name="userClaimKey">The user claim key.</param>
+        /// <param name="userClaimValue">The user claim value.</param>
         protected BaseTest(string userClaimKey = null, object userClaimValue = null)
         {
             _httpContext = new DummyIHttpContextAccessor(userClaimKey, userClaimValue);
 
             var services = new ServiceCollection();
             var stringLocalizerFactory = new DummyIStringLocalizerFactory();
-            var config = new DummyIConfiguration();
 
             services.AddSingleton<IStringLocalizerFactory>(stringLocalizerFactory);
-            services.AddSingleton<IConfiguration>(config);
+            services.AddSingleton<IConfiguration>(svcProvider => new DummyIConfiguration());
             services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContext);
 
             InitializeServiceProvier(services);
@@ -71,13 +70,11 @@ namespace Celerik.NetCore.Util
             return _serviceProvider.GetRequiredService<TService>();
         }
 
-
         /// <summary>
         /// Gets the IValidator that validates the passed-in payload object.
         /// </summary>
         /// <param name="payload">The payload object to get its IValidator.</param>
         /// <returns>IValidator that validates the passed-in payload object.</returns>
-        //[SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "We need to infer the type based on the parameter to make the code cleaner")]
         protected IValidator<TPayload> GetValidator<TPayload>(TPayload payload)
         {
             var validator = _serviceProvider.GetRequiredService<IValidator<TPayload>>();
@@ -93,8 +90,8 @@ namespace Celerik.NetCore.Util
         /// <summary>
         /// Sets the current User Claims.
         /// </summary>
-        /// <param name="userClaimKey">The key used to store the user claim.</param>
-        /// <param name="userClaimValue">The value of the user claim.</param>
+        /// <param name="userClaimKey">The user claim key.</param>
+        /// <param name="userClaimValue">The user claim value.</param>
         protected void SetUserClaims(string userClaimKey, object userClaimValue)
         {
             _httpContext = new DummyIHttpContextAccessor(userClaimKey, userClaimValue);

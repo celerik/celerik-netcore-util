@@ -24,8 +24,8 @@ namespace Celerik.NetCore.Util
         /// <summary>
         /// Initializes a new instance of the class.
         /// </summary>
-        /// <param name="userClaimKey">The key used to store the user claim.</param>
-        /// <param name="userClaimValue">The value of the user claim.</param>
+        /// <param name="userClaimKey">The user claim key.</param>
+        /// <param name="userClaimValue">The user claim value.</param>
         public DummyIHttpContextAccessor(string userClaimKey = null, object userClaimValue = null)
         {
             if (userClaimKey != null)
