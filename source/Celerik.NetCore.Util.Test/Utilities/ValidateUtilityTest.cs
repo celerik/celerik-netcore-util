@@ -44,7 +44,7 @@ namespace Celerik.NetCore.Util.Test
         [TestMethod]
         public void IsValidBoolInvalid()
         {
-            var boolean = "El jugo de remolacha es bueno";
+            var boolean = "El jugo de remolacha es nutritivo";
             var isValid = boolean.IsValidBool();
 
             Assert.AreEqual(false, isValid);
@@ -133,7 +133,7 @@ namespace Celerik.NetCore.Util.Test
         [TestMethod]
         public void IsValidUrlInvalid()
         {
-            var url = "http:// gene simmons is ugly . com";
+            var url = "http:// frisby . com";
             var isValid = url.IsValidUrl();
 
             Assert.AreEqual(false, isValid);

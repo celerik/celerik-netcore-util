@@ -12,7 +12,7 @@ namespace Celerik.NetCore.Util.Test
         public void SetUserlaims()
         {
             var claimKey = "UserName";
-            var claimValue = "Aida Merlano";
+            var claimValue = "René Higuita";
             SetUserClaims(claimKey, claimValue);
 
             var httpContextAccesor = GetService<IHttpContextAccessor>();
