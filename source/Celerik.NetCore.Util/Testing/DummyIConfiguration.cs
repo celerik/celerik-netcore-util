@@ -40,7 +40,7 @@ namespace Celerik.NetCore.Util
         /// Returns a Microsoft.Extensions.Primitives.IChangeToken that can be used to observe
         /// when this configuration is reloaded.
         /// </summary>
-        /// <returns> A Microsoft.Extensions.Primitives.IChangeToken.</returns>
+        /// <returns>A Microsoft.Extensions.Primitives.IChangeToken.</returns>
         public IChangeToken GetReloadToken()
         {
             throw new NotImplementedException();
