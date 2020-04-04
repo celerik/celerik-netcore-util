@@ -10,7 +10,7 @@ namespace Celerik.NetCore.Util
     /// <summary>
     /// Base class for all tests.
     /// </summary>
-    public abstract class BaseTest
+    public class BaseTest
     {
         /// <summary>
         /// Reference to the current HttpContext instance.
@@ -71,19 +71,23 @@ namespace Celerik.NetCore.Util
             return _serviceProvider.GetRequiredService<TService>();
         }
 
+
         /// <summary>
         /// Gets the IValidator that validates the passed-in payload object.
         /// </summary>
         /// <param name="payload">The payload object to get its IValidator.</param>
         /// <returns>IValidator that validates the passed-in payload object.</returns>
+        //[SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "We need to infer the type based on the parameter to make the code cleaner")]
         protected IValidator<TPayload> GetValidator<TPayload>(TPayload payload)
         {
             var validator = _serviceProvider.GetRequiredService<IValidator<TPayload>>();
 
-            // The analyzer is not suppressing the CA1801 warning by any way.
-            // We need to infer the type based on the parameter to make the
-            // code cleaner.
-            return payload != null ? validator : validator;
+            // This useless call is beacuse The analyzer is not suppressing the CA1801
+            // warning by any way. We need to infer the type based on the payload to
+            // make the code cleaner.
+            payload.GetType();
+
+            return validator;
         }
 
         /// <summary>
