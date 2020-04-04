@@ -8,7 +8,7 @@ namespace Celerik.NetCore.Util
     /// Implementation of the IStringLocalizer interface for testing purposes. With
     /// this implementation we localize string values in memory.
     /// </summary>
-    public class DummyIStringLocalizer : IStringLocalizer
+    public class DummyStringLocalizer : IStringLocalizer
     {
         /// <summary>
         /// Gets the string resource with the given name.
@@ -44,6 +44,6 @@ namespace Celerik.NetCore.Util
         /// <param name="culture">The System.Globalization.CultureInfo to use.</param>
         /// <returns>A culture-specific IStringLocalizer.</returns>
         public IStringLocalizer WithCulture(CultureInfo culture) =>
-            new DummyIStringLocalizer();
+            new DummyStringLocalizer();
     }
 }

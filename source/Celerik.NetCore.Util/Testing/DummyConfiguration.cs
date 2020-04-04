@@ -9,7 +9,7 @@ namespace Celerik.NetCore.Util
     /// Implementation of the IConfiguration interface for testing purposes. With
     /// this implementation we retrieve and store config values in memory.
     /// </summary>
-    public class DummyIConfiguration : IConfiguration, IDisposable
+    public class DummyConfiguration : IConfiguration, IDisposable
     {
         /// <summary>
         /// Indicates whether Dispose() was already called.
@@ -24,7 +24,7 @@ namespace Celerik.NetCore.Util
         /// <summary>
         /// Initializes a new instance of the class.
         /// </summary>
-        public DummyIConfiguration()
+        public DummyConfiguration()
         {
             _config = new ConfigurationRoot(new List<IConfigurationProvider> {
                 new DummyConfigurationProvider()

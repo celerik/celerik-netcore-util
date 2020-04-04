@@ -15,7 +15,7 @@ namespace Celerik.NetCore.Util
         /// <summary>
         /// Reference to the current HttpContext instance.
         /// </summary>
-        private DummyIHttpContextAccessor _httpContext;
+        private DummyHttpContextAccessor _httpContext;
 
         /// <summary>
         /// Provider to resolve service objects.
@@ -29,13 +29,13 @@ namespace Celerik.NetCore.Util
         /// <param name="userClaimValue">The user claim value.</param>
         protected BaseTest(string userClaimKey = null, object userClaimValue = null)
         {
-            _httpContext = new DummyIHttpContextAccessor(userClaimKey, userClaimValue);
+            _httpContext = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
 
             var services = new ServiceCollection();
-            var stringLocalizerFactory = new DummyIStringLocalizerFactory();
+            var stringLocalizerFactory = new DummyStringLocalizerFactory();
 
             services.AddSingleton<IStringLocalizerFactory>(stringLocalizerFactory);
-            services.AddSingleton<IConfiguration>(svcProvider => new DummyIConfiguration());
+            services.AddSingleton<IConfiguration>(svcProvider => new DummyConfiguration());
             services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContext);
 
             InitializeServiceProvier(services);
@@ -94,7 +94,7 @@ namespace Celerik.NetCore.Util
         /// <param name="userClaimValue">The user claim value.</param>
         protected void SetUserClaims(string userClaimKey, object userClaimValue)
         {
-            _httpContext = new DummyIHttpContextAccessor(userClaimKey, userClaimValue);
+            _httpContext = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
         }
     }
 }

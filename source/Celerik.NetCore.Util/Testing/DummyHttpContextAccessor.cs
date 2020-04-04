@@ -9,7 +9,7 @@ namespace Celerik.NetCore.Util
     /// Implementation of the IHttpContextAccessor interface for testing purposes. With
     /// this implementation we get a DefaultHttpContext.
     /// </summary>
-    public class DummyIHttpContextAccessor : IHttpContextAccessor
+    public class DummyHttpContextAccessor : IHttpContextAccessor
     {
         /// <summary>
         /// Reference to the current HttpContext instance.
@@ -26,7 +26,7 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <param name="userClaimKey">The user claim key.</param>
         /// <param name="userClaimValue">The user claim value.</param>
-        public DummyIHttpContextAccessor(string userClaimKey = null, object userClaimValue = null)
+        public DummyHttpContextAccessor(string userClaimKey = null, object userClaimValue = null)
         {
             if (userClaimKey != null)
             {

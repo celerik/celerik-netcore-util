@@ -7,7 +7,7 @@ namespace Celerik.NetCore.Util
     /// Implementation of the IStringLocalizerFactory interface for testing purposes. With
     /// this implementation we create dummy IStringLocalizer objects.
     /// </summary>
-    public class DummyIStringLocalizerFactory : IStringLocalizerFactory
+    public class DummyStringLocalizerFactory : IStringLocalizerFactory
     {
         /// <summary>
         /// Creates an Microsoft.Extensions.Localization.IStringLocalizer using the
@@ -17,7 +17,7 @@ namespace Celerik.NetCore.Util
         /// <returns>The Microsoft.Extensions.Localization.IStringLocalizer.</returns>
         public IStringLocalizer Create(Type resourceSource)
         {
-            return new DummyIStringLocalizer();
+            return new DummyStringLocalizer();
         }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Celerik.NetCore.Util
         /// <returns>The Microsoft.Extensions.Localization.IStringLocalizer.</returns>
         public IStringLocalizer Create(string baseName, string location)
         {
-            return new DummyIStringLocalizer();
+            return new DummyStringLocalizer();
         }
     }
 }
