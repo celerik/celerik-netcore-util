@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 
@@ -9,7 +10,7 @@ namespace Celerik.NetCore.Util.Test
     public class BaseTestTest : BaseTest
     {
         [TestMethod]
-        public void SetUserlaims()
+        public void SetUserClaims()
         {
             var claimKey = "UserName";
             var claimValue = "René Higuita";
@@ -21,6 +22,15 @@ namespace Celerik.NetCore.Util.Test
             var claimStr = JsonConvert.DeserializeObject<string>(claimObj.Value);
 
             Assert.AreEqual(claimValue, claimStr);
+        }
+
+        [TestMethod]
+        public void GetIConfiguration()
+        {
+            var configSvc = GetService<IConfiguration>();
+            var isDummyConfiguration = configSvc is DummyConfiguration;
+
+            Assert.AreEqual(true, isDummyConfiguration);
         }
     }
 }
