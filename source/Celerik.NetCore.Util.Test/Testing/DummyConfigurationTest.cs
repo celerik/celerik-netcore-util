@@ -88,5 +88,14 @@ namespace Celerik.NetCore.Util.Test
             Assert.AreEqual("Desayunos:Martes:Principal", itemsDesayunoMartes[1].Path);
             Assert.AreEqual("Pastel 3 quesos La Miguería", itemsDesayunoMartes[1].Value);
         }
+
+        [TestMethod]
+        public void DoubleDispose()
+        {
+            using var config = new DummyConfiguration();
+            config.Dispose();
+
+            Assert.AreNotEqual(null, config);
+        }
     }
 }
