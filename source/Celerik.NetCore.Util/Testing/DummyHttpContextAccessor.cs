@@ -12,16 +12,6 @@ namespace Celerik.NetCore.Util
     public class DummyHttpContextAccessor : IHttpContextAccessor
     {
         /// <summary>
-        /// Reference to the current HttpContext instance.
-        /// </summary>
-        private HttpContext _httpContext;
-
-        /// <summary>
-        /// The claims related to the current UserIdentity.
-        /// </summary>
-        private readonly ClaimsIdentity _claimsIdentity;
-
-        /// <summary>
         /// Initializes a new instance of the class.
         /// </summary>
         /// <param name="userClaimKey">The user claim key.</param>
@@ -32,30 +22,16 @@ namespace Celerik.NetCore.Util
             {
                 var userJson = JsonConvert.SerializeObject(userClaimValue);
                 var userClaims = new List<Claim> { new Claim(userClaimKey, userJson) };
+                var userIdentity = new ClaimsIdentity(userClaims);
 
-                _claimsIdentity = new ClaimsIdentity(userClaims);
+                HttpContext.User.AddIdentity(userIdentity);
             }
+            
         }
 
         /// <summary>
         /// Gets or sets a reference to the current HttpContext.
         /// </summary>
-        public HttpContext HttpContext
-        {
-            get
-            {
-                if (_httpContext == null)
-                {
-                    _httpContext = new DefaultHttpContext();
-                    _httpContext.User.AddIdentity(_claimsIdentity);
-                }
-
-                return _httpContext;
-            }
-            set
-            {
-                _httpContext = value;
-            }
-        }
+        public HttpContext HttpContext { get; set; } = new DefaultHttpContext();
     }
 }

@@ -7,7 +7,7 @@ namespace Celerik.NetCore.Util.Test
     public class DummyConfigurationTest : UtilBaseTest
     {
         [TestMethod]
-        public void SetAndGet()
+        public void GetAndSet()
         {
             using var config = new DummyConfiguration();
             config["Almuerzo"] = "Bandeja Paisa";
