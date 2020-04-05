@@ -15,7 +15,7 @@ namespace Celerik.NetCore.Util
         /// <param name="defaultVal">Value to return by default in case the
         /// convertion cann't be performed.</param>
         /// <returns>String converted to Boolean.</returns>
-        public static bool ToBool(this string str, bool defaultVal = false) =>
+        public static bool ToBool(this string str, bool defaultVal = default) =>
             str.IsValidBool()
                 ? bool.Parse(str)
                 : defaultVal;
@@ -27,7 +27,7 @@ namespace Celerik.NetCore.Util
         /// <param name="defaultVal">Value to return by default in case the
         /// convertion cann't be performed.</param>
         /// <returns>String converted to Decimal.</returns>
-        public static decimal ToDecimal(this string str, decimal defaultVal = 0) =>
+        public static decimal ToDecimal(this string str, decimal defaultVal = default) =>
             str.IsValidDecimal()
                 ? decimal.Parse(str, CultureInfo.InvariantCulture)
                 : defaultVal;
@@ -39,7 +39,7 @@ namespace Celerik.NetCore.Util
         /// <param name="defaultVal">Value to return by default in case the
         /// convertion cann't be performed.</param>
         /// <returns>String converted to Double.</returns>
-        public static double ToDouble(this string str, double defaultVal = 0) =>
+        public static double ToDouble(this string str, double defaultVal = default) =>
             str.IsValidDouble()
                 ? double.Parse(str, CultureInfo.InvariantCulture)
                 : defaultVal;
@@ -51,7 +51,7 @@ namespace Celerik.NetCore.Util
         /// <param name="defaultVal">Value to return by default in case the
         /// convertion cann't be performed.</param>
         /// <returns>String converted to Float.</returns>
-        public static float ToFloat(this string str, float defaultVal = 0) =>
+        public static float ToFloat(this string str, float defaultVal = default) =>
             str.IsValidFloat()
                 ? float.Parse(str, CultureInfo.InvariantCulture)
                 : defaultVal;
@@ -63,7 +63,7 @@ namespace Celerik.NetCore.Util
         /// <param name="defaultVal">Value to return by default in case the
         /// convertion cann't be performed.</param>
         /// <returns>String converted to Int.</returns>
-        public static int ToInt(this string str, int defaultVal = 0) =>
+        public static int ToInt(this string str, int defaultVal = default) =>
             str.IsValidInt()
                 ? int.Parse(str, CultureInfo.InvariantCulture)
                 : defaultVal;
@@ -72,10 +72,12 @@ namespace Celerik.NetCore.Util
         /// Convert this string to an DateTime by using invariant culture.
         /// </summary>
         /// <param name="str">The string to be converted.</param>
+        /// <param name="defaultVal">Value to return by default in case the
+        /// convertion cann't be performed.</param>
         /// <returns>String converted to DateTime</returns>
-        public static DateTime ToDateTime(this string str) =>
+        public static DateTime ToDateTime(this string str, DateTime defaultVal = default) =>
             str.IsValidDate()
                 ? DateTime.Parse(str, CultureInfo.InvariantCulture)
-                : DateTime.MinValue;
+                : defaultVal;
     }
 }
