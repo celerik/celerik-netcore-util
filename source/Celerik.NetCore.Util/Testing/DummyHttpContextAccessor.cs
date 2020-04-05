@@ -26,7 +26,7 @@ namespace Celerik.NetCore.Util
 
                 HttpContext.User.AddIdentity(userIdentity);
             }
-            
+
         }
 
         /// <summary>

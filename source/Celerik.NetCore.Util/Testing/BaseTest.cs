@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging.Abstractions;
+using Microsoft.Extensions.Options;
 
 namespace Celerik.NetCore.Util
 {
@@ -13,9 +15,9 @@ namespace Celerik.NetCore.Util
     public class BaseTest
     {
         /// <summary>
-        /// Reference to the current HttpContext instance.
+        /// Object to get a reference to the current HttpContext.
         /// </summary>
-        private DummyHttpContextAccessor _httpContext;
+        private DummyHttpContextAccessor _httpContextAccesor;
 
         /// <summary>
         /// Provider to resolve service objects.
@@ -29,28 +31,17 @@ namespace Celerik.NetCore.Util
         /// <param name="userClaimValue">The user claim value.</param>
         protected BaseTest(string userClaimKey = null, object userClaimValue = null)
         {
-            _httpContext = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
+            _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
 
             var services = new ServiceCollection();
-            var stringLocalizerFactory = new DummyStringLocalizerFactory();
+            var stringocalizerFactory = CreateStringLocalizerFactory();
 
-            services.AddSingleton<IStringLocalizerFactory>(stringLocalizerFactory);
-            services.AddSingleton<IConfiguration>(svcProvider => new DummyConfiguration());
-            services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContext);
+            services.AddSingleton(stringocalizerFactory);
+            services.AddSingleton<IConfiguration, DummyConfiguration>();
+            services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContextAccesor);
 
             InitializeServiceProvier(services);
-            UtilResources.Initialize(stringLocalizerFactory);
-        }
-
-        /// <summary>
-        /// Initializes the service provider.
-        /// </summary>
-        /// <param name="services">List where we add the services to.</param>
-        private void InitializeServiceProvier(ServiceCollection services)
-        {
-            _serviceProvider = services.BuildServiceProvider();
-            AddServices(services);
-            _serviceProvider = services.BuildServiceProvider();
+            UtilResources.Initialize(stringocalizerFactory);
         }
 
         /// <summary>
@@ -94,7 +85,35 @@ namespace Celerik.NetCore.Util
         /// <param name="userClaimValue">The user claim value.</param>
         protected void SetUserClaims(string userClaimKey, object userClaimValue)
         {
-            _httpContext = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
+            _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
+        }
+
+        /// <summary>
+        /// Creates an instance of the IStringLocalizerFactory.
+        /// </summary>
+        /// <returns>Instance of the IStringLocalizerFactory.</returns>
+        private IStringLocalizerFactory CreateStringLocalizerFactory()
+        {
+            var stringLocalizerFactory = new ResourceManagerStringLocalizerFactory(
+                Options.Create(new LocalizationOptions
+                {
+                    ResourcesPath = "Resources"
+                }),
+                NullLoggerFactory.Instance
+            );
+
+            return stringLocalizerFactory;
+        }
+
+        /// <summary>
+        /// Initializes the service provider.
+        /// </summary>
+        /// <param name="services">List where we add the services to.</param>
+        private void InitializeServiceProvier(ServiceCollection services)
+        {
+            _serviceProvider = services.BuildServiceProvider();
+            AddServices(services);
+            _serviceProvider = services.BuildServiceProvider();
         }
     }
 }

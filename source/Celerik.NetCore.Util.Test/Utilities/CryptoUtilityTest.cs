@@ -9,7 +9,7 @@ namespace Celerik.NetCore.Util.Test
         [TestMethod]
         public void HashPassword()
         {
-            var password = "AlexaPlayLaTigresaDelOriente";
+            var password = "AlexaPlayLaPituca";
             var hash1 = CryptoUtility.HashPassword(password);
             var hash2 = CryptoUtility.HashPassword(password);
 
