@@ -7,7 +7,7 @@
 [![build](https://github.com/celerik/celerik-netcore-util/workflows/build/badge.svg?branch=master&event=push)](https://github.com/celerik/celerik-netcore-util/actions?query=workflow%3Abuild)
 [![deploy](https://github.com/celerik/celerik-netcore-util/workflows/deploy/badge.svg)](https://github.com/celerik/celerik-netcore-util/actions?query=workflow%3Adeploy)
 [![documentation](https://github.com/celerik/celerik-netcore-util/workflows/documentation/badge.svg)](https://github.com/celerik/celerik-netcore-util/actions?query=workflow%3Adocumentation)
-[![Coverage Status](https://coveralls.io/repos/github/celerik/celerik-netcore-util/badge.svg?branch=master)](https://coveralls.io/github/celerik/celerik-netcore-util?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/celerik/celerik-netcore-util/badge.svg)](https://coveralls.io/github/celerik/celerik-netcore-util)
 [![NuGet](https://img.shields.io/nuget/v/Celerik.NetCore.Util.svg)](http://www.nuget.org/packages/Celerik.NetCore.Util/)
 
 </div>
