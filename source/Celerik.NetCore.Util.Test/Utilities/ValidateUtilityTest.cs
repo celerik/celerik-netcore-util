@@ -122,9 +122,18 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
-        public void IsValidUrlValid()
+        public void IsValidUrlValidHttp()
         {
             var url = "http://www.themostamazingwebsiteontheinternet.com/";
+            var isValid = url.IsValidUrl();
+
+            Assert.AreEqual(true, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidUrlValidHttps()
+        {
+            var url = "https://www.themostamazingwebsiteontheinternet.com/";
             var isValid = url.IsValidUrl();
 
             Assert.AreEqual(true, isValid);
