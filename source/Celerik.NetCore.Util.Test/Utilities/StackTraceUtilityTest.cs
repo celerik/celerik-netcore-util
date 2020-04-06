@@ -21,7 +21,7 @@ namespace Celerik.NetCore.Util.Test
             var stackTrace = new StackTrace();
             var topMethodName = stackTrace.GetMethodName();
 
-            Assert.AreEqual("StackTraceUtilityTest.GetMethodName()", topMethodName);
+            Assert.AreEqual("StackTraceUtilityTest.GetMethodNameValid()", topMethodName);
         }
     }
 }
