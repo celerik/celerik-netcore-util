@@ -16,13 +16,15 @@ namespace Celerik.NetCore.Util
         public static string GetMethodName(this StackTrace stackTrace)
         {
             if (stackTrace == null)
-                throw new ArgumentException(UtilResources.Get("StackTraceUtility.GetMethodName.NullStackTrace"));
+                throw new ArgumentException(
+                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(stackTrace)));
 
             var toString = stackTrace.ToString();
             var firstLine = toString.Substring(0, toString.IndexOf(Environment.NewLine, StringComparison.InvariantCulture));
             var tokens = firstLine.Split('.');
+            var methodName = $"{tokens[^2]}.{tokens[^1]}";
 
-            return $"{tokens[^2]}.{tokens[^1]}";
+            return methodName;
         }
     }
 }

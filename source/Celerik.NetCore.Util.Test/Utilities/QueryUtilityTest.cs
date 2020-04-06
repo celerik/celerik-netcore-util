@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -20,6 +21,21 @@ namespace Celerik.NetCore.Util.Test
             new Actress { Name = "Mia Khalifa", Rating = 2 },
             new Actress { Name = "Savannah Shannon", Rating = 5 },
         };
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void NullQuery()
+        {
+            IQueryable<Actress> query = null;
+            query.OrderBy("Name");
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void NullPropName()
+        {
+            _actresses.AsQueryable().OrderBy(null);
+        }
 
         [TestMethod]
         public void OrderBy()

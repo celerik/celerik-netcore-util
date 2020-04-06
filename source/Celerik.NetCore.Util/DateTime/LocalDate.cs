@@ -16,7 +16,7 @@ namespace Celerik.NetCore.Util
         /// Initializes a new instance of the class.
         /// </summary>
         /// <param name="utcOffset">The difference between this time zone and UTC.
-        /// The int part represent hours, and the float part represents minutes.</param>
+        /// The int part represent hours, and the decimal part represents minutes.</param>
         public LocalDate(double utcOffset)
         {
             var hours = (int)utcOffset;

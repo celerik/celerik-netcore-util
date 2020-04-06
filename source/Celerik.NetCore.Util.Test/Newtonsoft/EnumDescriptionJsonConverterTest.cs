@@ -4,19 +4,19 @@ using Newtonsoft.Json;
 
 namespace Celerik.NetCore.Util.Test
 {
-    public enum FeelingType
+    public enum PersonalityType
     {
-        [System.ComponentModel.Description(":(")]
-        Sad = 1,
+        [System.ComponentModel.Description(":()")]
+        Choleric = 1,
 
         [System.ComponentModel.Description(":)")]
-        Happy = 2
+        Phlegmatic = 2
     }
 
     public class Employee
     {
         [JsonConverter(typeof(EnumDescriptionJsonConverter))]
-        public FeelingType? Feeling { get; set; }
+        public PersonalityType? Personality { get; set; }
     }
 
     [TestClass]
@@ -25,10 +25,10 @@ namespace Celerik.NetCore.Util.Test
         [TestMethod]
         public void SerializeSettedValue()
         {
-            var me = new Employee { Feeling = FeelingType.Sad };
+            var me = new Employee { Personality = PersonalityType.Choleric };
             var meSerialized = JsonConvert.SerializeObject(me);
 
-            Assert.AreEqual(true, meSerialized.Contains(":(", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, meSerialized.Contains(":()", StringComparison.InvariantCulture));
         }
 
         [TestMethod]
@@ -43,10 +43,10 @@ namespace Celerik.NetCore.Util.Test
         [TestMethod]
         public void Deserialize()
         {
-            var json = "{ Feeling: 2 }";
+            var json = "{ Personality: 2 }";
             var deserialized = JsonConvert.DeserializeObject<Employee>(json);
 
-            Assert.AreEqual(FeelingType.Happy, deserialized.Feeling);
+            Assert.AreEqual(PersonalityType.Phlegmatic, deserialized.Personality);
         }
 
         [TestMethod]

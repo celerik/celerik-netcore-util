@@ -23,7 +23,7 @@ namespace Celerik.NetCore.Util
             PaginationRequest request)
         {
             if (request == null)
-                throw new ArgumentException(UtilResources.Get("PaginationExtensions.Paginate.NullRequest"));
+                throw new ArgumentException(UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(request)));
 
             int count;
 
@@ -62,7 +62,7 @@ namespace Celerik.NetCore.Util
 
             var pageCount = (int)Math.Ceiling(count / (double)request.PageSize);
 
-            return new PaginationResult<TItem>
+            var result = new PaginationResult<TItem>
             {
                 PageNumber = request.PageNumber,
                 PageSize = request.PageSize,
@@ -72,6 +72,8 @@ namespace Celerik.NetCore.Util
                 RecordCount = count,
                 PageCount = pageCount
             };
+
+            return result;
         }
     }
 }

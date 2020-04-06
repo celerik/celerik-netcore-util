@@ -19,7 +19,7 @@ namespace Celerik.NetCore.Util.Test
         public void ToBoolInvalid(string str)
         {
             var boolean = str.ToBool();
-            Assert.AreEqual(false, boolean);
+            Assert.AreEqual(default, boolean);
         }
 
         [TestMethod]
@@ -36,7 +36,7 @@ namespace Celerik.NetCore.Util.Test
         public void ToDecimalInvalid(string str)
         {
             var number = str.ToDecimal();
-            Assert.AreEqual(0m, number);
+            Assert.AreEqual(default, number);
         }
 
         [TestMethod]
@@ -53,7 +53,7 @@ namespace Celerik.NetCore.Util.Test
         public void ToDoubleInvalid(string str)
         {
             var number = str.ToDouble();
-            Assert.AreEqual(0.0, number);
+            Assert.AreEqual(default, number);
         }
 
         [TestMethod]
@@ -70,7 +70,7 @@ namespace Celerik.NetCore.Util.Test
         public void ToFloatInvalid(string str)
         {
             var number = str.ToFloat();
-            Assert.AreEqual(0.0f, number);
+            Assert.AreEqual(default, number);
         }
 
         [TestMethod]
@@ -87,7 +87,29 @@ namespace Celerik.NetCore.Util.Test
         public void ToIntInvalid(string str)
         {
             var number = str.ToInt();
-            Assert.AreEqual(0, number);
+            Assert.AreEqual(default, number);
+        }
+
+        [TestMethod]
+        public void ToDateTimeValid()
+        {
+            var str = "2020/12/31 22:50:36";
+            var date = str.ToDateTime();
+            Assert.AreEqual(2020, date.Year);
+            Assert.AreEqual(12, date.Month);
+            Assert.AreEqual(31, date.Day);
+            Assert.AreEqual(22, date.Hour);
+            Assert.AreEqual(50, date.Minute);
+            Assert.AreEqual(36, date.Second);
+        }
+
+        [DataTestMethod]
+        [DataRow("InvalidDate")]
+        [DataRow(null)]
+        public void ToDateTimeInvalid(string str)
+        {
+            var date = str.ToDateTime();
+            Assert.AreEqual(default, date);
         }
     }
 }

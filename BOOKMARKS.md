@@ -42,3 +42,5 @@ Convert PFX Certificate to Base64 String
 Signing nuget package
  - https://timheuer.com/blog/use-nuget-with-github-actions-github-packages/
  
+Custom Configuration in .NET Core 2+
+ - https://medium.com/@dneimke/custom-configuration-in-net-core-2-193ff6f02046

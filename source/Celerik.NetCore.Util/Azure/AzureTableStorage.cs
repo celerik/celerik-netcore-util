@@ -28,21 +28,6 @@ namespace Celerik.NetCore.Util
         }
 
         /// <summary>
-        /// Gets a reference to the current table. In case the table doesn´t
-        /// exist, it is created.
-        /// </summary>
-        /// <returns>Reference to the current table.</returns>
-        private async Task<CloudTable> GetTableAsync()
-        {
-            var account = CloudStorageAccount.Parse(_config.ConnectionString);
-            var client = account.CreateCloudTableClient();
-            var table = client.GetTableReference(_config.TableName);
-            await table.CreateIfNotExistsAsync();
-
-            return table;
-        }
-
-        /// <summary>
         /// Gets a list of entities matching the given partitionKey.
         /// </summary>
         /// <param name="partitionKey">Partition Key.</param>
@@ -95,7 +80,9 @@ namespace Celerik.NetCore.Util
                 var table = await GetTableAsync();
                 var operation = TableOperation.Retrieve<TElement>(partitionKey, rowKey);
                 var result = await table.ExecuteAsync(operation);
-                return (TElement)(dynamic)result.Result;
+                var entity = (TElement)(dynamic)result.Result;
+
+                return entity;
             }
             catch
             {
@@ -118,6 +105,7 @@ namespace Celerik.NetCore.Util
                 var table = await GetTableAsync();
                 var operation = TableOperation.Insert(entity);
                 await table.ExecuteAsync(operation);
+
                 return true;
             }
             catch
@@ -141,6 +129,7 @@ namespace Celerik.NetCore.Util
                 var table = await GetTableAsync();
                 var operation = TableOperation.InsertOrReplace(entity);
                 await table.ExecuteAsync(operation);
+
                 return true;
             }
             catch
@@ -166,6 +155,7 @@ namespace Celerik.NetCore.Util
                 var table = await GetTableAsync();
                 var operation = TableOperation.Delete(entity);
                 await table.ExecuteAsync(operation);
+
                 return true;
             }
             catch
@@ -175,6 +165,21 @@ namespace Celerik.NetCore.Util
 
                 throw;
             }
+        }
+
+        /// <summary>
+        /// Gets a reference to the current table. In case the table doesn´t
+        /// exist, it is created.
+        /// </summary>
+        /// <returns>Reference to the current table.</returns>
+        private async Task<CloudTable> GetTableAsync()
+        {
+            var account = CloudStorageAccount.Parse(_config.ConnectionString);
+            var client = account.CreateCloudTableClient();
+            var table = client.GetTableReference(_config.TableName);
+            await table.CreateIfNotExistsAsync();
+
+            return table;
         }
     }
 }

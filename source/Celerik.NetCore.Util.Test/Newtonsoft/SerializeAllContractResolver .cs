@@ -4,14 +4,12 @@ using Newtonsoft.Json;
 
 namespace Celerik.NetCore.Util.Test
 {
-    public class Metallica
+    public class MetalBand
     {
-        public string JamesHetfield { get; set; }
-        public string KirkHammett { get; set; }
-        public string CliffBurton { get; set; }
-
-        [JsonIgnore]
-        public string LarsUlrich { get; set; }
+        public string Singer { get; set; }
+        public string LeadGuitar { get; set; }
+        public string Bassist { get; set; }
+        [JsonIgnore] public string Trumpeter { get; set; }
     }
 
     [TestClass]
@@ -20,44 +18,44 @@ namespace Celerik.NetCore.Util.Test
         [TestMethod]
         public void WithoutContractResolver()
         {
-            var metallica = new Metallica
+            var metallica = new MetalBand
             {
-                JamesHetfield = "Cool guy",
-                KirkHammett = "Cool guy",
-                CliffBurton = "Cool guy",
-                LarsUlrich = "Sucks",
+                Singer = "James Hetfield",
+                LeadGuitar = "Kirk Hammett",
+                Bassist = "Cliff Burton",
+                Trumpeter = "Lars Ulrich",
             };
 
-            var json = JsonConvert.SerializeObject(metallica);
+            var metalJson = JsonConvert.SerializeObject(metallica);
 
-            Assert.AreEqual(true, json.Contains("\"JamesHetfield\":", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, json.Contains("\"KirkHammett\":", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, json.Contains("\"CliffBurton\":", StringComparison.InvariantCulture));
-            Assert.AreEqual(false, json.Contains("\"LarsUlrich\":", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, metalJson.Contains("James Hetfield", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, metalJson.Contains("Kirk Hammett", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, metalJson.Contains("Cliff Burton", StringComparison.InvariantCulture));
+            Assert.AreEqual(false, metalJson.Contains("Lars Ulrich", StringComparison.InvariantCulture));
         }
 
         [TestMethod]
         public void WithContractResolver()
         {
-            var metallica = new Metallica
+            var ironMaiden = new MetalBand
             {
-                JamesHetfield = "Cool guy",
-                KirkHammett = "Cool guy",
-                CliffBurton = "Cool guy",
-                LarsUlrich = "Sucks"
+                Singer = "Paul Di'Anno",
+                LeadGuitar = "Dave Murray",
+                Bassist = "Steve Harvey",
+                Trumpeter = "El Pibe Valderrama"
             };
 
-            var settings = new JsonSerializerSettings
+            var ironSettings = new JsonSerializerSettings
             {
                 ContractResolver = new SerializeAllContractResolver()
             };
 
-            var json = JsonConvert.SerializeObject(metallica, settings);
+            var ironJson = JsonConvert.SerializeObject(ironMaiden, ironSettings);
 
-            Assert.AreEqual(true, json.Contains("\"JamesHetfield\":", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, json.Contains("\"KirkHammett\":", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, json.Contains("\"CliffBurton\":", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, json.Contains("\"LarsUlrich\":", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, ironJson.Contains("Paul Di'Anno", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, ironJson.Contains("Dave Murray", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, ironJson.Contains("Steve Harvey", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, ironJson.Contains("El Pibe Valderrama", StringComparison.InvariantCulture));
         }
     }
 }

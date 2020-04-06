@@ -43,7 +43,24 @@ namespace Celerik.NetCore.Util.Test
     public class EnumUtilityTest : UtilBaseTest
     {
         [TestMethod]
-        public void GetAttribute()
+        [ExpectedException(typeof(ArgumentException))]
+        public void GetAttributeNullValue()
+        {
+            Enum enumValue = null;
+            enumValue.GetAttribute<System.ComponentModel.CategoryAttribute>();
+        }
+
+        [TestMethod]
+        public void GetAttributeUnexisting()
+        {
+            var enumValue = SouthParkCharacterType.Chef;
+            var category = enumValue.GetAttribute<System.ComponentModel.CategoryAttribute>();
+
+            Assert.AreEqual(null, category);
+        }
+
+        [TestMethod]
+        public void GetAttributeValid()
         {
             var enumValue = SouthParkCharacterType.Kenny;
             var category = enumValue.GetAttribute<System.ComponentModel.CategoryAttribute>();
@@ -179,7 +196,14 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
-        public void ToStringList()
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ToStringListNotAnEnum()
+        {
+            EnumUtility.ToList<int>();
+        }
+
+        [TestMethod]
+        public void ToStringListValid()
         {
             var southParkList = EnumUtility.ToList<SouthParkCharacterType>();
 
@@ -189,6 +213,13 @@ namespace Celerik.NetCore.Util.Test
             Assert.AreEqual("Kyle Broflovski", southParkList[2]);
             Assert.AreEqual("Stan Marsh", southParkList[3]);
             Assert.AreEqual("Chef", southParkList[4]);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ToObjectListNotAnEnum()
+        {
+            EnumUtility.ToList<int, object>("Id", "Name");
         }
 
         [TestMethod]

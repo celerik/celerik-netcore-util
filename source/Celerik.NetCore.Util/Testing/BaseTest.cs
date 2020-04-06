@@ -4,18 +4,20 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging.Abstractions;
+using Microsoft.Extensions.Options;
 
 namespace Celerik.NetCore.Util
 {
     /// <summary>
     /// Base class for all tests.
     /// </summary>
-    public abstract class BaseTest
+    public class BaseTest
     {
         /// <summary>
-        /// Reference to the current HttpContext instance.
+        /// Object to get a reference to the current HttpContext.
         /// </summary>
-        private DummyIHttpContextAccessor _httpContext;
+        private DummyHttpContextAccessor _httpContextAccesor;
 
         /// <summary>
         /// Provider to resolve service objects.
@@ -25,33 +27,21 @@ namespace Celerik.NetCore.Util
         /// <summary>
         /// Initializes a new instance of the class.
         /// </summary>
-        /// <param name="userClaimKey">The key used to store the user claim.</param>
-        /// <param name="userClaimValue">The value of the user claim.</param>
+        /// <param name="userClaimKey">The user claim key.</param>
+        /// <param name="userClaimValue">The user claim value.</param>
         protected BaseTest(string userClaimKey = null, object userClaimValue = null)
         {
-            _httpContext = new DummyIHttpContextAccessor(userClaimKey, userClaimValue);
+            _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
 
             var services = new ServiceCollection();
-            var stringLocalizerFactory = new DummyIStringLocalizerFactory();
-            var config = new DummyIConfiguration();
+            var stringocalizerFactory = CreateStringLocalizerFactory();
 
-            services.AddSingleton<IStringLocalizerFactory>(stringLocalizerFactory);
-            services.AddSingleton<IConfiguration>(config);
-            services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContext);
+            services.AddSingleton(stringocalizerFactory);
+            services.AddSingleton<IConfiguration, DummyConfiguration>();
+            services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContextAccesor);
 
             InitializeServiceProvier(services);
-            UtilResources.Initialize(stringLocalizerFactory);
-        }
-
-        /// <summary>
-        /// Initializes the service provider.
-        /// </summary>
-        /// <param name="services">List where we add the services to.</param>
-        private void InitializeServiceProvier(ServiceCollection services)
-        {
-            _serviceProvider = services.BuildServiceProvider();
-            AddServices(services);
-            _serviceProvider = services.BuildServiceProvider();
+            UtilResources.Initialize(stringocalizerFactory);
         }
 
         /// <summary>
@@ -80,20 +70,50 @@ namespace Celerik.NetCore.Util
         {
             var validator = _serviceProvider.GetRequiredService<IValidator<TPayload>>();
 
-            // The analyzer is not suppressing the CA1801 warning by any way.
-            // We need to infer the type based on the parameter to make the
-            // code cleaner.
-            return payload != null ? validator : validator;
+            // This useless call is beacuse The analyzer is not suppressing the CA1801
+            // warning by any way. We need to infer the type based on the payload to
+            // make the code cleaner.
+            payload.GetType();
+
+            return validator;
         }
 
         /// <summary>
         /// Sets the current User Claims.
         /// </summary>
-        /// <param name="userClaimKey">The key used to store the user claim.</param>
-        /// <param name="userClaimValue">The value of the user claim.</param>
+        /// <param name="userClaimKey">The user claim key.</param>
+        /// <param name="userClaimValue">The user claim value.</param>
         protected void SetUserClaims(string userClaimKey, object userClaimValue)
         {
-            _httpContext = new DummyIHttpContextAccessor(userClaimKey, userClaimValue);
+            _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
+        }
+
+        /// <summary>
+        /// Creates an instance of the IStringLocalizerFactory.
+        /// </summary>
+        /// <returns>Instance of the IStringLocalizerFactory.</returns>
+        private IStringLocalizerFactory CreateStringLocalizerFactory()
+        {
+            var stringLocalizerFactory = new ResourceManagerStringLocalizerFactory(
+                Options.Create(new LocalizationOptions
+                {
+                    ResourcesPath = "Resources"
+                }),
+                NullLoggerFactory.Instance
+            );
+
+            return stringLocalizerFactory;
+        }
+
+        /// <summary>
+        /// Initializes the service provider.
+        /// </summary>
+        /// <param name="services">List where we add the services to.</param>
+        private void InitializeServiceProvier(ServiceCollection services)
+        {
+            _serviceProvider = services.BuildServiceProvider();
+            AddServices(services);
+            _serviceProvider = services.BuildServiceProvider();
         }
     }
 }

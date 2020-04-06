@@ -16,7 +16,8 @@ namespace Celerik.NetCore.Util
         public static void AssertThrows<TException>(Action func) where TException : Exception
         {
             if (func == null)
-                throw new ArgumentException(UtilResources.Get("TestUtility.AssertThrows.NullFunc"));
+                throw new ArgumentException(
+                    UtilResources.Get("TestUtility.AssertThrows.NullFunc"));
 
             var exceptionThrown = false;
 
@@ -30,7 +31,8 @@ namespace Celerik.NetCore.Util
             }
 
             if (!exceptionThrown)
-                throw new AssertFailedException(UtilResources.Get("TestUtility.AssertThrows.NoThrown"));                
+                throw new AssertFailedException(
+                    UtilResources.Get("TestUtility.AssertThrows.NoThrown"));
         }
     }
 }
