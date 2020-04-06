@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Celerik.NetCore.Util.Test
@@ -7,7 +8,15 @@ namespace Celerik.NetCore.Util.Test
     public class StackTraceUtilityTest : UtilBaseTest
     {
         [TestMethod]
-        public void GetMethodName()
+        [ExpectedException(typeof(ArgumentException))]
+        public void GetMethodNameInvalid()
+        {
+            StackTrace stackTrace = null;
+            stackTrace.GetMethodName();
+        }
+
+        [TestMethod]
+        public void GetMethodNameValid()
         {
             var stackTrace = new StackTrace();
             var topMethodName = stackTrace.GetMethodName();
