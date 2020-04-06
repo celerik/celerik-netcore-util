@@ -22,13 +22,6 @@ namespace Celerik.NetCore.Util
         public static IOrderedQueryable<TEntity> OrderBy<TEntity>(
             this IQueryable<TEntity> query, string propName, IComparer<object> comparer = null)
         {
-            if (query == null)
-                throw new ArgumentException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(query)));
-            if (propName == null)
-                throw new ArgumentException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(propName)));
-
             var orderedList = ApplyOrder(query, "OrderBy", propName, comparer);
             return orderedList;
         }
@@ -45,13 +38,6 @@ namespace Celerik.NetCore.Util
         public static IOrderedQueryable<TEntity> OrderByDescending<TEntity>(
             this IQueryable<TEntity> query, string propName, IComparer<object> comparer = null)
         {
-            if (query == null)
-                throw new ArgumentException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(query)));
-            if (propName == null)
-                throw new ArgumentException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(propName)));
-
             var orderedList = ApplyOrder(query, "OrderByDescending", propName, comparer);
             return orderedList;
         }
@@ -68,13 +54,6 @@ namespace Celerik.NetCore.Util
         public static IOrderedQueryable<TEntity> ThenBy<TEntity>(
             this IOrderedQueryable<TEntity> query, string propName, IComparer<object> comparer = null)
         {
-            if (query == null)
-                throw new ArgumentException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(query)));
-            if (propName == null)
-                throw new ArgumentException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(propName)));
-
             var orderedList = ApplyOrder(query, "ThenBy", propName, comparer);
             return orderedList;
         }
@@ -91,13 +70,6 @@ namespace Celerik.NetCore.Util
         public static IOrderedQueryable<TEntity> ThenByDescending<TEntity>(
             this IOrderedQueryable<TEntity> query, string propName, IComparer<object> comparer = null)
         {
-            if (query == null)
-                throw new ArgumentException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(query)));
-            if (propName == null)
-                throw new ArgumentException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(propName)));
-
             var orderedList = ApplyOrder(query, "ThenByDescending", propName, comparer);
             return orderedList;
         }
@@ -115,6 +87,13 @@ namespace Celerik.NetCore.Util
         private static IOrderedQueryable<TEntity> ApplyOrder<TEntity>(
             IQueryable<TEntity> query, string methodName, string propName, IComparer<object> comparer = null)
         {
+            if (query == null)
+                throw new ArgumentException(
+                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(query)));
+            if (propName == null)
+                throw new ArgumentException(
+                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(propName)));
+
             var param = Expression.Parameter(typeof(TEntity), "x");
             var body = propName.Split('.').Aggregate<string, Expression>(param, Expression.PropertyOrField);
 
