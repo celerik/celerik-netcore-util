@@ -27,7 +27,7 @@ namespace Celerik.NetCore.Util
         /// <returns>True if the hash value is a cryptographic match for the
         /// password; otherwise, false.</returns>
         /// <exception cref="System.ArgumentNullException">HashedPassword or password
-        /// is null.</exception>
+        /// are null.</exception>
         public static bool VerifyHashedPassword(string hash, string password) =>
             Crypto.VerifyHashedPassword(hash, password);
     }

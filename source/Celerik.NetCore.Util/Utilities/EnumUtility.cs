@@ -19,6 +19,7 @@ namespace Celerik.NetCore.Util
         /// <typeparam name="TAttribute">The attribute type to get.</typeparam>
         /// <param name="value">Enum value.</param>
         /// <returns>Attribute belonging to this enumeration.</returns>
+        /// <exception cref="ArgumentException">Enum value is null.</exception>
         public static TAttribute GetAttribute<TAttribute>(this Enum value)
             where TAttribute : Attribute
         {

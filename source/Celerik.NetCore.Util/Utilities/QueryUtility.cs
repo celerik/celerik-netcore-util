@@ -69,6 +69,7 @@ namespace Celerik.NetCore.Util
         /// <param name="query">Object to evaluate queries against the data source.</param>
         /// <param name="methodName">OrderBy, OrderByDescending, ThenBy, ThenByDescending.</param>
         /// <param name="propName">The property name to sort by.</param>
+        /// <exception cref="ArgumentException">Query or propName are null.</exception>
         private static IOrderedQueryable<TEntity> ApplyOrder<TEntity>(
             IQueryable<TEntity> query, string methodName, string propName)
         {
