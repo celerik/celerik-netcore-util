@@ -29,15 +29,10 @@ namespace Celerik.NetCore.Util
             var type = typeof(TAttribute);
             var memberInfo = value.GetType().GetMember(value.ToString());
 
-            if (memberInfo.Length > 0)
-            {
-                var attribute = memberInfo[0].GetCustomAttributes(type, inherit: false)
-                    .OfType<TAttribute>().FirstOrDefault();
+            var attribute = memberInfo[0].GetCustomAttributes(type, inherit: false)
+                .OfType<TAttribute>().FirstOrDefault();
 
-                return attribute;
-            }
-
-            return null;
+            return attribute;
         }
 
         /// <summary>
