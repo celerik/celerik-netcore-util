@@ -13,6 +13,9 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <typeparam name="TException">Type of the expected exception.</typeparam>
         /// <param name="func">The function to test.</param>
+        /// <exception cref="ArgumentException">The function to test is null.</exception>
+        /// <exception cref="AssertFailedException">The function did not throw
+        /// the expected exception.</exception>
         public static void AssertThrows<TException>(Action func) where TException : Exception
         {
             if (func == null)

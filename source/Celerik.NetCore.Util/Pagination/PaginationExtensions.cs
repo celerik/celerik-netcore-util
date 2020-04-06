@@ -18,6 +18,7 @@ namespace Celerik.NetCore.Util
         /// <param name="query">Object against we are querying.</param>
         /// <param name="request">Object with the request arguments.</param>
         /// <returns>Paginated result.</returns>
+        /// <exception cref="ArgumentException">Request is null.</exception>
         public static async Task<PaginationResult<TItem>> Paginate<TItem>(
             this IQueryable<TItem> query,
             PaginationRequest request)

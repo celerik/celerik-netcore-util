@@ -20,7 +20,7 @@ namespace Celerik.NetCore.Util
         /// null, we search the resource into the calling assembly.</param>
         /// <returns>Content of the embedded file existing into the
         /// passed-in assembly.</returns>
-        /// <exception cref="FileNotFoundException">If the embedded file could not
+        /// <exception cref="FileNotFoundException">The embedded file could not
         /// be found.</exception>
         public static string ReadFile(string name, Assembly assembly = null)
         {
@@ -59,10 +59,10 @@ namespace Celerik.NetCore.Util
         /// serialized without taking into account the JsonIgnore attribute.</param>
         /// <returns>Content of the embedded JSON file existing into the
         /// calling assembly, casted to the specified Type.</returns>
-        /// <exception cref="FileNotFoundException">If the embedded JSON file could not
+        /// <exception cref="FileNotFoundException">The embedded JSON file could not
         /// be found.</exception>
-        /// <exception cref="FileLoadException">If there was an error trying to load
-        /// the content of the JSON file.</exception>
+        /// <exception cref="FileLoadException">There was an error when trying to
+        /// load the content of the JSON file.</exception>
         public static TOutputType ReadJson<TOutputType>(string name, bool serializeAll = true)
         {
             var content = ReadFile(name, Assembly.GetCallingAssembly());
