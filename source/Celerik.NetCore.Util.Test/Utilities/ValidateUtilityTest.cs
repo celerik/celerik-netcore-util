@@ -138,5 +138,77 @@ namespace Celerik.NetCore.Util.Test
 
             Assert.AreEqual(false, isValid);
         }
+
+        [TestMethod]
+        public void IsValidDateValid()
+        {
+            var date = "2000/01/01";
+            var isValid = date.IsValidDate();
+
+            Assert.AreEqual(true, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidDateInvalid()
+        {
+            var date = "2000/50/01";
+            var isValid = date.IsValidDate();
+
+            Assert.AreEqual(false, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidNameValid()
+        {
+            var name = "José Covid";
+            var isValid = name.IsValidName();
+
+            Assert.AreEqual(true, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidNameInvalid()
+        {
+            var name = "José Covid 19";
+            var isValid = name.IsValidName();
+
+            Assert.AreEqual(false, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidPhoneNumberValid()
+        {
+            var phone = "444 44 44";
+            var isValid = phone.IsValidPhoneNumber();
+
+            Assert.AreEqual(true, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidPhoneNumberInvvalid()
+        {
+            var phone = "444 44 44 (Ext. 59)";
+            var isValid = phone.IsValidPhoneNumber();
+
+            Assert.AreEqual(false, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidZipValid()
+        {
+            var zip = "123456";
+            var isValid = zip.IsValidZip();
+
+            Assert.AreEqual(true, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidZipInvalid()
+        {
+            var zip = "123";
+            var isValid = zip.IsValidZip();
+
+            Assert.AreEqual(false, isValid);
+        }
     }
 }
