@@ -158,6 +158,24 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
+        public void IsValidEmailValid()
+        {
+            var email = "juan@pollosmario.com";
+            var isValid = email.IsValidEmail();
+
+            Assert.AreEqual(true, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidEmailInvalid()
+        {
+            var email = "juan@pollosmario";
+            var isValid = email.IsValidEmail();
+
+            Assert.AreEqual(false, isValid);
+        }
+
+        [TestMethod]
         public void IsValidNameValid()
         {
             var name = "José Covid";
