@@ -196,7 +196,14 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
-        public void ToStringList()
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ToStringListNotAnEnum()
+        {
+            EnumUtility.ToList<int>();
+        }
+
+        [TestMethod]
+        public void ToStringListValid()
         {
             var southParkList = EnumUtility.ToList<SouthParkCharacterType>();
 

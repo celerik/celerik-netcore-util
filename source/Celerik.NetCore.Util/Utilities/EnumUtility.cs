@@ -63,7 +63,7 @@ namespace Celerik.NetCore.Util
 
             if (!type.IsEnum)
                 throw new InvalidOperationException(
-                    UtilResources.Get("EnumUtility.NotAnEnum", nameof(TEnum)));
+                    UtilResources.Get("EnumUtility.NotAnEnum", type));
             if (!Enum.IsDefined(typeof(TEnum), value))
                 return defaultVal;
 
@@ -99,7 +99,7 @@ namespace Celerik.NetCore.Util
 
             if (!type.IsEnum)
                 throw new InvalidOperationException(
-                    UtilResources.Get("EnumUtility.NotAnEnum", nameof(TEnum)));
+                    UtilResources.Get("EnumUtility.NotAnEnum", type));
             if (!Enum.IsDefined(typeof(TEnum), value))
                 return defaultVal;
 
@@ -123,7 +123,7 @@ namespace Celerik.NetCore.Util
 
             if (!type.IsEnum)
                 throw new InvalidOperationException(
-                    UtilResources.Get("EnumUtility.NotAnEnum", nameof(TEnum)));
+                    UtilResources.Get("EnumUtility.NotAnEnum", type));
 
             foreach (var field in type.GetFields())
             {
@@ -155,7 +155,7 @@ namespace Celerik.NetCore.Util
 
             if (!type.IsEnum)
                 throw new InvalidOperationException(
-                    UtilResources.Get("EnumUtility.NotAnEnum", nameof(TEnum)));
+                    UtilResources.Get("EnumUtility.NotAnEnum", type));
 
             foreach (var field in type.GetFields())
             {
@@ -187,7 +187,7 @@ namespace Celerik.NetCore.Util
 
             if (!type.IsEnum)
                 throw new InvalidOperationException(
-                    UtilResources.Get("EnumUtility.NotAnEnum", nameof(TEnum)));
+                    UtilResources.Get("EnumUtility.NotAnEnum", type));
 
             var min = Enum.GetValues(typeof(TEnum)).Cast<int>().Min();
             return min;
@@ -206,7 +206,7 @@ namespace Celerik.NetCore.Util
 
             if (!type.IsEnum)
                 throw new InvalidOperationException(
-                    UtilResources.Get("EnumUtility.NotAnEnum", nameof(TEnum)));
+                    UtilResources.Get("EnumUtility.NotAnEnum", type));
 
             var max = Enum.GetValues(typeof(TEnum)).Cast<int>().Max();
             return max;
@@ -226,7 +226,7 @@ namespace Celerik.NetCore.Util
 
             if (!type.IsEnum)
                 throw new InvalidOperationException(
-                    UtilResources.Get("EnumUtility.NotAnEnum", nameof(TEnum)));
+                    UtilResources.Get("EnumUtility.NotAnEnum", type));
 
             var list = new List<string>();
             var fields = type.GetFields().OrderBy(field => field.MetadataToken);
@@ -269,7 +269,7 @@ namespace Celerik.NetCore.Util
 
             if (!type.IsEnum)
                 throw new InvalidOperationException(
-                    UtilResources.Get("EnumUtility.NotAnEnum", nameof(TEnum)));
+                    UtilResources.Get("EnumUtility.NotAnEnum", type));
 
             var list = new List<TList>();
             var fields = type.GetFields().OrderBy(field => field.MetadataToken);
