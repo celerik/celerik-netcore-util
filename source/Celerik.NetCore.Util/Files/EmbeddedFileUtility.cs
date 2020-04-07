@@ -32,11 +32,14 @@ namespace Celerik.NetCore.Util
                 var namespce = assembly.FullName.Split(',')[0];
                 var fullPath = $"{namespce}.{name}";
 
-                using var stream = assembly.GetManifestResourceStream(fullPath);
-                using var reader = new StreamReader(stream);
-                var content = reader.ReadToEnd();
-
-                return content;
+                using (var stream = assembly.GetManifestResourceStream(fullPath))
+                {
+                    using (var reader = new StreamReader(stream))
+                    {
+                        var content = reader.ReadToEnd();
+                        return content;
+                    }
+                }
             }
             catch
             {

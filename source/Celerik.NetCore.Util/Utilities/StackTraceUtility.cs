@@ -23,7 +23,7 @@ namespace Celerik.NetCore.Util
             var toString = stackTrace.ToString();
             var firstLine = toString.Substring(0, toString.IndexOf(Environment.NewLine, StringComparison.InvariantCulture));
             var tokens = firstLine.Split('.');
-            var methodName = $"{tokens[^2]}.{tokens[^1]}";
+            var methodName = $"{tokens[tokens.Length - 2]}.{tokens[tokens.Length - 1]}";
 
             return methodName;
         }
