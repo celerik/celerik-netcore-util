@@ -13,7 +13,7 @@
     <PackageId>Celerik.NetCore.Util</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-util</PackageProjectUrl>
-    <PackageReleaseNotes>Documented exceptions in methods</PackageReleaseNotes>
+    <PackageReleaseNotes>Changed target framework to netstandard2.0</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, utility-library, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -21,9 +21,9 @@
     <SignAssembly>false</SignAssembly>
     <Summary>Provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, exceptions, files, json, pagination, resources, testing, convertions, crypto, enums, queries, stack trace, strings, validations.</Summary>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Celerik.NetCore.Util</Title>
-    <Version>1.0.8</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

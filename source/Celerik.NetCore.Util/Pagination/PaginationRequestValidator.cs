@@ -53,7 +53,7 @@ namespace Celerik.NetCore.Util
                 .WithMessage(
                     UtilResources.Get(
                         "PaginationRequestValidator.Constructor.InvalidSortKey",
-                        string.Join(',', propNames)
+                        string.Join(",", propNames)
                     )
                 );
         }
