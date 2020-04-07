@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
 
@@ -36,9 +37,9 @@ namespace Celerik.NetCore.Util
             var services = new ServiceCollection();
             var stringocalizerFactory = CreateStringLocalizerFactory();
 
-            services.AddSingleton(NullLogger.Instance);
-            services.AddSingleton(stringocalizerFactory);
+            services.AddSingleton<ILogger>(NullLogger.Instance);
             services.AddSingleton<IConfiguration, DummyConfiguration>();
+            services.AddSingleton(stringocalizerFactory);
             services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContextAccesor);
 
             InitializeServiceProvier(services);
