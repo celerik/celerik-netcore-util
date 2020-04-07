@@ -28,7 +28,7 @@ PM > Install-Package Celerik.NetCore.Util
  - Check out tutorials on Celerik's blog [here](http://celerik.com).
  
 ## Requirements
-  - .NETStandard,Version=v2.0
+  - .NETStandard 2.0
   
 ## CI/CD pipeline
 
