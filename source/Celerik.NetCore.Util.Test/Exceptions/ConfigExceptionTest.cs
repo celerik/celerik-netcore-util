@@ -5,13 +5,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class ConfigFileExceptionTest : UtilBaseTest
+    public class ConfigExceptionTest : UtilBaseTest
     {
         [TestMethod]
         public void ConstructorEmpty()
         {
-            var exception = new ConfigFileException();
-            Assert.AreEqual("Exception of type 'Celerik.NetCore.Util.ConfigFileException' was thrown.", exception.Message);
+            var exception = new ConfigException();
+            Assert.AreEqual("Exception of type 'Celerik.NetCore.Util.ConfigException' was thrown.", exception.Message);
         }
 
         [TestMethod]
@@ -19,7 +19,7 @@ namespace Celerik.NetCore.Util.Test
         public void ConstructorWithMessage()
         {
             var message = "Error...";
-            var exception = new ConfigFileException(message);
+            var exception = new ConfigException(message);
 
             Assert.AreEqual(message, exception.Message);
         }
@@ -30,7 +30,7 @@ namespace Celerik.NetCore.Util.Test
         {
             var message = "Error...";
             var inner = new Exception();
-            var exception = new ConfigFileException(message, inner);
+            var exception = new ConfigException(message, inner);
 
             Assert.AreEqual(message, exception.Message);
             Assert.AreEqual(inner, exception.InnerException);
