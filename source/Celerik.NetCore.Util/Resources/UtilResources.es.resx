@@ -120,6 +120,9 @@
   <data name="Common.ArgumentCanNotBeNull" xml:space="preserve">
     <value>'{0}' no puede ser nulo</value>
   </data>
+  <data name="Common.FactoryException" xml:space="preserve">
+    <value>No se puede crear una instancia de: '{0}'. '{1}' es inválido: '{2}'</value>
+  </data>
   <data name="EmbeddedFileUtility.ReadFile.Exception" xml:space="preserve">
     <value>Error al leer el archivo embebido: '{0}'</value>
   </data>
