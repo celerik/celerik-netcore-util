@@ -24,7 +24,8 @@ namespace Celerik.NetCore.Util
             PaginationRequest request)
         {
             if (request == null)
-                throw new ArgumentException(UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(request)));
+                throw new ArgumentException(
+                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(request)));
 
             int count;
 
