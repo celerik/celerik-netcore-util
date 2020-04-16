@@ -129,6 +129,9 @@
   <data name="Common.IdDoesntExist" xml:space="preserve">
     <value>'{0}' con valor '{1}' no existe</value>
   </data>
+  <data name="Common.InjectException" xml:space="preserve">
+    <value>No se puede inyectar una instancia de: '{0}'. '{1}' es inválido: '{2}'</value>
+  </data>
   <data name="EmbeddedFileUtility.ReadFile.Exception" xml:space="preserve">
     <value>Error al leer el archivo embebido: '{0}'</value>
   </data>
