@@ -13,9 +13,7 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <param name="code">Code value.</param>
         public CodeAttribute(string code)
-        {
-            Code = code;
-        }
+            => Code = code;
 
         /// <summary>
         /// Gets or sets the Code value.

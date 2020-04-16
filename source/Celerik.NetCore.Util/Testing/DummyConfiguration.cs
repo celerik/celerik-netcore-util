@@ -25,11 +25,9 @@ namespace Celerik.NetCore.Util
         /// Initializes a new instance of the class.
         /// </summary>
         public DummyConfiguration()
-        {
-            _config = new ConfigurationRoot(new List<IConfigurationProvider> {
+            => _config = new ConfigurationRoot(new List<IConfigurationProvider> {
                 new DummyConfigurationProvider()
             });
-        }
 
         /// <summary>
         /// Helper class for implementing the IConfigurationProvider interface.
@@ -54,9 +52,7 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <returns>The configuration sub-sections.</returns>
         public IEnumerable<IConfigurationSection> GetChildren()
-        {
-            return _config.GetChildren();
-        }
+            => _config.GetChildren();
 
         /// <summary>
         /// Returns a Microsoft.Extensions.Primitives.IChangeToken that can be used to observe
@@ -64,9 +60,7 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <returns>A Microsoft.Extensions.Primitives.IChangeToken.</returns>
         public IChangeToken GetReloadToken()
-        {
-            return _config.GetReloadToken();
-        }
+            => _config.GetReloadToken();
 
         /// <summary>
         /// Gets a configuration sub-section with the specified key.
@@ -74,9 +68,7 @@ namespace Celerik.NetCore.Util
         /// <param name="key">The key of the configuration section.</param>
         /// <returns>The Microsoft.Extensions.Configuration.IConfigurationSection.</returns>
         public IConfigurationSection GetSection(string key)
-        {
-            return _config.GetSection(key);
-        }
+            => _config.GetSection(key);
 
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting

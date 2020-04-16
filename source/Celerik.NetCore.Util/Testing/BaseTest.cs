@@ -59,9 +59,7 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <returns>A service object of type TService.</returns>
         protected TService GetService<TService>()
-        {
-            return _serviceProvider.GetRequiredService<TService>();
-        }
+            => _serviceProvider.GetRequiredService<TService>();
 
         /// <summary>
         /// Gets the IValidator that validates the passed-in payload object.
@@ -86,9 +84,7 @@ namespace Celerik.NetCore.Util
         /// <param name="userClaimKey">The user claim key.</param>
         /// <param name="userClaimValue">The user claim value.</param>
         protected void SetUserClaims(string userClaimKey, object userClaimValue)
-        {
-            _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
-        }
+            => _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
 
         /// <summary>
         /// Creates an instance of the IStringLocalizerFactory.
