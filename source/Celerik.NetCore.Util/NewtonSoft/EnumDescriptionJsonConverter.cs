@@ -49,17 +49,13 @@ namespace Celerik.NetCore.Util
         /// <param name="serializer">The calling serializer.</param>
         /// <returns>The object value.</returns>
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
-        {
-            return null;
-        }
+            => null;
 
         /// <summary>
         /// Gets a value indicating whether this Newtonsoft.Json.JsonConverter can read JSON.
         /// </summary>
         public override bool CanRead
-        {
-            get { return false; }
-        }
+            => false;
 
         /// <summary>
         /// Determines whether this instance can convert the specified object type.
@@ -68,8 +64,6 @@ namespace Celerik.NetCore.Util
         /// <returns>true if this instance can convert the specified object type;
         /// otherwise, false.</returns>
         public override bool CanConvert(Type objectType)
-        {
-            return objectType == typeof(Enum);
-        }
+            => objectType == typeof(Enum);
     }
 }

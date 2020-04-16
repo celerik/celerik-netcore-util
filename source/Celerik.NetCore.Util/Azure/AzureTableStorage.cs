@@ -23,9 +23,7 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <param name="config">Configuration to access the Azure Table Storage.</param>
         public AzureTableStorage(AzureTableStorageConfig config)
-        {
-            _config = config;
-        }
+            => _config = config;
 
         /// <summary>
         /// Gets a list of entities matching the given partitionKey.
