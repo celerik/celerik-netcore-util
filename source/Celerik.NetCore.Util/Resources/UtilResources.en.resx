@@ -129,6 +129,9 @@
   <data name="Common.IdDoesntExist" xml:space="preserve">
     <value>'{0}' with value '{1}' does not exist</value>
   </data>
+  <data name="Common.InjectException" xml:space="preserve">
+    <value>Unable to inject an instance of: '{0}'. Invalid '{1}': '{2}'</value>
+  </data>
   <data name="EmbeddedFileUtility.ReadFile.Exception" xml:space="preserve">
     <value>Failed to read embedded file: '{0}'</value>
   </data>
