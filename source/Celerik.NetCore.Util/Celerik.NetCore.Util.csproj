@@ -8,12 +8,11 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <LangVersion>latest</LangVersion>
-    <NeutralLanguage>en</NeutralLanguage>
     <PackageIcon>Celerik.png</PackageIcon>
     <PackageId>Celerik.NetCore.Util</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-util</PackageProjectUrl>
-    <PackageReleaseNotes>Fixed singleton for IConfiguration in BaseTest</PackageReleaseNotes>
+    <PackageReleaseNotes>Removed default neutral language</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, utility-library, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -23,7 +22,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Celerik.NetCore.Util</Title>
-    <Version>2.0.10</Version>
+    <Version>2.0.11</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
