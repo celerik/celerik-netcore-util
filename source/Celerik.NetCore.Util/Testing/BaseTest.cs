@@ -36,9 +36,10 @@ namespace Celerik.NetCore.Util
 
             var services = new ServiceCollection();
             var stringocalizerFactory = CreateStringLocalizerFactory();
+            using var config = new DummyConfiguration();
 
             services.AddSingleton<ILogger>(NullLogger.Instance);
-            services.AddSingleton<IConfiguration, DummyConfiguration>();
+            services.AddSingleton<IConfiguration>(config);
             services.AddSingleton(stringocalizerFactory);
             services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContextAccesor);
 
