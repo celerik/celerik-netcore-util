@@ -9,7 +9,6 @@
     <IncludeSymbols>true</IncludeSymbols>
     <IsPackable>false</IsPackable>
     <LangVersion>latest</LangVersion>
-    <NeutralLanguage>en</NeutralLanguage>
     <PackageIcon>Celerik.png</PackageIcon>
     <PackageId>Celerik.NetCore.Util.Test</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
