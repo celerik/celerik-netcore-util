@@ -12,7 +12,7 @@ env:
 
 jobs:
   build:
-    if: false == contains(github.event.head_commit.message, '${{env.RELEASE_KEYWORD}}')
+    if: false == contains(github.event.head_commit.message, RELEASE_KEYWORD)
     runs-on: ubuntu-latest
 
     steps:
