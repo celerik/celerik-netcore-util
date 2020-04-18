@@ -3,6 +3,7 @@ name: build
 on: [push]
 
 env:
+ RELEASE_KEYWORD: '[release]'
  SOLUTION_FILE: './source/Celerik.NetCore.Util.sln'
  TEST_PROJECT: './source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj'
  TEST_FOLDER: './source/Celerik.NetCore.Util.Test/'
