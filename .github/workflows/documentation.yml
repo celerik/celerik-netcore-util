@@ -1,6 +1,9 @@
 name: documentation
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
       
 env:
   BUILD_DIR: 'source/DocFx/_site'
