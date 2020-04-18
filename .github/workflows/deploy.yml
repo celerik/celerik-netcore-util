@@ -5,6 +5,17 @@ on:
     branches:
       - master
 
+env:
+  DOTNET_VERSION: 3.1.100
+  SOLUTION_FILE: '**/*.sln'
+  TEST_PROJECT: '**/**/*Test.csproj'
+  TEST_FOLDER: './source/*.Test/'
+  COVERAGE_FILE: ./source/coverage.info
+  NUGET_PACKAGE_PUSH_URL: 'https://api.nuget.org/v3/index.json'
+  NUGET_PACKAGE_API_KEY: ${{ secrets.NUGET_PACKAGE_API_KEY }}
+  GITHUB_PACKAGE_PUSH_URL: 'https://nuget.pkg.github.com/equisoide/index.json'
+  GITHUB_PACKAGE_PUSH_USR: 'equisoide'
+
 jobs:
   build:
     if: contains(github.event.head_commit.message, '[release]')
@@ -16,20 +27,20 @@ jobs:
     - name: Setup .net core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1.100
+        dotnet-version: ${{env.DOTNET_VERSION}}
     - name: Build with dotnet
-      run: dotnet build ./source/Celerik.NetCore.Util.sln --configuration Release
+      run: dotnet build ${{env.SOLUTION_FILE}} --configuration Release
     - name: Run unit tests
-      run: dotnet test ./source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj
+      run: dotnet test ${{env.TEST_PROJECT}}
     - name: Generate coverage report
       run: |
-        cd ./source/Celerik.NetCore.Util.Test/
-        dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+        cd ${{env.TEST_FOLDER}}
+        dotnet test /p:CollectCoverage=true /p:CoverletOutput=../ /p:CoverletOutputFormat=lcov
     - name: Publish coverage report to coveralls.io
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: ./source/Celerik.NetCore.Util.Test/TestResults/coverage.info
+        path-to-lcov: ${{env.COVERAGE_FILE}}
 
   deploy_to_nuget:
     needs: build
@@ -39,7 +50,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Pack nuget package
-      run: dotnet pack ./source/Celerik.NetCore.Util.sln --configuration Release -o package
+      run: dotnet pack ${{env.SOLUTION_FILE}} --configuration Release -o package
     - name: Publish package artifact
       uses: actions/upload-artifact@master
       with:
@@ -47,8 +58,8 @@ jobs:
         path: package
     - name: Publish package to nuget.org
       run: dotnet nuget push **/*.nupkg
-           --api-key ${{ secrets.CELERIK_NUGET_API_KEY }}
-           --source https://api.nuget.org/v3/index.json
+           --source ${{ env.NUGET_PACKAGE_PUSH_URL }}
+           --api-key ${{ env.NUGET_PACKAGE_API_KEY }}
            --skip-duplicate
 
   deploy_to_github:
@@ -66,11 +77,11 @@ jobs:
       with:
         nuget-version: latest
     - name: Add github package source
-      run: nuget sources Add -Name "github" -Source "https://nuget.pkg.github.com/equisoide/index.json" -UserName equisoide -Password ${{ secrets.GITHUB_TOKEN }}
+      run: nuget sources Add -Name "github" -Source ${{env.GITHUB_PACKAGE_PUSH_URL}} -UserName ${{env.GITHUB_PACKAGE_PUSH_USR}} -Password ${{ secrets.GITHUB_TOKEN }}
     - name: Push to GitHub Packages
       run: nuget push **/*.nupkg -source "github" -SkipDuplicate
 
-  release:
+  create_tag:
     runs-on: ubuntu-latest
     needs: deploy_to_github
 
