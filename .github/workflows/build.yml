@@ -4,7 +4,7 @@ on: [push]
 
 env:
  DOTNET_VERSION: 3.1.100
- SOLUTION_FILE: './source/Celerik.NetCore.Util.sln'
+ SOLUTION_FILE: '**/*.sln'
  TEST_PROJECT: './source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj'
  TEST_FOLDER: './source/Celerik.NetCore.Util.Test/'
  COVERAGE_FILE: './source/Celerik.NetCore.Util.Test/TestResults/coverage.info'
