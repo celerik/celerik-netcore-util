@@ -1,16 +1,17 @@
 name: deploy
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 env:
- DOTNET_VERSION: 3.1.100
- SOLUTION_FILE: '**/*.sln'
- TEST_PROJECT: '**/**/*Test.csproj'
- TEST_FOLDER: './source/*.Test/'
- COVERAGE_FILE: ./source/coverage.info 
+  DOTNET_VERSION: 3.1.100
+  SOLUTION_FILE: '**/*.sln'
+  TEST_PROJECT: '**/**/*Test.csproj'
+  TEST_FOLDER: './source/*.Test/'
+  COVERAGE_FILE: ./source/coverage.info
+  NUGET_PACKAGE_PUSH_URL: 'https://api.nuget.org/v3/index.json'
+  NUGET_PACKAGE_API_KEY: ${{ secrets.NUGET_PACKAGE_API_KEY }}
+  GITHUB_PACKAGE_PUSH_URL: 'https://nuget.pkg.github.com/equisoide/index.json'
+  GITHUB_PACKAGE_PUSH_USR: 'equisoide'
 
 jobs:
   build:
@@ -54,8 +55,8 @@ jobs:
         path: package
     - name: Publish package to nuget.org
       run: dotnet nuget push **/*.nupkg
-           --api-key ${{ secrets.CELERIK_NUGET_API_KEY }}
-           --source https://api.nuget.org/v3/index.json
+           --source ${{ env.NUGET_PACKAGE_PUSH_URL }}
+           --api-key ${{ env.NUGET_PACKAGE_API_KEY }}
            --skip-duplicate
 
   deploy_to_github:
@@ -73,7 +74,7 @@ jobs:
       with:
         nuget-version: latest
     - name: Add github package source
-      run: nuget sources Add -Name "github" -Source "https://nuget.pkg.github.com/equisoide/index.json" -UserName equisoide -Password ${{ secrets.GITHUB_TOKEN }}
+      run: nuget sources Add -Name "github" -Source ${{env.GITHUB_PACKAGE_PUSH_URL}} -UserName ${{env.GITHUB_PACKAGE_PUSH_USR}} -Password ${{ secrets.GITHUB_TOKEN }}
     - name: Push to GitHub Packages
       run: nuget push **/*.nupkg -source "github" -SkipDuplicate
 
