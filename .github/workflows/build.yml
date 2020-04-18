@@ -7,7 +7,7 @@ env:
  SOLUTION_FILE: '**/*.sln'
  TEST_PROJECT: '**/**/*Test.csproj'
  TEST_FOLDER: './source/Celerik.NetCore.Util.Test/'
- COVERAGE_FILE: ./source/**/TestResults/coverage.info
+ COVERAGE_FILE: .TestResults/coverage.info
 
 jobs:
   build:
@@ -31,6 +31,7 @@ jobs:
         dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
     - name: Publish coverage report to coveralls.io
       uses: coverallsapp/github-action@master
+      working-directory: ${{env.TEST_FOLDER}}
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: ${{env.COVERAGE_FILE}}
