@@ -2,6 +2,12 @@ name: build
 
 on: [push]
 
+env:
+ solution-file: './source/Celerik.NetCore.Util.sln'
+ test-project: './source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj'
+ test-folder: './source/Celerik.NetCore.Util.Test/'
+ coverage-file: './source/Celerik.NetCore.Util.Test/TestResults/coverage.info'
+
 jobs:
   build:
     if: false == contains(github.event.head_commit.message, '[release]')
