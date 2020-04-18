@@ -3,7 +3,6 @@ name: build
 on: [push]
 
 env:
- RELEASE_KEYWORD: '[release]'
  DOTNET_VERSION: 3.1.100
  SOLUTION_FILE: './source/Celerik.NetCore.Util.sln'
  TEST_PROJECT: './source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj'
@@ -12,7 +11,7 @@ env:
 
 jobs:
   build:
-    if: false == contains(github.event.head_commit.message, RELEASE_KEYWORD)
+    if: false == contains(github.event.head_commit.message, '[release]')
     runs-on: ubuntu-latest
 
     steps:
