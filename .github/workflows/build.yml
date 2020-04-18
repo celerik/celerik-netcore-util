@@ -4,10 +4,11 @@ on: [push]
 
 env:
  DOTNET_VERSION: 3.1.100
- SOLUTION_FILE: './source/Celerik.NetCore.Util.sln'
- TEST_PROJECT: './source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj'
- TEST_FOLDER: './source/Celerik.NetCore.Util.Test/'
- COVERAGE_FILE: './source/Celerik.NetCore.Util.Test/TestResults/coverage.info'
+ PROJECT_NAME: 'Util'
+ SOLUTION_FILE: './source/Celerik.NetCore.${{env.PROJECT_NAME}}.sln'
+ TEST_PROJECT: './source/Celerik.NetCore.${{env.PROJECT_NAME}}.Test/Celerik.NetCore.${{env.PROJECT_NAME}}.Test.csproj'
+ TEST_FOLDER: './source/Celerik.NetCore.${{env.PROJECT_NAME}}.Test/'
+ COVERAGE_FILE: './source/Celerik.NetCore.${{env.PROJECT_NAME}}.Test/TestResults/coverage.info'
 
 jobs:
   build:
