@@ -6,7 +6,7 @@ env:
  DOTNET_VERSION: 3.1.100
  SOLUTION_FILE: '**/*.sln'
  TEST_PROJECT: '**/**/*Test.csproj'
- TEST_FOLDER: './source/Celerik.NetCore.Util.Test/'
+ TEST_FOLDER: './source/*.Test/'
  COVERAGE_FILE: ./source/coverage.info 
 
 jobs:
