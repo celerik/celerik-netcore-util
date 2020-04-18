@@ -3,9 +3,9 @@ name: documentation
 on: [push]
       
 env:
-    BUILD_DIR: 'source/DocFx/_site'
-    DOCFX_FILE: 'source/DocFx/docfx.json'
-    GH_PAT: ${{ secrets.DEPLOY_DOCUMENTATION_PERSONAL_ACCESS_TOKEN }}
+  BUILD_DIR: 'source/DocFx/_site'
+  DOCFX_FILE: 'source/DocFx/docfx.json'
+  GH_PAT: ${{ secrets.DEPLOY_DOCUMENTATION_PERSONAL_ACCESS_TOKEN }}
 
 jobs:
   documentation:
