@@ -1,9 +1,11 @@
 name: documentation
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
+      
+env:
+    BUILD_DIR: 'source/DocFx/_site'
+    DOCFX_FILE: 'source/DocFx/docfx.json'
+    GH_PAT: ${{ secrets.DEPLOY_DOCUMENTATION_PERSONAL_ACCESS_TOKEN }}
 
 jobs:
   documentation:
@@ -15,9 +17,9 @@ jobs:
     - name: Build Documentation
       uses: nikeee/docfx-action@master
       with:
-        args: source/DocFx/docfx.json
+        args: ${{ env.DOCFX_FILE }}
     - name: Publish documentation on github pages
       uses: maxheld83/ghpages@master
       env:
-        BUILD_DIR: source/DocFx/_site
-        GH_PAT: ${{ secrets.DEPLOY_DOCUMENTATION_PERSONAL_ACCESS_TOKEN }}
+        BUILD_DIR: ${{ env.BUILD_DIR }}
+        GH_PAT: ${{ env.DEPLOY_DOCUMENTATION_PERSONAL_ACCESS_TOKEN }}
