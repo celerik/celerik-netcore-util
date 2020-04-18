@@ -2,13 +2,15 @@ name: build
 
 on: [push]
 
+PROJECT_NAME: 'Util'
+
 env:
  DOTNET_VERSION: 3.1.100
  PROJECT_NAME: 'Util'
- SOLUTION_FILE: './source/Celerik.NetCore.${{env.PROJECT_NAME}}.sln'
- TEST_PROJECT: './source/Celerik.NetCore.${{env.PROJECT_NAME}}.Test/Celerik.NetCore.${{env.PROJECT_NAME}}.Test.csproj'
- TEST_FOLDER: './source/Celerik.NetCore.${{env.PROJECT_NAME}}.Test/'
- COVERAGE_FILE: './source/Celerik.NetCore.${{env.PROJECT_NAME}}.Test/TestResults/coverage.info'
+ SOLUTION_FILE: './source/Celerik.NetCore.${{PROJECT_NAME}}.sln'
+ TEST_PROJECT: './source/Celerik.NetCore.${{PROJECT_NAME}}.Test/Celerik.NetCore.${{PROJECT_NAME}}.Test.csproj'
+ TEST_FOLDER: './source/Celerik.NetCore.${{PROJECT_NAME}}.Test/'
+ COVERAGE_FILE: './source/Celerik.NetCore.${{PROJECT_NAME}}.Test/TestResults/coverage.info'
 
 jobs:
   build:
