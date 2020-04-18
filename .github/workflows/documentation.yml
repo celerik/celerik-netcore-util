@@ -5,7 +5,6 @@ on: [push]
 env:
     BUILD_DIR: 'source/DocFx/_site'
     DOCFX_FILE: 'source/DocFx/docfx.json'
-    GH_PAT: ${{ secrets.DEPLOY_DOCUMENTATION_PERSONAL_ACCESS_TOKEN }}
 
 jobs:
   documentation:
@@ -22,4 +21,4 @@ jobs:
       uses: maxheld83/ghpages@master
       env:
         BUILD_DIR: ${{ env.BUILD_DIR }}
-        GH_PAT: ${{ env.DEPLOY_DOCUMENTATION_PERSONAL_ACCESS_TOKEN }}
+        GH_PAT: ${{ secrets.DEPLOY_DOCUMENTATION_PERSONAL_ACCESS_TOKEN }}
