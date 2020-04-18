@@ -4,7 +4,6 @@ on: [push]
 
 env:
  DOTNET_VERSION: 3.1.100
- PROJECT_NAME: 'Util'
  SOLUTION_FILE: './source/Celerik.NetCore.Util.sln'
  TEST_PROJECT: './source/Celerik.NetCore.Util.Test/Celerik.NetCore.Util.Test.csproj'
  TEST_FOLDER: './source/Celerik.NetCore.Util.Test/'
