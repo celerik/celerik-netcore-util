@@ -29,7 +29,8 @@ namespace Celerik.NetCore.Util
         /// Gets a list of entities matching the given partitionKey.
         /// </summary>
         /// <param name="partitionKey">Partition Key.</param>
-        /// <returns>List of entities matching the given partitionKey.</returns>
+        /// <returns>The task object representing the asynchronous operation.
+        /// </returns>
         public async Task<List<TElement>> ListAsync(string partitionKey = null)
         {
             try
@@ -70,7 +71,8 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <param name="partitionKey">Partitition Key.</param>
         /// <param name="rowKey">Row Key.</param>
-        /// <returns>Entity matching the given partitionKey and rowKey.</returns>
+        /// <returns>The task object representing the asynchronous operation.
+        /// </returns>
         public async Task<TElement> GetAsync(string partitionKey, string rowKey)
         {
             try
@@ -95,7 +97,8 @@ namespace Celerik.NetCore.Util
         /// Inserts a new entity.
         /// </summary>
         /// <param name="entity">The entity to insert.</param>
-        /// <returns>True if the entity could be inserted.</returns>
+        /// <returns>The task object representing the asynchronous operation.
+        /// </returns>
         public async Task<bool> InsertAsync(TElement entity)
         {
             try
@@ -119,7 +122,8 @@ namespace Celerik.NetCore.Util
         /// Updates an existing entity.
         /// </summary>
         /// <param name="entity">The entity to update.</param>
-        /// <returns>True if the entity could be updated.</returns>
+        /// <returns>The task object representing the asynchronous operation.
+        /// </returns>
         public async Task<bool> UpdateAsync(TElement entity)
         {
             try
@@ -144,7 +148,8 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <param name="partitionKey">Partitition Key.</param>
         /// <param name="rowKey">Row Key.</param>
-        /// <returns>True if the entity could be deleted.</returns>
+        /// <returns>The task object representing the asynchronous operation.
+        /// </returns>
         public async Task<bool> DeleteAsync(string partitionKey, string rowKey)
         {
             try
@@ -169,7 +174,8 @@ namespace Celerik.NetCore.Util
         /// Gets a reference to the current table. In case the table doesn´t
         /// exist, it is created.
         /// </summary>
-        /// <returns>Reference to the current table.</returns>
+        /// <returns>The task object representing the asynchronous operation.
+        /// </returns>
         private async Task<CloudTable> GetTableAsync()
         {
             var account = CloudStorageAccount.Parse(_config.ConnectionString);

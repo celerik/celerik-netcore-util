@@ -21,7 +21,7 @@ namespace Celerik.NetCore.Util.Test
                 new Cat { Name = "Brad Michi" }
             }.AsQueryable();
             
-            await items.Paginate(null);
+            await items.PaginateAsync(null);
         }
 
         [TestMethod]
@@ -41,7 +41,7 @@ namespace Celerik.NetCore.Util.Test
                 new Cat { Name = "Brad Michi" }
             }.AsQueryable();
 
-            var pagination = await items.Paginate(request);
+            var pagination = await items.PaginateAsync(request);
 
             Assert.AreEqual(true, pagination.IsAscending);
             Assert.AreEqual(items.ElementAt(2).Name, pagination.Items.ElementAt(0).Name);
@@ -71,7 +71,7 @@ namespace Celerik.NetCore.Util.Test
                 new Cat { Name = "Brad Michi" }
             }.AsQueryable();
 
-            var pagination = await items.Paginate(request);
+            var pagination = await items.PaginateAsync(request);
 
             Assert.AreEqual(false, pagination.IsAscending);
             Assert.AreEqual(items.ElementAt(1).Name, pagination.Items.ElementAt(0).Name);
