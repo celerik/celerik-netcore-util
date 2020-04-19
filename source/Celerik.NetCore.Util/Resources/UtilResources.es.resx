@@ -120,8 +120,11 @@
   <data name="Common.ArgumentCanNotBeNull" xml:space="preserve">
     <value>'{0}' no puede ser nulo</value>
   </data>
-  <data name="Common.ConnectionNotFound" xml:space="preserve">
-    <value>Cadena de conexión no encontrada: '{0}'</value>
+  <data name="Common.ConfigurationKeyNotFound" xml:space="preserve">
+    <value>Llave de configuración no encontrada: '{0}'</value>
+  </data>
+  <data name="Common.EnvironmentVariableNotFound" xml:space="preserve">
+    <value>Variable de entorno no encontrada: '{0}'</value>
   </data>
   <data name="Common.FactoryException" xml:space="preserve">
     <value>No se puede crear una instancia de: '{0}'. '{1}' es inválido: '{2}'</value>
