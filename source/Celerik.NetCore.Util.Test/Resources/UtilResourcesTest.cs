@@ -13,9 +13,10 @@ namespace Celerik.NetCore.Util.Test
 
             var name = "Common.ArgumentCanNotBeNull";
             var resource = UtilResources.Get(name);
+            var expected = name;
 
+            Assert.AreEqual(expected, resource);
             UtilResources.Initialize(factory);
-            Assert.AreEqual(name, resource);
         }
 
         [TestMethod]
@@ -27,28 +28,31 @@ namespace Celerik.NetCore.Util.Test
             var name = "Common.ArgumentCanNotBeNull";
             string args;
             var resource = UtilResources.Get(name, nameof(args));
+            var expected = name;
 
+            Assert.AreEqual(expected, resource);
             UtilResources.Initialize(factory);
-            Assert.AreEqual(name, resource);
         }
 
         [TestMethod]
         public void Get()
         {
-            var name = "Common.ArgumentCanNotBeNull";
+            var name = "Common.UnexistingResource";
             var resource = UtilResources.Get(name);
+            var expected = name;
 
-            Assert.AreEqual("'{0}' can not be null", resource);
+            Assert.AreEqual(expected, resource);
         }
 
         [TestMethod]
         public void GetWithArgs()
         {
-            var name = "Common.ArgumentCanNotBeNull";
+            var name = "Common.UnexistingResource";
             string args;
             var resource = UtilResources.Get(name, nameof(args));
+            var expected = name;
 
-            Assert.AreEqual("'args' can not be null", resource);
+            Assert.AreEqual(expected, resource);
         }
     }
 }
