@@ -30,11 +30,11 @@ namespace Celerik.NetCore.Util
         /// <param name="writer">The Newtonsoft.Json.JsonWriter to write to.</param>
         /// <param name="value">The value.</param>
         /// <param name="serializer">The calling serializer.</param>
-        /// <exception cref="ArgumentException">Writer is null.</exception>
+        /// <exception cref="ArgumentNullException">Writer is null.</exception>
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             if (writer == null)
-                throw new ArgumentException(
+                throw new ArgumentNullException(
                     UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(writer)));
 
             writer.WriteValue(EnumUtility.GetDescription((Enum)value));

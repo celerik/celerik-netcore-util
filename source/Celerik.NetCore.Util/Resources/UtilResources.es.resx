@@ -153,7 +153,4 @@
   <data name="TestUtility.AssertThrows.NoThrown" xml:space="preserve">
     <value>Se esperaba una excepción de tipo '{0}' pero no fue lanzada</value>
   </data>
-  <data name="TestUtility.AssertThrows.NullFunc" xml:space="preserve">
-    <value>La función a testear no puede ser nula</value>
-  </data>
 </root>

@@ -19,13 +19,13 @@ namespace Celerik.NetCore.Util
         /// <param name="request">Object with the request arguments.</param>
         /// <returns>The task object representing the asynchronous operation.
         /// </returns>
-        /// <exception cref="ArgumentException">Request is null.</exception>
+        /// <exception cref="ArgumentNullException">Request is null.</exception>
         public static async Task<PaginationResult<TItem>> PaginateAsync<TItem>(
             this IQueryable<TItem> query,
             PaginationRequest request)
         {
             if (request == null)
-                throw new ArgumentException(
+                throw new ArgumentNullException(
                     UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(request)));
 
             int count;
