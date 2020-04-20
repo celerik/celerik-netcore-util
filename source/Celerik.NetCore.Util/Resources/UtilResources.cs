@@ -20,7 +20,10 @@ namespace Celerik.NetCore.Util
         /// <param name="factory">Factory to create IStringLocalizer objects.</param>
         /// <returns>Reference to the current IStringLocalizer instance.</returns>
         public static void Initialize(IStringLocalizerFactory factory)
-            => Factory = factory;
+        {
+            Factory = factory;
+            _localizer = null;
+        }
 
         /// <summary>
         /// Gets a reference to the factory to create IStringLocalizer objects.
@@ -35,7 +38,7 @@ namespace Celerik.NetCore.Util
         {
             get
             {
-                if (_localizer == null)
+                if (_localizer == null && Factory != null)
                     _localizer = Factory.Create(typeof(UtilResources));
 
                 return _localizer;
@@ -48,7 +51,7 @@ namespace Celerik.NetCore.Util
         /// <param name="name">The name of the string resource.</param>
         /// <returns>The string resource.</returns>
         public static string Get(string name)
-            => Localizer[name].Value;
+            => Localizer?[name].Value ?? name;
 
         /// <summary>
         /// Gets the string resource with the given name and formatted with
@@ -58,6 +61,6 @@ namespace Celerik.NetCore.Util
         /// <param name="arguments">The values to format the string with.</param>
         /// <returns>The formatted string resource.</returns>
         public static string Get(string name, params object[] arguments)
-            => Localizer[name, arguments].Value;
+            => Localizer?[name, arguments].Value ?? name;
     }
 }

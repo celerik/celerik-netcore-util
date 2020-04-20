@@ -153,7 +153,4 @@
   <data name="TestUtility.AssertThrows.NoThrown" xml:space="preserve">
     <value>An exception of type '{0}' was expected, but not thrown</value>
   </data>
-  <data name="TestUtility.AssertThrows.NullFunc" xml:space="preserve">
-    <value>The function to test can not be null</value>
-  </data>
 </root>

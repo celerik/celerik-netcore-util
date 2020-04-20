@@ -8,7 +8,7 @@ namespace Celerik.NetCore.Util.Test
     public class StackTraceUtilityTest : UtilBaseTest
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void GetMethodNameInvalid()
         {
             StackTrace stackTrace = null;

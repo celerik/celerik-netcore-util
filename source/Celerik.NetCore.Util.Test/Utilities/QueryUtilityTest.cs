@@ -23,7 +23,7 @@ namespace Celerik.NetCore.Util.Test
         };
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void NullQuery()
         {
             IQueryable<Actress> query = null;
@@ -31,7 +31,7 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void NullPropName()
         {
             _actresses.AsQueryable().OrderBy(null);

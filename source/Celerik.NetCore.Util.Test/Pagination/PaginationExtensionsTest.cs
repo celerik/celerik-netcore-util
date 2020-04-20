@@ -12,7 +12,7 @@ namespace Celerik.NetCore.Util.Test
     public class PaginationExtensionsTest : UtilBaseTest
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public async Task PaginateNullRequest()
         {
             var items = new List<Cat> {

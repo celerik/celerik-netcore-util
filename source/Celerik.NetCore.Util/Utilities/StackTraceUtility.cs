@@ -13,11 +13,11 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <param name="stackTrace">Stack trace to retrieve the top method name.</param>
         /// <returns>Top method name of this stackTrace.</returns>
-        /// <exception cref="ArgumentException">StackTrace is null.</exception>
+        /// <exception cref="ArgumentNullException">StackTrace is null.</exception>
         public static string GetMethodName(this StackTrace stackTrace)
         {
             if (stackTrace == null)
-                throw new ArgumentException(
+                throw new ArgumentNullException(
                     UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(stackTrace)));
 
             var toString = stackTrace.ToString();

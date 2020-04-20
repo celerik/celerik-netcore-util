@@ -43,7 +43,7 @@ namespace Celerik.NetCore.Util.Test
     public class EnumUtilityTest : UtilBaseTest
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void GetAttributeNullValue()
         {
             Enum enumValue = null;

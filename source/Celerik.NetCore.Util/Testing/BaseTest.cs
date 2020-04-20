@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
@@ -32,6 +33,8 @@ namespace Celerik.NetCore.Util
         /// <param name="userClaimValue">The user claim value.</param>
         protected BaseTest(string userClaimKey = null, object userClaimValue = null)
         {
+            CultureInfo.CurrentCulture = new CultureInfo("en");
+
             _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
 
             var services = new ServiceCollection();

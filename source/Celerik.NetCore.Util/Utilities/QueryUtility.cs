@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -69,15 +68,15 @@ namespace Celerik.NetCore.Util
         /// <param name="query">Object to evaluate queries against the data source.</param>
         /// <param name="methodName">OrderBy, OrderByDescending, ThenBy, ThenByDescending.</param>
         /// <param name="propName">The property name to sort by.</param>
-        /// <exception cref="ArgumentException">Query or propName are null.</exception>
+        /// <exception cref="ArgumentNullException">Query or propName are null.</exception>
         private static IOrderedQueryable<TEntity> ApplyOrder<TEntity>(
             IQueryable<TEntity> query, string methodName, string propName)
         {
             if (query == null)
-                throw new ArgumentException(
+                throw new ArgumentNullException(
                     UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(query)));
             if (propName == null)
-                throw new ArgumentException(
+                throw new ArgumentNullException(
                     UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(propName)));
 
             var param = Expression.Parameter(typeof(TEntity), "x");

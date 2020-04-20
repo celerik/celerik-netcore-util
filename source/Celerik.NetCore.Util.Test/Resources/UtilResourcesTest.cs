@@ -6,22 +6,53 @@ namespace Celerik.NetCore.Util.Test
     public class UtilResourcesTest : UtilBaseTest
     {
         [TestMethod]
+        public void NullFactoryGet()
+        {
+            var factory = UtilResources.Factory;
+            UtilResources.Initialize(null);
+
+            var name = "Common.ArgumentCanNotBeNull";
+            var resource = UtilResources.Get(name);
+            var expected = name;
+
+            Assert.AreEqual(expected, resource);
+            UtilResources.Initialize(factory);
+        }
+
+        [TestMethod]
+        public void NullFactoryGetWithArgs()
+        {
+            var factory = UtilResources.Factory;
+            UtilResources.Initialize(null);
+
+            var name = "Common.ArgumentCanNotBeNull";
+            string args;
+            var resource = UtilResources.Get(name, nameof(args));
+            var expected = name;
+
+            Assert.AreEqual(expected, resource);
+            UtilResources.Initialize(factory);
+        }
+
+        [TestMethod]
         public void Get()
         {
-            var name = "The database was deleted!";
+            var name = "Common.UnexistingResource";
             var resource = UtilResources.Get(name);
+            var expected = name;
 
-            Assert.AreEqual(name, resource);
+            Assert.AreEqual(expected, resource);
         }
 
         [TestMethod]
         public void GetWithArgs()
         {
-            var name = "The {0} database couldn´t be deleted!";
-            var args = "ChuckNorrisFacts";
-            var resource = UtilResources.Get(name, args);
+            var name = "Common.UnexistingResource";
+            string args;
+            var resource = UtilResources.Get(name, nameof(args));
+            var expected = name;
 
-            Assert.AreEqual("The ChuckNorrisFacts database couldn´t be deleted!", resource);
+            Assert.AreEqual(expected, resource);
         }
     }
 }

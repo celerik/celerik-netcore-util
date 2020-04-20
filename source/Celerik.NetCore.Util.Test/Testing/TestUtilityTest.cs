@@ -7,7 +7,7 @@ namespace Celerik.NetCore.Util.Test
     public class TestUtilityTest : BaseTest
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void NullFunction()
         {
             TestUtility.AssertThrows<ArgumentException>(null);
