@@ -11,11 +11,10 @@ namespace Celerik.NetCore.Util.Test
             var factory = UtilResources.Factory;
             UtilResources.Initialize(null);
 
-            var name = "Common.ArgumentCanNotBeNull";
+            var name = "The database was deleted!";
             var resource = UtilResources.Get(name);
-            var expected = name;
 
-            Assert.AreEqual(expected, resource);
+            Assert.AreEqual(name, resource);
             UtilResources.Initialize(factory);
         }
 
@@ -25,34 +24,31 @@ namespace Celerik.NetCore.Util.Test
             var factory = UtilResources.Factory;
             UtilResources.Initialize(null);
 
-            var name = "Common.ArgumentCanNotBeNull";
-            string args;
-            var resource = UtilResources.Get(name, nameof(args));
-            var expected = name;
+            var name = "The {0} database couldn´t be deleted!";
+            var args = "ChuckNorrisFacts";
+            var resource = UtilResources.Get(name, args);
 
-            Assert.AreEqual(expected, resource);
+            Assert.AreEqual("The ChuckNorrisFacts database couldn´t be deleted!", resource);
             UtilResources.Initialize(factory);
         }
 
         [TestMethod]
         public void Get()
         {
-            var name = "Common.UnexistingResource";
+            var name = "The database was deleted!";
             var resource = UtilResources.Get(name);
-            var expected = name;
 
-            Assert.AreEqual(expected, resource);
+            Assert.AreEqual(name, resource);
         }
 
         [TestMethod]
         public void GetWithArgs()
         {
-            var name = "Common.UnexistingResource";
-            string args;
-            var resource = UtilResources.Get(name, nameof(args));
-            var expected = name;
+            var name = "The {0} database couldn´t be deleted!";
+            var args = "ChuckNorrisFacts";
+            var resource = UtilResources.Get(name, args);
 
-            Assert.AreEqual(expected, resource);
+            Assert.AreEqual("The ChuckNorrisFacts database couldn´t be deleted!", resource);
         }
     }
 }

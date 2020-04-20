@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 using Microsoft.Extensions.Localization;
 
 namespace Celerik.NetCore.Util
@@ -61,6 +62,7 @@ namespace Celerik.NetCore.Util
         /// <param name="arguments">The values to format the string with.</param>
         /// <returns>The formatted string resource.</returns>
         public static string Get(string name, params object[] arguments)
-            => Localizer?[name, arguments].Value ?? name;
+            => Localizer?[name, arguments].Value ??
+                string.Format(CultureInfo.InvariantCulture, name, arguments);
     }
 }
