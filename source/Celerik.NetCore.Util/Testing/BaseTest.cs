@@ -33,6 +33,8 @@ namespace Celerik.NetCore.Util
         /// <param name="userClaimValue">The user claim value.</param>
         protected BaseTest(string userClaimKey = null, object userClaimValue = null)
         {
+            CultureInfo.CurrentCulture = new CultureInfo("en");
+
             _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
 
             var services = new ServiceCollection();
@@ -45,8 +47,6 @@ namespace Celerik.NetCore.Util
             services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContextAccesor);
 
             InitializeServiceProvier(services);
-            
-            CultureInfo.CurrentCulture = new CultureInfo("en");
             UtilResources.Initialize(stringocalizerFactory);
         }
 
