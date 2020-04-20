@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
@@ -44,6 +45,8 @@ namespace Celerik.NetCore.Util
             services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContextAccesor);
 
             InitializeServiceProvier(services);
+            
+            CultureInfo.CurrentCulture = new CultureInfo("en");
             UtilResources.Initialize(stringocalizerFactory);
         }
 
