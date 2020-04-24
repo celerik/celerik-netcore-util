@@ -203,19 +203,37 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
-        public void IsValidPhoneNumberValid()
+        public void IsValidPasswordValid()
         {
-            var phone = "444 44 44";
-            var isValid = phone.IsValidPhoneNumber();
+            var password = "Juan123456**";
+            var isValid = password.IsValidPassword();
 
             Assert.AreEqual(true, isValid);
         }
 
         [TestMethod]
-        public void IsValidPhoneNumberInvvalid()
+        public void IsValidPasswordInvalid()
+        {
+            var password = "123";
+            var isValid = password.IsValidPassword();
+
+            Assert.AreEqual(false, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidInternationalPhoneValid()
+        {
+            var phone = "+573043499162";
+            var isValid = phone.IsValidInternationalPhone();
+
+            Assert.AreEqual(true, isValid);
+        }
+
+        [TestMethod]
+        public void IsValidInternationalPhoneInvalid()
         {
             var phone = "444 44 44 (Ext. 59)";
-            var isValid = phone.IsValidPhoneNumber();
+            var isValid = phone.IsValidInternationalPhone();
 
             Assert.AreEqual(false, isValid);
         }

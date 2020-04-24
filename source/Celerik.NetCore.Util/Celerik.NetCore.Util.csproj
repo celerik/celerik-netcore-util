@@ -12,7 +12,7 @@
     <PackageId>Celerik.NetCore.Util</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-util</PackageProjectUrl>
-    <PackageReleaseNotes>Added Config Utility</PackageReleaseNotes>
+    <PackageReleaseNotes>Added validations, string resources and config utilities</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, utility-library, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -22,7 +22,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Celerik.NetCore.Util</Title>
-    <Version>2.0.16</Version>
+    <Version>2.0.17</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -34,6 +34,7 @@
   <ItemGroup>
     <PackageReference Include="CryptoHelper" Version="3.0.2" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="libphonenumber-csharp" Version="8.12.2" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

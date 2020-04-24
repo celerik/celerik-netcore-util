@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Text.RegularExpressions;
+using PhoneNumbers;
 
 namespace Celerik.NetCore.Util
 {
@@ -20,9 +22,9 @@ namespace Celerik.NetCore.Util
         public const string NameRegex = @"^[A-zÀ-ú ]+$";
 
         /// <summary>
-        /// Regex for phone numbers.
+        /// Regex for passwords.
         /// </summary>
-        public const string PhoneRegex = @"^(?:\((\+?\d+)?\)|\+?\d+) ?\d*(-?\d{2,3} ?){0,4}$";
+        public const string PasswordRegex = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,50}$";
 
         /// <summary>
         /// Regex for Zip codes.
@@ -116,34 +118,57 @@ namespace Celerik.NetCore.Util
             );
 
         /// <summary>
-        /// Validates wheter this string has a valid email format.
+        /// Validates wheter this string is a valid email format.
         /// </summary>
         /// <param name="str">The string to validate.</param>
-        /// <returns>True if this string has a valid email format.</returns>
+        /// <returns>True if this string is a valid email format.</returns>
         public static bool IsValidEmail(this string str) =>
             new Regex(EmailRegex).IsMatch(str);
 
         /// <summary>
-        /// Validates wheter this string has a valid name format.
+        /// Validates wheter this string is a valid name format.
         /// </summary>
         /// <param name="str">The string to validate.</param>
-        /// <returns>True if this string has a valid name format.</returns>
+        /// <returns>True if this string is a valid name format.</returns>
         public static bool IsValidName(this string str) =>
             new Regex(NameRegex).IsMatch(str);
 
         /// <summary>
-        /// Validates wheter this string has a valid phone number.
+        /// Validates wheter this string is a valid password.
         /// </summary>
         /// <param name="str">The string to validate.</param>
-        /// <returns>True if this string has a valid phone number.</returns>
-        public static bool IsValidPhoneNumber(this string str) =>
-            new Regex(PhoneRegex).IsMatch(str);
+        /// <returns>True if this string is a valid password.</returns>
+        public static bool IsValidPassword(this string str) =>
+            new Regex(PasswordRegex).IsMatch(str);
 
         /// <summary>
-        /// Validates wheter this string has a valid zip code.
+        /// Validates wheter this string is a valid international
+        /// phone number E.164 compilant.
         /// </summary>
         /// <param name="str">The string to validate.</param>
-        /// <returns>True if this string has a valid phone number.</returns>
+        /// <returns>True this string is a valid phone number
+        /// E.164 compilant.</returns>
+        [SuppressMessage("Design", "CA1031:Do not catch general exception types", Justification = "Any exception indicates the number is invalid")]
+        public static bool IsValidInternationalPhone(this string str)
+        {
+            var isValid = false;
+
+            try
+            {
+                var phoneUtil = PhoneNumberUtil.GetInstance();
+                var phoneNumber = phoneUtil.Parse(str, null);
+                isValid = phoneUtil.IsValidNumber(phoneNumber);
+            }
+            catch { }
+            
+            return isValid;
+        }
+
+        /// <summary>
+        /// Validates wheter this string is a valid zip code.
+        /// </summary>
+        /// <param name="str">The string to validate.</param>
+        /// <returns>True if this string is a valid phone number.</returns>
         public static bool IsValidZip(this string str) =>
             new Regex(ZipRegex).IsMatch(str);
     }
