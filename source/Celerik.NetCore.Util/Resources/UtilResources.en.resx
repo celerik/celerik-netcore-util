@@ -123,17 +123,20 @@
   <data name="Common.ConfigurationKeyNotFound" xml:space="preserve">
     <value>Configuration key not found: '{0}'</value>
   </data>
-  <data name="Common.EnvironmentVariableNotFound" xml:space="preserve">
-    <value>Environment variable not found: '{0}'</value>
+  <data name="Common.ConfigurationValueInvalid" xml:space="preserve">
+    <value>Configuration value '{0}' is invalid: '{1}'</value>
   </data>
   <data name="Common.FactoryException" xml:space="preserve">
-    <value>Unable to create an instance of: '{0}'. Invalid '{1}': '{2}'</value>
+    <value>Unable to create an instance of: '{0}'</value>
   </data>
   <data name="Common.IdDoesntExist" xml:space="preserve">
     <value>'{0}' with value '{1}' does not exist</value>
   </data>
   <data name="Common.InjectException" xml:space="preserve">
-    <value>Unable to inject an instance of: '{0}'. Invalid '{1}': '{2}'</value>
+    <value>Unable to inject an instance of: '{0}'</value>
+  </data>
+  <data name="Common.InvalidArguments" xml:space="preserve">
+    <value>Some arguments are invalid, please check</value>
   </data>
   <data name="EmbeddedFileUtility.ReadFile.Exception" xml:space="preserve">
     <value>Failed to read embedded file: '{0}'</value>

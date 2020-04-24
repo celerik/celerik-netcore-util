@@ -123,8 +123,8 @@
   <data name="Common.ConfigurationKeyNotFound" xml:space="preserve">
     <value>Llave de configuración no encontrada: '{0}'</value>
   </data>
-  <data name="Common.EnvironmentVariableNotFound" xml:space="preserve">
-    <value>Variable de entorno no encontrada: '{0}'</value>
+  <data name="Common.ConfigurationValueInvalid" xml:space="preserve">
+    <value>El valor de configuración '{0}' es inválido: '{1}'</value>
   </data>
   <data name="Common.FactoryException" xml:space="preserve">
     <value>No se puede crear una instancia de: '{0}'. '{1}' es inválido: '{2}'</value>
@@ -134,6 +134,9 @@
   </data>
   <data name="Common.InjectException" xml:space="preserve">
     <value>No se puede inyectar una instancia de: '{0}'. '{1}' es inválido: '{2}'</value>
+  </data>
+  <data name="Common.InvalidArguments" xml:space="preserve">
+    <value>Algunos argumentos son inválidos, por favor verifique</value>
   </data>
   <data name="EmbeddedFileUtility.ReadFile.Exception" xml:space="preserve">
     <value>Error al leer el archivo embebido: '{0}'</value>
