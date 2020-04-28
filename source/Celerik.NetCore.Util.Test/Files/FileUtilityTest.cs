@@ -3,7 +3,7 @@
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class FileUtilityTest : UtilBaseTest
+    public class FileUtilityTest
     {
         [TestMethod]
         public void GetAssemblyDirectory()

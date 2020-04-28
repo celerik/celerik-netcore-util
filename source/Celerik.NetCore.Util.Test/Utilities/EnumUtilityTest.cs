@@ -40,7 +40,7 @@ namespace Celerik.NetCore.Util.Test
     }
 
     [TestClass]
-    public class EnumUtilityTest : UtilBaseTest
+    public class EnumUtilityTest
     {
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]

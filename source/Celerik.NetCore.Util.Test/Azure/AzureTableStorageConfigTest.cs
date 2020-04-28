@@ -3,7 +3,7 @@
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class AzureTableStorageConfigTest : UtilBaseTest
+    public class AzureTableStorageConfigTest
     {
         [TestMethod]
         public void Constructor()

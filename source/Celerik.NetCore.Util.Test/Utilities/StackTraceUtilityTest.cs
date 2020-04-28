@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class StackTraceUtilityTest : UtilBaseTest
+    public class StackTraceUtilityTest
     {
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]

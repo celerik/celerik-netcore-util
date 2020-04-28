@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class TestUtilityTest : BaseTest
+    public class TestUtilityTest
     {
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]

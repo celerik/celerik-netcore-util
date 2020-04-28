@@ -13,7 +13,7 @@ namespace Celerik.NetCore.Util.Test
     }
 
     [TestClass]
-    public class SerializeAllContractResolverTest : UtilBaseTest
+    public class SerializeAllContractResolverTest
     {
         [TestMethod]
         public void WithoutContractResolver()

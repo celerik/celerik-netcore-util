@@ -12,7 +12,7 @@ namespace Celerik.NetCore.Util.Test
     }
 
     [TestClass]
-    public class QueryUtilityTest : UtilBaseTest
+    public class QueryUtilityTest
     {
         private readonly List<Actress> _actresses = new List<Actress> {
             new Actress { Name = "Sasha Gray", Rating = 3 },

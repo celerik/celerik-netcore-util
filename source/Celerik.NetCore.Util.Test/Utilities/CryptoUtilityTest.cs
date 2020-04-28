@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class CryptoUtilityTest : UtilBaseTest
+    public class CryptoUtilityTest
     {
         [TestMethod]
         public void HashPassword()

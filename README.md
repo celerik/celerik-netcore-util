@@ -14,7 +14,7 @@
 
 ## What's it
 
-*Celerik.NetCore.Util* provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, exceptions, files, json, pagination, resources, testing, convertions, crypto, enums, queries, stack trace, strings, validations.
+*Celerik.NetCore.Util* provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, files, json, resources, convertions, crypto, enums, queries, stack trace, strings, testing, validations among others.
 
 ## Quick start
 

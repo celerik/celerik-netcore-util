@@ -117,43 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Common.ArgumentCanNotBeNull" xml:space="preserve">
+  <data name="ArgumentCanNotBeNull" xml:space="preserve">
     <value>'{0}' no puede ser nulo</value>
   </data>
-  <data name="Common.ConfigurationKeyNotFound" xml:space="preserve">
-    <value>Llave de configuración no encontrada: '{0}'</value>
-  </data>
-  <data name="Common.ConfigurationValueInvalid" xml:space="preserve">
-    <value>El valor de configuración '{0}' es inválido: '{1}'</value>
-  </data>
-  <data name="Common.FactoryException" xml:space="preserve">
-    <value>No se puede crear una instancia de: '{0}'. '{1}' es inválido: '{2}'</value>
-  </data>
-  <data name="Common.IdDoesntExist" xml:space="preserve">
-    <value>'{0}' con valor '{1}' no existe</value>
-  </data>
-  <data name="Common.InjectException" xml:space="preserve">
-    <value>No se puede inyectar una instancia de: '{0}'. '{1}' es inválido: '{2}'</value>
-  </data>
-  <data name="Common.InvalidArguments" xml:space="preserve">
-    <value>Algunos argumentos son inválidos, por favor verifique</value>
-  </data>
-  <data name="EmbeddedFileUtility.ReadFile.Exception" xml:space="preserve">
+  <data name="ReadEmbeddedFileException" xml:space="preserve">
     <value>Error al leer el archivo embebido: '{0}'</value>
   </data>
-  <data name="EmbeddedFileUtility.ReadJson.Exception" xml:space="preserve">
+  <data name="ReadEmbeddedJsonException" xml:space="preserve">
     <value>Error al convertir el archivo JSON '{0}' al tipo: '{1}'</value>
   </data>
-  <data name="EnumUtility.NotAnEnum" xml:space="preserve">
+  <data name="ArgumentIsNotAnEnum" xml:space="preserve">
     <value>'{0}' no es una enumeración</value>
   </data>
-  <data name="PaginationRequestValidator.Constructor.InvalidSortDirection" xml:space="preserve">
-    <value>'SortDirection' debe ser 'asc' o 'desc'</value>
-  </data>
-  <data name="PaginationRequestValidator.Constructor.InvalidSortKey" xml:space="preserve">
-    <value>'SortKey' debe ser uno de los siguientes valores: '{0}'</value>
-  </data>
-  <data name="TestUtility.AssertThrows.NoThrown" xml:space="preserve">
+  <data name="AssertExceptionNotThrown" xml:space="preserve">
     <value>Se esperaba una excepción de tipo '{0}' pero no fue lanzada</value>
   </data>
 </root>
