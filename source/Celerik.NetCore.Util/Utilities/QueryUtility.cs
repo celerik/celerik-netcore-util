@@ -74,10 +74,10 @@ namespace Celerik.NetCore.Util
         {
             if (query == null)
                 throw new ArgumentNullException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(query)));
+                    UtilResources.Get("ArgumentCanNotBeNull", nameof(query)));
             if (propName == null)
                 throw new ArgumentNullException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(propName)));
+                    UtilResources.Get("ArgumentCanNotBeNull", nameof(propName)));
 
             var param = Expression.Parameter(typeof(TEntity), "x");
             var body = propName.Split('.').Aggregate<string, Expression>(param, Expression.PropertyOrField);

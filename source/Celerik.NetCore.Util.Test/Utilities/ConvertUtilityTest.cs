@@ -3,7 +3,7 @@
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class ConvertUtilityTest : UtilBaseTest
+    public class ConvertUtilityTest
     {
         [TestMethod]
         public void ToBoolValid()

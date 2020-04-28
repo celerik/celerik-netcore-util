@@ -20,7 +20,7 @@ namespace Celerik.NetCore.Util.Test
     }
 
     [TestClass]
-    public class EnumDescriptionJsonConverterTest : UtilBaseTest
+    public class EnumDescriptionJsonConverterTest
     {
         [TestMethod]
         public void SerializeSettedValue()

@@ -3,7 +3,7 @@
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class StringUtilityTest : UtilBaseTest
+    public class StringUtilityTest
     {
         [TestMethod]
         public void FirstUpperRestLower()

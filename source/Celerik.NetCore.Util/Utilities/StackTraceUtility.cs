@@ -18,7 +18,7 @@ namespace Celerik.NetCore.Util
         {
             if (stackTrace == null)
                 throw new ArgumentNullException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(stackTrace)));
+                    UtilResources.Get("ArgumentCanNotBeNull", nameof(stackTrace)));
 
             var toString = stackTrace.ToString();
             var firstLine = toString.Substring(0, toString.IndexOf(Environment.NewLine, StringComparison.InvariantCulture));

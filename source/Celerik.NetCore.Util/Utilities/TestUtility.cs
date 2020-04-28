@@ -20,7 +20,7 @@ namespace Celerik.NetCore.Util
         {
             if (func == null)
                 throw new ArgumentNullException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull"));
+                    UtilResources.Get("ArgumentCanNotBeNull"));
 
             var exceptionThrown = false;
 
@@ -35,7 +35,7 @@ namespace Celerik.NetCore.Util
 
             if (!exceptionThrown)
                 throw new AssertFailedException(
-                    UtilResources.Get("TestUtility.AssertThrows.NoThrown", nameof(TException)));
+                    UtilResources.Get("AssertExceptionNotThrown", nameof(TException)));
         }
     }
 }

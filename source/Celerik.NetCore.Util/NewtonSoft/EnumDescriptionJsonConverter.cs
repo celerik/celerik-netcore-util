@@ -35,7 +35,7 @@ namespace Celerik.NetCore.Util
         {
             if (writer == null)
                 throw new ArgumentNullException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(writer)));
+                    UtilResources.Get("ArgumentCanNotBeNull", nameof(writer)));
 
             writer.WriteValue(EnumUtility.GetDescription((Enum)value));
         }

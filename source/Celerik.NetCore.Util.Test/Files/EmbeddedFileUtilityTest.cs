@@ -16,7 +16,7 @@ namespace Celerik.NetCore.Util.Test
     }
 
     [TestClass]
-    public class EmbeddedFileUtilityTest : UtilBaseTest
+    public class EmbeddedFileUtilityTest
     {
         [TestMethod]
         [ExpectedException(typeof(FileNotFoundException))]

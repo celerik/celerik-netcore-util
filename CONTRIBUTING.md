@@ -7,7 +7,7 @@ The document covers the process for contributing to the code that is hosted on t
 - [DOs and DON'Ts](#dos-and-donts)
 - [Process for contributing](#process-for-contributing)
 
-This repository provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, exceptions, files, json, pagination, resources, testing, convertions, crypto, enums, queries, stack trace, strings, validations.
+This repository provides some custom utilities for .NET Core projects, including: attributes, azure, datetime, files, json, resources, convertions, crypto, enums, queries, stack trace, strings, testing, validations among others.
 
 Issues and tasks for this repository are tracked in [celerik-netcore-util/projects](https://github.com/celerik/celerik-netcore-util/projects).
 
@@ -46,20 +46,15 @@ Celerik.NetCore.Util
   /Attributes
   /Azure
   /DateTime
-  /Exceptions
   /Files
   /Newtonsoft
-  /Pagination
   /Resources
-  /Testing
   /Utilities
 Celerik.NetCore.Util.Test
   /Azure
   /DateTime
-  /Exceptions
   /Files
   /Newtonsoft
-  /Pagination
   /Resources
   /Utilities
 ```

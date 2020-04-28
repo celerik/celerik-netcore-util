@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class LocalDateTest : UtilBaseTest
+    public class LocalDateTest
     {
         [TestMethod]
         public void Now()

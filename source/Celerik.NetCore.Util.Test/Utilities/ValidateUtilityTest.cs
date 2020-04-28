@@ -3,7 +3,7 @@
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class ValidateUtilityTest : UtilBaseTest
+    public class ValidateUtilityTest
     {
         [TestMethod]
         public void IsValidBoolValidLowerTrue()

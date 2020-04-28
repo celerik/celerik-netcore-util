@@ -3,7 +3,7 @@
 namespace Celerik.NetCore.Util.Test
 {
     [TestClass]
-    public class UtilResourcesTest : UtilBaseTest
+    public class UtilResourcesTest
     {
         [TestMethod]
         public void NullFactoryGet()

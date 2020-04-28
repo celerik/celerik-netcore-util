@@ -117,43 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Common.ArgumentCanNotBeNull" xml:space="preserve">
+  <data name="ArgumentCanNotBeNull" xml:space="preserve">
     <value>'{0}' can not be null</value>
   </data>
-  <data name="Common.ConfigurationKeyNotFound" xml:space="preserve">
-    <value>Configuration key not found: '{0}'</value>
-  </data>
-  <data name="Common.ConfigurationValueInvalid" xml:space="preserve">
-    <value>Configuration value '{0}' is invalid: '{1}'</value>
-  </data>
-  <data name="Common.FactoryException" xml:space="preserve">
-    <value>Unable to create an instance of: '{0}'</value>
-  </data>
-  <data name="Common.IdDoesntExist" xml:space="preserve">
-    <value>'{0}' with value '{1}' does not exist</value>
-  </data>
-  <data name="Common.InjectException" xml:space="preserve">
-    <value>Unable to inject an instance of: '{0}'</value>
-  </data>
-  <data name="Common.InvalidArguments" xml:space="preserve">
-    <value>Some arguments are invalid, please check</value>
-  </data>
-  <data name="EmbeddedFileUtility.ReadFile.Exception" xml:space="preserve">
+  <data name="ReadEmbeddedFileException" xml:space="preserve">
     <value>Failed to read embedded file: '{0}'</value>
   </data>
-  <data name="EmbeddedFileUtility.ReadJson.Exception" xml:space="preserve">
+  <data name="ReadEmbeddedJsonException" xml:space="preserve">
     <value>Failed to convert JSON file '{0}' to type: '{1}'</value>
   </data>
-  <data name="EnumUtility.NotAnEnum" xml:space="preserve">
+  <data name="ArgumentIsNotAnEnum" xml:space="preserve">
     <value>'{0}' is not an enum</value>
   </data>
-  <data name="PaginationRequestValidator.Constructor.InvalidSortDirection" xml:space="preserve">
-    <value>'SortDirection' must be 'asc' or 'desc'</value>
-  </data>
-  <data name="PaginationRequestValidator.Constructor.InvalidSortKey" xml:space="preserve">
-    <value>'SortKey' must be one of following values: '{0}'</value>
-  </data>
-  <data name="TestUtility.AssertThrows.NoThrown" xml:space="preserve">
+  <data name="AssertExceptionNotThrown" xml:space="preserve">
     <value>An exception of type '{0}' was expected, but not thrown</value>
   </data>
 </root>
