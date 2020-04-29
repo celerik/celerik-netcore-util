@@ -1,0 +1,6 @@
+﻿{
+  "AssertExceptionNotThrown": "Se esperaba una excepción de tipo '{0}' pero no fue lanzada",
+  "ErrorReadingEmbeddedFile": "Error leyendo archivo embebido",
+  "ErrorLoadingEmbeddedJsonFile": "Error al cargar el archivo JSON en el tipo: '{0}'",
+  "TypeIsNotAnEnum": "'{0}' no es una enumeración"
+}

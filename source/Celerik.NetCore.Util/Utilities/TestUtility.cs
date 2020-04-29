@@ -19,8 +19,7 @@ namespace Celerik.NetCore.Util
         public static void AssertThrows<TException>(Action func) where TException : Exception
         {
             if (func == null)
-                throw new ArgumentNullException(
-                    UtilResources.Get("ArgumentCanNotBeNull"));
+                throw new ArgumentNullException(nameof(func));
 
             var exceptionThrown = false;
 

@@ -24,8 +24,7 @@ namespace Celerik.NetCore.Util
             where TAttribute : Attribute
         {
             if (value == null)
-                throw new ArgumentNullException(
-                    UtilResources.Get("ArgumentCanNotBeNull", nameof(value)));
+                throw new ArgumentNullException(nameof(value));
 
             var type = typeof(TAttribute);
             var memberInfo = value.GetType().GetMember(value.ToString());
@@ -56,15 +55,15 @@ namespace Celerik.NetCore.Util
         /// <param name="defaultVal">Value to return by default in case the value doesn't
         /// exist in the enum.</param>
         /// <returns>Code of the enumeration.</returns>
-        /// <exception cref="InvalidOperationException">TEnum is not an enum.</exception>
+        /// <exception cref="InvalidCastException">TEnum is not an enum.</exception>
         public static string GetCode<TEnum>(int value, string defaultVal = null)
             where TEnum : struct, IConvertible
         {
             var type = typeof(TEnum);
 
             if (!type.IsEnum)
-                throw new InvalidOperationException(
-                    UtilResources.Get("ArgumentIsNotAnEnum", type));
+                throw new InvalidCastException(
+                    UtilResources.Get("TypeIsNotAnEnum", type));
             if (!Enum.IsDefined(typeof(TEnum), value))
                 return defaultVal;
 
@@ -92,15 +91,15 @@ namespace Celerik.NetCore.Util
         /// <param name="defaultVal">Value to return by default in case the value doesn't
         /// exist in the enum.</param>
         /// <returns>Description of the enumeration.</returns>
-        /// <exception cref="InvalidOperationException">TEnum is not an enum.</exception>
+        /// <exception cref="InvalidCastException">TEnum is not an enum.</exception>
         public static string GetDescription<TEnum>(int value, string defaultVal = null)
             where TEnum : struct, IConvertible
         {
             var type = typeof(TEnum);
 
             if (!type.IsEnum)
-                throw new InvalidOperationException(
-                    UtilResources.Get("ArgumentIsNotAnEnum", type));
+                throw new InvalidCastException(
+                    UtilResources.Get("TypeIsNotAnEnum", type));
             if (!Enum.IsDefined(typeof(TEnum), value))
                 return defaultVal;
 
@@ -116,15 +115,15 @@ namespace Celerik.NetCore.Util
         /// <returns>Enum value for the given CodeAttribute.</returns>
         /// <param name="defaultVal">Value to return by default in case the code
         /// doesn't exist in the enum.</param>
-        /// <exception cref="InvalidOperationException">TEnum is not an enum.</exception>
+        /// <exception cref="InvalidCastException">TEnum is not an enum.</exception>
         public static TEnum GetValueFromCode<TEnum>(string code, TEnum defaultVal = default)
             where TEnum : struct, IConvertible
         {
             var type = typeof(TEnum);
 
             if (!type.IsEnum)
-                throw new InvalidOperationException(
-                    UtilResources.Get("ArgumentIsNotAnEnum", type));
+                throw new InvalidCastException(
+                    UtilResources.Get("TypeIsNotAnEnum", type));
 
             foreach (var field in type.GetFields())
             {
@@ -148,15 +147,15 @@ namespace Celerik.NetCore.Util
         /// <returns>Enum value for the given DescriptionAttribute.</returns>
         /// <param name="defaultVal">Value to return by default in case the description
         /// doesn't exist in the enum.</param>
-        /// <exception cref="InvalidOperationException">TEnum is not an enum.</exception>
+        /// <exception cref="InvalidCastException">TEnum is not an enum.</exception>
         public static TEnum GetValueFromDescription<TEnum>(string description, TEnum defaultVal = default)
             where TEnum : struct, IConvertible
         {
             var type = typeof(TEnum);
 
             if (!type.IsEnum)
-                throw new InvalidOperationException(
-                    UtilResources.Get("ArgumentIsNotAnEnum", type));
+                throw new InvalidCastException(
+                    UtilResources.Get("TypeIsNotAnEnum", type));
 
             foreach (var field in type.GetFields())
             {
@@ -180,15 +179,15 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <typeparam name="TEnum">Enum type.</typeparam>
         /// <returns>Minimun value of the enum.</returns>
-        /// <exception cref="InvalidOperationException">TEnum is not an enum.</exception>
+        /// <exception cref="InvalidCastException">TEnum is not an enum.</exception>
         public static int GetMin<TEnum>()
             where TEnum : struct, IConvertible
         {
             var type = typeof(TEnum);
 
             if (!type.IsEnum)
-                throw new InvalidOperationException(
-                    UtilResources.Get("ArgumentIsNotAnEnum", type));
+                throw new InvalidCastException(
+                    UtilResources.Get("TypeIsNotAnEnum", type));
 
             var min = Enum.GetValues(typeof(TEnum)).Cast<int>().Min();
             return min;
@@ -199,15 +198,15 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <typeparam name="TEnum">Enum type.</typeparam>
         /// <returns>Maximun value of the enum.</returns>
-        /// <exception cref="InvalidOperationException">TEnum is not an enum.</exception>
+        /// <exception cref="InvalidCastException">TEnum is not an enum.</exception>
         public static int GetMax<TEnum>()
             where TEnum : struct, IConvertible
         {
             var type = typeof(TEnum);
 
             if (!type.IsEnum)
-                throw new InvalidOperationException(
-                    UtilResources.Get("ArgumentIsNotAnEnum", type));
+                throw new InvalidCastException(
+                    UtilResources.Get("TypeIsNotAnEnum", type));
 
             var max = Enum.GetValues(typeof(TEnum)).Cast<int>().Max();
             return max;
@@ -220,14 +219,14 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <typeparam name="TEnum">Enum type.</typeparam>
         /// <returns>Enumeration converted to a list of strings.</returns>
-        /// <exception cref="InvalidOperationException">TEnum is not an enum.</exception>
+        /// <exception cref="InvalidCastException">TEnum is not an enum.</exception>
         public static List<string> ToList<TEnum>() where TEnum : struct, IConvertible
         {
             var type = typeof(TEnum);
 
             if (!type.IsEnum)
-                throw new InvalidOperationException(
-                    UtilResources.Get("ArgumentIsNotAnEnum", type));
+                throw new InvalidCastException(
+                    UtilResources.Get("TypeIsNotAnEnum", type));
 
             var list = new List<string>();
             var fields = type.GetFields().OrderBy(field => field.MetadataToken);
@@ -258,7 +257,7 @@ namespace Celerik.NetCore.Util
         /// <param name="descriptionProp">Property name for the description in the list.</param>
         /// <param name="codeProp">Property name for the code in the list.</param>
         /// <returns>Enumeration converted to a list of objects.</returns>
-        /// <exception cref="InvalidOperationException">TEnum is not an enum.</exception>
+        /// <exception cref="InvalidCastException">TEnum is not an enum.</exception>
         public static List<TList> ToList<TEnum, TList>(
             string valueProp,
             string descriptionProp,
@@ -269,8 +268,8 @@ namespace Celerik.NetCore.Util
             var type = typeof(TEnum);
 
             if (!type.IsEnum)
-                throw new InvalidOperationException(
-                    UtilResources.Get("ArgumentIsNotAnEnum", type));
+                throw new InvalidCastException(
+                    UtilResources.Get("TypeIsNotAnEnum", type));
 
             var list = new List<TList>();
             var fields = type.GetFields().OrderBy(field => field.MetadataToken);

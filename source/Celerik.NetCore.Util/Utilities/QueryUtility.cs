@@ -73,11 +73,9 @@ namespace Celerik.NetCore.Util
             IQueryable<TEntity> query, string methodName, string propName)
         {
             if (query == null)
-                throw new ArgumentNullException(
-                    UtilResources.Get("ArgumentCanNotBeNull", nameof(query)));
+                throw new ArgumentNullException(nameof(query));
             if (propName == null)
-                throw new ArgumentNullException(
-                    UtilResources.Get("ArgumentCanNotBeNull", nameof(propName)));
+                throw new ArgumentNullException(nameof(propName));
 
             var param = Expression.Parameter(typeof(TEntity), "x");
             var body = propName.Split('.').Aggregate<string, Expression>(param, Expression.PropertyOrField);

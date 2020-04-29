@@ -15,9 +15,9 @@ namespace Celerik.NetCore.Util.Test
 
         [TestMethod]
         [ExpectedException(typeof(AssertFailedException))]
-        public void ExceptionNotTriggered()
+        public void AssertFailedException()
         {
-            TestUtility.AssertThrows<ArgumentException>(() => { 
+            TestUtility.AssertThrows<ArgumentException>(() => {
             });
         }
     }

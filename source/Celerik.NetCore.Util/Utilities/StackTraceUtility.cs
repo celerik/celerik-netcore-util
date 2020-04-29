@@ -17,8 +17,7 @@ namespace Celerik.NetCore.Util
         public static string GetMethodName(this StackTrace stackTrace)
         {
             if (stackTrace == null)
-                throw new ArgumentNullException(
-                    UtilResources.Get("ArgumentCanNotBeNull", nameof(stackTrace)));
+                throw new ArgumentNullException(nameof(stackTrace));
 
             var toString = stackTrace.ToString();
             var firstLine = toString.Substring(0, toString.IndexOf(Environment.NewLine, StringComparison.InvariantCulture));

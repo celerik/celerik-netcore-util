@@ -98,7 +98,7 @@ namespace Celerik.NetCore.Util.Test
             enumCode = EnumUtility.GetCode<SouthParkCharacterType>(enumValue, defaultVal: "RD");
             Assert.AreEqual("RD", enumCode);
 
-            TestUtility.AssertThrows<InvalidOperationException>(() => {
+            TestUtility.AssertThrows<InvalidCastException>(() => {
                 EnumUtility.GetCode<int>(0);
             });
         }
@@ -130,7 +130,7 @@ namespace Celerik.NetCore.Util.Test
             enumDescription = EnumUtility.GetDescription<SouthParkCharacterType>(enumValue, defaultVal: "Randy");
             Assert.AreEqual("Randy", enumDescription);
 
-            TestUtility.AssertThrows<InvalidOperationException>(() => {
+            TestUtility.AssertThrows<InvalidCastException>(() => {
                 EnumUtility.GetDescription<int>(0);
             });
         }
@@ -150,7 +150,7 @@ namespace Celerik.NetCore.Util.Test
             enumValue = EnumUtility.GetValueFromCode(enumCode, defaultVal: SouthParkCharacterType.Chef);
             Assert.AreEqual(SouthParkCharacterType.Chef, enumValue);
 
-            TestUtility.AssertThrows<InvalidOperationException>(() => {
+            TestUtility.AssertThrows<InvalidCastException>(() => {
                 EnumUtility.GetValueFromCode<int>(null);
             });
         }
@@ -170,7 +170,7 @@ namespace Celerik.NetCore.Util.Test
             enumValue = EnumUtility.GetValueFromDescription(enumDescription, defaultVal: SouthParkCharacterType.Chef);
             Assert.AreEqual(SouthParkCharacterType.Chef, enumValue);
 
-            TestUtility.AssertThrows<InvalidOperationException>(() => {
+            TestUtility.AssertThrows<InvalidCastException>(() => {
                 EnumUtility.GetValueFromDescription<int>(null);
             });
         }
@@ -180,7 +180,7 @@ namespace Celerik.NetCore.Util.Test
         {
             Assert.AreEqual(1, EnumUtility.GetMin<SouthParkCharacterType>());
 
-            TestUtility.AssertThrows<InvalidOperationException>(() => {
+            TestUtility.AssertThrows<InvalidCastException>(() => {
                 EnumUtility.GetMin<int>();
             });
         }
@@ -190,13 +190,13 @@ namespace Celerik.NetCore.Util.Test
         {
             Assert.AreEqual(5, EnumUtility.GetMax<SouthParkCharacterType>());
 
-            TestUtility.AssertThrows<InvalidOperationException>(() => {
+            TestUtility.AssertThrows<InvalidCastException>(() => {
                 EnumUtility.GetMax<int>();
             });
         }
 
         [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
+        [ExpectedException(typeof(InvalidCastException))]
         public void ToStringListNotAnEnum()
         {
             EnumUtility.ToList<int>();
@@ -216,7 +216,7 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
+        [ExpectedException(typeof(InvalidCastException))]
         public void ToObjectListNotAnEnum()
         {
             EnumUtility.ToList<int, object>("Id", "Name");
@@ -244,7 +244,7 @@ namespace Celerik.NetCore.Util.Test
             Assert.AreEqual(5, southParkList[4].Id);
             Assert.AreEqual("Chef", southParkList[4].Name);
 
-            TestUtility.AssertThrows<InvalidOperationException>(() => {
+            TestUtility.AssertThrows<InvalidCastException>(() => {
                 EnumUtility.ToList<int, SouthParkCharacter>("Id", "Name");
             });
         }

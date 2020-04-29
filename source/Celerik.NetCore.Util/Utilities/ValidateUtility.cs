@@ -160,7 +160,7 @@ namespace Celerik.NetCore.Util
                 isValid = phoneUtil.IsValidNumber(phoneNumber);
             }
             catch { }
-            
+
             return isValid;
         }
 
