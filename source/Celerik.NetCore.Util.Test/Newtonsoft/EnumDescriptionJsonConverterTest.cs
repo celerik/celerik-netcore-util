@@ -28,7 +28,7 @@ namespace Celerik.NetCore.Util.Test
             var me = new Employee { Personality = PersonalityType.Choleric };
             var meSerialized = JsonConvert.SerializeObject(me);
 
-            Assert.AreEqual(true, meSerialized.Contains(":()", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, meSerialized.ContainsInvariant(":()"));
         }
 
         [TestMethod]
@@ -37,7 +37,7 @@ namespace Celerik.NetCore.Util.Test
             var me = new Employee();
             var meSerialized = JsonConvert.SerializeObject(me);
 
-            Assert.AreEqual(true, meSerialized.Contains("null", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, meSerialized.ContainsInvariant("null"));
         }
 
         [TestMethod]
@@ -50,14 +50,11 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void WriteJsonNullWritter()
         {
             var converter = new EnumDescriptionJsonConverter();
-
-            TestUtility.AssertThrows<ArgumentException>(() => {
-                converter.WriteJson(null, "{}", new JsonSerializer());
-            });
-
+            converter.WriteJson(null, "{}", new JsonSerializer());
         }
 
         [TestMethod]

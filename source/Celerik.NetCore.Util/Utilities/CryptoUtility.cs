@@ -13,8 +13,8 @@ namespace Celerik.NetCore.Util
         /// <param name="password">The password to generate a hash value for.</param>
         /// <returns>The hash value for password as a base-64-encoded string.</returns>
         /// <exception cref="System.ArgumentNullException">Password is null.</exception>
-        public static string HashPassword(string password) =>
-            Crypto.HashPassword(password);
+        public static string HashPassword(string password)
+            => Crypto.HashPassword(password);
 
         /// <summary>
         /// Determines whether the specified RFC 2898 hash and password are a
@@ -28,7 +28,7 @@ namespace Celerik.NetCore.Util
         /// password; otherwise, false.</returns>
         /// <exception cref="System.ArgumentNullException">HashedPassword or password
         /// are null.</exception>
-        public static bool VerifyHashedPassword(string hash, string password) =>
-            Crypto.VerifyHashedPassword(hash, password);
+        public static bool VerifyHashedPassword(string hash, string password)
+            => Crypto.VerifyHashedPassword(hash, password);
     }
 }

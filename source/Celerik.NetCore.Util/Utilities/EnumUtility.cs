@@ -42,9 +42,9 @@ namespace Celerik.NetCore.Util
         /// <param name="defaultVal">Value to return by default in case the enumeration
         /// does not have a CodeAttribute.</param>
         /// <returns>Code of this enumeration.</returns>
-        public static string GetCode(this Enum value, string defaultVal = null) =>
-            value.GetAttribute<CodeAttribute>()?.Code ??
-            defaultVal;
+        public static string GetCode(this Enum value, string defaultVal = null)
+            => value.GetAttribute<CodeAttribute>()?.Code
+                ?? defaultVal;
 
         /// <summary>
         /// Gets the CodeAttribute value of an enumeration matching the
@@ -78,9 +78,9 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <param name="value">Enum value.</param>
         /// <returns>Description of this enumeration.</returns>
-        public static string GetDescription(this Enum value) =>
-            value.GetAttribute<DescriptionAttribute>()?.Description ??
-            value.ToString();
+        public static string GetDescription(this Enum value)
+            => value.GetAttribute<DescriptionAttribute>()?.Description
+                ?? value.ToString();
 
         /// <summary>
         /// Gets the DescriptionAttribute value of an enumeration matching the

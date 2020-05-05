@@ -5,28 +5,40 @@ namespace Celerik.NetCore.Util.Test
     [TestClass]
     public class ConvertUtilityTest
     {
-        [TestMethod]
-        public void ToBoolValid()
-        {
-            var str = "True";
-            var boolean = str.ToBool();
-            Assert.AreEqual(true, boolean);
-        }
+        [DataTestMethod]
+        [DataRow("true")]
+        [DataRow("True")]
+        public void ToBoolValid(string str)
+            => Assert.AreEqual(true, str.ToBool());
 
         [DataTestMethod]
-        [DataRow("Verdadero")]
         [DataRow(null)]
+        [DataRow("")]
+        [DataRow("Verdadero")]
+        [DataRow("Falso")]
+        [DataRow("TrUe")]
+        [DataRow("FALSE")]
         public void ToBoolInvalid(string str)
-        {
-            var boolean = str.ToBool();
-            Assert.AreEqual(default, boolean);
-        }
+            => Assert.AreEqual(default, str.ToBool());
+
+        [TestMethod]
+        [DataRow("1000000")]
+        public void ToIntInvariantValid(string str)
+            => Assert.AreEqual(1000000, str.ToIntInvariant());
+
+        [DataTestMethod]
+        [DataRow(null)]
+        [DataRow("")]
+        [DataRow("1,1")]
+        [DataRow("2147483648")]
+        public void ToIntInvariantInvalid(string str)
+            => Assert.AreEqual(default, str.ToIntInvariant());
 
         [TestMethod]
         public void ToDecimalValid()
         {
             var str = "1.1";
-            var number = str.ToDecimal();
+            var number = str.ToDecimalInvariant();
             Assert.AreEqual(1.1m, number);
         }
 
@@ -35,7 +47,7 @@ namespace Celerik.NetCore.Util.Test
         [DataRow(null)]
         public void ToDecimalInvalid(string str)
         {
-            var number = str.ToDecimal();
+            var number = str.ToDecimalInvariant();
             Assert.AreEqual(default, number);
         }
 
@@ -70,23 +82,6 @@ namespace Celerik.NetCore.Util.Test
         public void ToFloatInvalid(string str)
         {
             var number = str.ToFloat();
-            Assert.AreEqual(default, number);
-        }
-
-        [TestMethod]
-        public void ToIntValid()
-        {
-            var str = "-1";
-            var number = str.ToInt();
-            Assert.AreEqual(-1, number);
-        }
-
-        [DataTestMethod]
-        [DataRow("1,1")]
-        [DataRow(null)]
-        public void ToIntInvalid(string str)
-        {
-            var number = str.ToInt();
             Assert.AreEqual(default, number);
         }
 

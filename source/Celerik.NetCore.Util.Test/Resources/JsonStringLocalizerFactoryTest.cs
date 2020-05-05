@@ -10,6 +10,9 @@ namespace Celerik.NetCore.Util.Test
         {
             var factory = new JsonStringLocalizerFactory("Resources");
             var localizer = factory.Create(typeof(UtilResources));
+#pragma warning disable CS0618 // Type or member is obsolete
+            var all = localizer.WithCulture(new System.Globalization.CultureInfo("es")).GetAllStrings(true);
+#pragma warning restore CS0618 // Type or member is obsolete
         }
 
         [TestMethod]

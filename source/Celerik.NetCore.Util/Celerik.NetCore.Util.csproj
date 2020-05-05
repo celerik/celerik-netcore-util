@@ -34,7 +34,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Resources\UtilResources-en.json" />
+    <EmbeddedResource Include="Resources\UtilResources.json" />
     <EmbeddedResource Include="Resources\UtilResources-es.json" />
   </ItemGroup>
 

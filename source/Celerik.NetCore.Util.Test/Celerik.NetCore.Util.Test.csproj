@@ -61,4 +61,8 @@
     <ProjectReference Include="..\Celerik.NetCore.Util\Celerik.NetCore.Util.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>

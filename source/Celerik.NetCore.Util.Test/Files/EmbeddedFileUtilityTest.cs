@@ -30,9 +30,9 @@ namespace Celerik.NetCore.Util.Test
         {
             var movies = EmbeddedFileUtility.ReadFile("Files.Movies.json");
 
-            Assert.AreEqual(true, movies.Contains("Enter the Dragon", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, movies.Contains("Kill Bill", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, movies.Contains("Terminator", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, movies.ContainsInvariant("Enter the Dragon"));
+            Assert.AreEqual(true, movies.ContainsInvariant("Kill Bill"));
+            Assert.AreEqual(true, movies.ContainsInvariant("Terminator"));
         }
 
         [TestMethod]
@@ -40,9 +40,9 @@ namespace Celerik.NetCore.Util.Test
         {
             var movies = EmbeddedFileUtility.ReadFile("Files.Movies.json", typeof(EmbeddedFileUtilityTest).Assembly);
 
-            Assert.AreEqual(true, movies.Contains("Enter the Dragon", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, movies.Contains("Kill Bill", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, movies.Contains("Terminator", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, movies.ContainsInvariant("Enter the Dragon"));
+            Assert.AreEqual(true, movies.ContainsInvariant("Kill Bill"));
+            Assert.AreEqual(true, movies.ContainsInvariant("Terminator"));
         }
 
         [TestMethod]

@@ -1,14 +1,13 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
+﻿using System.Globalization;
 using Microsoft.Extensions.Localization;
 
 namespace Celerik.NetCore.Util
 {
     /// <summary>
-    /// Provides localized strings for this layer.
+    /// Provides localized strings for this layer. By default,
+    /// a JsonStringLocalizerFactory is used.
     /// </summary>
-    [SuppressMessage("Design", "CA1052:Static holder types should be Static or NotInheritable", Justification = "This class is instantiable by the String Localizer Factory")]
-    public class UtilResources
+    public static class UtilResources
     {
         /// <summary>
         /// Reference to the current IStringLocalizer instance.
@@ -18,12 +17,18 @@ namespace Celerik.NetCore.Util
         /// <summary>
         /// Performs static initialization for this class.
         /// </summary>
-        /// <param name="factory">Factory to create IStringLocalizer objects.</param>
-        /// <returns>Reference to the current IStringLocalizer instance.</returns>
+        static UtilResources()
+            => Initialize(new JsonStringLocalizerFactory());
+
+        /// <summary>
+        /// Performs static initialization for this class.
+        /// </summary>
+        /// <param name="factory">Factory to create IStringLocalizer objects.
+        /// </param>
         public static void Initialize(IStringLocalizerFactory factory)
         {
-            Factory = factory;
             _localizer = null;
+            Factory = factory;
         }
 
         /// <summary>
@@ -56,13 +61,13 @@ namespace Celerik.NetCore.Util
 
         /// <summary>
         /// Gets the string resource with the given name and formatted with
-        /// the supplied arguments.
+        /// the supplied arguments, using the current culture.
         /// </summary>
         /// <param name="name">The name of the string resource.</param>
         /// <param name="arguments">The values to format the string with.</param>
         /// <returns>The formatted string resource.</returns>
         public static string Get(string name, params object[] arguments)
-            => Localizer?[name, arguments].Value ??
-                string.Format(CultureInfo.InvariantCulture, name, arguments);
+            => Localizer?[name, arguments].Value
+                ?? string.Format(CultureInfo.CurrentCulture, name, arguments);
     }
 }

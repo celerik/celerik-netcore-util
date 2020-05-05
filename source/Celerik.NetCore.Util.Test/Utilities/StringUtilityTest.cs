@@ -9,7 +9,7 @@ namespace Celerik.NetCore.Util.Test
         public void FirstUpperRestLower()
         {
             Assert.AreEqual(null, ((string)null).FirstUpperRestLower());
-            Assert.AreEqual(string.Empty, string.Empty.FirstUpperRestLower());
+            Assert.AreEqual("", "".FirstUpperRestLower());
             Assert.AreEqual("A", "A".FirstUpperRestLower());
             Assert.AreEqual("A", "a".FirstUpperRestLower());
             Assert.AreEqual("Abc", "ABC".FirstUpperRestLower());

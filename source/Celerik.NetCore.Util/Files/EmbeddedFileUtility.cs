@@ -93,7 +93,7 @@ namespace Celerik.NetCore.Util
             }
             catch
             {
-                var msg = UtilResources.Get("ErrorLoadingEmbeddedJsonFile", typeof(TOutputType));
+                var msg = UtilResources.Get("ErrorDeserializingJson", typeof(TOutputType));
                 throw new FileLoadException(msg, fileName);
             }
         }

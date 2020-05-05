@@ -5,6 +5,88 @@ namespace Celerik.NetCore.Util.Test
     [TestClass]
     public class ValidateUtilityTest
     {
+        [DataTestMethod]
+        [DataRow("juan@crepsandwafles.com")]
+        [DataRow("juan-123@postreselastor.com")]
+        [DataRow("j@j.co")]
+        public void IsValidEmailValid(string email)
+            => Assert.AreEqual(true, email.IsValidEmail());
+
+        [DataTestMethod]
+        [DataRow(null)]
+        [DataRow("")]
+        [DataRow("juan@pollosmario")]
+        [DataRow("j@j.co.")]
+        [DataRow("@postreselastor.com")]
+        [DataRow("12345")]
+        [DataRow("abcde.com")]
+        [DataRow("https://abcde.com")]
+        public void IsValidEmailInvalid(string email)
+            => Assert.AreEqual(false, email.IsValidEmail());
+
+        [DataTestMethod]
+        [DataRow("Juan")]
+        [DataRow("Juan David")]
+        [DataRow("Juan David León")]
+        [DataRow("A")]
+        [DataRow("Ab")]
+        public void IsValidNameValid(string name)
+            => Assert.AreEqual(true, name.IsValidPersonName());
+
+        [DataTestMethod]
+        [DataRow(null)]
+        [DataRow("")]
+        [DataRow("12345")]
+        [DataRow("Juan David 19")]
+        [DataRow("Juan ")]
+        [DataRow(" Juan")]
+        [TestMethod]
+        public void IsValidNameInvalid(string name)
+            => Assert.AreEqual(false, name.IsValidPersonName());
+
+
+
+
+
+
+
+
+        [DataTestMethod]
+        [DataRow("Juan123456**")]
+        [DataRow("111AAAbbb###")]
+        public void IsValidStandardPasswordValid(string password)
+            => Assert.AreEqual(true, password.IsValidStandardPassword());
+
+        [DataTestMethod]
+        [DataRow(null)]
+        [DataRow("")]
+        [DataRow("123")]
+        [DataRow("123abc")]
+        [DataRow("123abcDEF")]
+        [DataRow("Ju1*")]
+        public void IsValidStandardPasswordInvalid(string password)
+            => Assert.AreEqual(false, password.IsValidStandardPassword());
+
+        [DataTestMethod]
+        [DataRow("12345")]
+        [DataRow("12345-6789")]
+        public void IsValidZipPlus4Valid(string zip)
+            => Assert.AreEqual(true, zip.IsValidZipPlus4());
+
+        [DataTestMethod]
+        [DataRow(null)]
+        [DataRow("")]
+        [DataRow("1234")]
+        [DataRow("1234-5678")]
+        public void IsValidZipPlus4Invalid(string zip)
+            => Assert.AreEqual(false, zip.IsValidZipPlus4());
+
+
+
+
+
+
+
         [TestMethod]
         public void IsValidBoolValidLowerTrue()
         {
@@ -54,71 +136,71 @@ namespace Celerik.NetCore.Util.Test
         [DataRow("665")]
         [DataRow("665.99")]
         [DataRow("-665.99")]
-        public void IsValidDecimalValid(string number)
+        public void IsValidDecimalInvariantValid(string number)
         {
-            Assert.AreEqual(true, number.IsValidDecimal());
+            Assert.AreEqual(true, number.IsValidDecimalInvariant());
         }
 
         [DataTestMethod]
         [DataRow("665,99")]
         [DataRow("$665")]
         [DataRow("22 acacia avenue")]
-        public void IsValidDecimalInvalid(string number)
+        public void IsValidDecimalInvariantInvalid(string number)
         {
-            Assert.AreEqual(false, number.IsValidDecimal());
+            Assert.AreEqual(false, number.IsValidDecimalInvariant());
         }
 
         [DataTestMethod]
         [DataRow("665")]
         [DataRow("665.99")]
         [DataRow("-665.99")]
-        public void IsValidDoubleValid(string number)
+        public void IsValidDoubleInvariantValid(string number)
         {
-            Assert.AreEqual(true, number.IsValidDouble());
+            Assert.AreEqual(true, number.IsValidDoubleInvariant());
         }
 
         [DataTestMethod]
         [DataRow("665,99")]
         [DataRow("$665")]
         [DataRow("22 acacia avenue")]
-        public void IsValidDoubleInvalid(string number)
+        public void IsValidDoubleInvariantInvalid(string number)
         {
-            Assert.AreEqual(false, number.IsValidDouble());
+            Assert.AreEqual(false, number.IsValidDoubleInvariant());
         }
 
         [DataTestMethod]
         [DataRow("665")]
         [DataRow("665.99")]
         [DataRow("-665.99")]
-        public void IsValidFloatValid(string number)
+        public void IsValidFloatInvariantValid(string number)
         {
-            Assert.AreEqual(true, number.IsValidFloat());
+            Assert.AreEqual(true, number.IsValidFloatInvariant());
         }
 
         [DataTestMethod]
         [DataRow("665,99")]
         [DataRow("$665")]
         [DataRow("22 acacia avenue")]
-        public void IsValidFloatInvalid(string number)
+        public void IsValidFloatInvariantInvalid(string number)
         {
-            Assert.AreEqual(false, number.IsValidFloat());
+            Assert.AreEqual(false, number.IsValidFloatInvariant());
         }
 
         [DataTestMethod]
         [DataRow("665")]
         [DataRow("-665")]
-        public void IsValidIntValid(string number)
+        public void IsValidIntInvariantValid(string number)
         {
-            Assert.AreEqual(true, number.IsValidInt());
+            Assert.AreEqual(true, number.IsValidIntInvariant());
         }
 
         [DataTestMethod]
         [DataRow("665,99")]
         [DataRow("$665")]
         [DataRow("22 acacia avenue")]
-        public void IsValidIntInvalid(string number)
+        public void IsValidIntInvariantInvalid(string number)
         {
-            Assert.AreEqual(false, number.IsValidInt());
+            Assert.AreEqual(false, number.IsValidIntInvariant());
         }
 
         [TestMethod]
@@ -149,73 +231,19 @@ namespace Celerik.NetCore.Util.Test
         }
 
         [TestMethod]
-        public void IsValidDateValid()
+        public void IsValidDateInvariantValid()
         {
             var date = "2000/01/01";
-            var isValid = date.IsValidDate();
+            var isValid = date.IsValidDateInvariant();
 
             Assert.AreEqual(true, isValid);
         }
 
         [TestMethod]
-        public void IsValidDateInvalid()
+        public void IsValidDateInvariantInvalid()
         {
             var date = "2000/50/01";
-            var isValid = date.IsValidDate();
-
-            Assert.AreEqual(false, isValid);
-        }
-
-        [TestMethod]
-        public void IsValidEmailValid()
-        {
-            var email = "juan@pollosmario.com";
-            var isValid = email.IsValidEmail();
-
-            Assert.AreEqual(true, isValid);
-        }
-
-        [TestMethod]
-        public void IsValidEmailInvalid()
-        {
-            var email = "juan@pollosmario";
-            var isValid = email.IsValidEmail();
-
-            Assert.AreEqual(false, isValid);
-        }
-
-        [TestMethod]
-        public void IsValidNameValid()
-        {
-            var name = "José Covid";
-            var isValid = name.IsValidName();
-
-            Assert.AreEqual(true, isValid);
-        }
-
-        [TestMethod]
-        public void IsValidNameInvalid()
-        {
-            var name = "José Covid 19";
-            var isValid = name.IsValidName();
-
-            Assert.AreEqual(false, isValid);
-        }
-
-        [TestMethod]
-        public void IsValidPasswordValid()
-        {
-            var password = "Juan123456**";
-            var isValid = password.IsValidPassword();
-
-            Assert.AreEqual(true, isValid);
-        }
-
-        [TestMethod]
-        public void IsValidPasswordInvalid()
-        {
-            var password = "123";
-            var isValid = password.IsValidPassword();
+            var isValid = date.IsValidDateInvariant();
 
             Assert.AreEqual(false, isValid);
         }
@@ -238,22 +266,6 @@ namespace Celerik.NetCore.Util.Test
             Assert.AreEqual(false, isValid);
         }
 
-        [TestMethod]
-        public void IsValidZipValid()
-        {
-            var zip = "123456";
-            var isValid = zip.IsValidZip();
-
-            Assert.AreEqual(true, isValid);
-        }
-
-        [TestMethod]
-        public void IsValidZipInvalid()
-        {
-            var zip = "123";
-            var isValid = zip.IsValidZip();
-
-            Assert.AreEqual(false, isValid);
-        }
+        
     }
 }
