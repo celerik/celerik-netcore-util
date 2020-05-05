@@ -23,7 +23,7 @@ namespace Celerik.NetCore.Util.Test
         private readonly ITableStorageClient<Person> Client
             = CreateClient(new TableStorageConfig
             {
-                ConnectionString = "DefaultEndpointsProtocol=https;AccountName=celerikjcuartaspoc;AccountKey=4FkJvkzT1g9bj+R9JeBJn08a+yfwUxys8Y0m6TUzVnJaXIjuJQ05yvxSIDQrib1WrEA81mxuxk9TcCmqHTyCTw==;EndpointSuffix=core.windows.net",
+                ConnectionString = "DefaultEndpointsProtocol=https;AccountName=fakeaccount;AccountKey=123456==;EndpointSuffix=core.windows.net",
                 TableName = nameof(Person)
             });
 
