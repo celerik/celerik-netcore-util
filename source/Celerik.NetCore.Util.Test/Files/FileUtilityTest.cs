@@ -6,9 +6,9 @@ namespace Celerik.NetCore.Util.Test
     public class FileUtilityTest
     {
         [TestMethod]
-        public void GetAssemblyDirectory()
+        public void GetExecutingAssemblyDir()
         {
-            var directory = FileUtility.GetAssemblyDirectory();
+            var directory = FileUtility.GetExecutingAssemblyDir();
             Assert.AreNotEqual(null, directory);
         }
     }

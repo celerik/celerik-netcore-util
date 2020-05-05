@@ -34,8 +34,7 @@ namespace Celerik.NetCore.Util
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             if (writer == null)
-                throw new ArgumentNullException(
-                    UtilResources.Get("ArgumentCanNotBeNull", nameof(writer)));
+                throw new ArgumentNullException(nameof(writer));
 
             writer.WriteValue(EnumUtility.GetDescription((Enum)value));
         }

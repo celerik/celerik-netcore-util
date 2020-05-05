@@ -28,10 +28,10 @@ namespace Celerik.NetCore.Util.Test
 
             var metalJson = JsonConvert.SerializeObject(metallica);
 
-            Assert.AreEqual(true, metalJson.Contains("James Hetfield", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, metalJson.Contains("Kirk Hammett", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, metalJson.Contains("Cliff Burton", StringComparison.InvariantCulture));
-            Assert.AreEqual(false, metalJson.Contains("Lars Ulrich", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, metalJson.ContainsInvariant("James Hetfield"));
+            Assert.AreEqual(true, metalJson.ContainsInvariant("Kirk Hammett"));
+            Assert.AreEqual(true, metalJson.ContainsInvariant("Cliff Burton"));
+            Assert.AreEqual(false, metalJson.ContainsInvariant("Lars Ulrich"));
         }
 
         [TestMethod]
@@ -52,10 +52,10 @@ namespace Celerik.NetCore.Util.Test
 
             var ironJson = JsonConvert.SerializeObject(ironMaiden, ironSettings);
 
-            Assert.AreEqual(true, ironJson.Contains("Paul Di'Anno", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, ironJson.Contains("Dave Murray", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, ironJson.Contains("Steve Harvey", StringComparison.InvariantCulture));
-            Assert.AreEqual(true, ironJson.Contains("El Pibe Valderrama", StringComparison.InvariantCulture));
+            Assert.AreEqual(true, ironJson.ContainsInvariant("Paul Di'Anno"));
+            Assert.AreEqual(true, ironJson.ContainsInvariant("Dave Murray"));
+            Assert.AreEqual(true, ironJson.ContainsInvariant("Steve Harvey"));
+            Assert.AreEqual(true, ironJson.ContainsInvariant("El Pibe Valderrama"));
         }
     }
 }

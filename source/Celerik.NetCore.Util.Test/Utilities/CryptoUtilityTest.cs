@@ -7,6 +7,7 @@ namespace Celerik.NetCore.Util.Test
     public class CryptoUtilityTest
     {
         [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void HashPassword()
         {
             var password = "AlexaPlayLaPituca";
@@ -17,13 +18,11 @@ namespace Celerik.NetCore.Util.Test
             Assert.AreEqual(true, hash2.Length > 0);
             Assert.AreNotEqual(hash1, hash2);
 
-            TestUtility.AssertThrows<ArgumentNullException>(() =>
-            {
-                CryptoUtility.HashPassword(null);
-            });
+            CryptoUtility.HashPassword(null);
         }
 
         [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void VerifyHashedPassword()
         {
             var password = "AlexaPlayLaPequenaWendyZulca";
@@ -32,10 +31,7 @@ namespace Celerik.NetCore.Util.Test
 
             Assert.AreEqual(true, isValidHash);
 
-            TestUtility.AssertThrows<ArgumentNullException>(() =>
-            {
-                CryptoUtility.VerifyHashedPassword(null, null);
-            });
+            CryptoUtility.VerifyHashedPassword(null, null);
         }
     }
 }

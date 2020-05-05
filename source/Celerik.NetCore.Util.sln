@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celerik.NetCore.Util", "Celerik.NetCore.Util\Celerik.NetCore.Util.csproj", "{3621ADB6-48BE-4C74-8A16-2389E1C299BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celerik.NetCore.Util.Test", "Celerik.NetCore.Util.Test\Celerik.NetCore.Util.Test.csproj", "{A2281A58-42C5-48F7-8233-8F87587CCAB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celerik.NetCore.Util.Test", "Celerik.NetCore.Util.Test\Celerik.NetCore.Util.Test.csproj", "{09F09EA1-16A2-49F9-AF3C-D50D0AE49AE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +24,10 @@ Global
 		{3621ADB6-48BE-4C74-8A16-2389E1C299BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3621ADB6-48BE-4C74-8A16-2389E1C299BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3621ADB6-48BE-4C74-8A16-2389E1C299BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2281A58-42C5-48F7-8233-8F87587CCAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2281A58-42C5-48F7-8233-8F87587CCAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2281A58-42C5-48F7-8233-8F87587CCAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2281A58-42C5-48F7-8233-8F87587CCAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F09EA1-16A2-49F9-AF3C-D50D0AE49AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F09EA1-16A2-49F9-AF3C-D50D0AE49AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F09EA1-16A2-49F9-AF3C-D50D0AE49AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F09EA1-16A2-49F9-AF3C-D50D0AE49AE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

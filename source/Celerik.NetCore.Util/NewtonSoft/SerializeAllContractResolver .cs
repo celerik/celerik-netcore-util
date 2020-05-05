@@ -6,8 +6,8 @@ using Newtonsoft.Json.Serialization;
 namespace Celerik.NetCore.Util
 {
     /// <summary>
-    /// Contract resolver to serialize all props in an object not taking into
-    /// account the JsonIgnore attribute.
+    /// Contract resolver to serialize all props in an object by not
+    /// taking into account the JsonIgnore attribute.
     /// </summary>
     /// <example>
     ///     <code>

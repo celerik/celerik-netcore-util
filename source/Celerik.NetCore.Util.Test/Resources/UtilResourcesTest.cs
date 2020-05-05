@@ -19,7 +19,7 @@ namespace Celerik.NetCore.Util.Test
         public LocalizedString this[string name]
             => new LocalizedString(name, name);
         public LocalizedString this[string name, params object[] arguments]
-            => new LocalizedString(name, string.Format(name, arguments));
+            => new LocalizedString(name, string.Format(CultureInfo.CurrentCulture, name, arguments));
         public IEnumerable<LocalizedString> GetAllStrings(bool includeParentCultures)
             => throw new NotImplementedException();
         public IStringLocalizer WithCulture(CultureInfo culture)

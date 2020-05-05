@@ -1,5 +1,4 @@
-﻿using System.Globalization;
-using System.Linq;
+﻿using System.Linq;
 
 namespace Celerik.NetCore.Util
 {
@@ -9,8 +8,8 @@ namespace Celerik.NetCore.Util
     public static class StringUtility
     {
         /// <summary>
-        /// Converts the first char of this string to UpperCase and the rest to
-        /// LowerCase.
+        /// Converts the first char of this string to UpperCase and
+        /// the rest to LowerCase.
         /// </summary>
         /// <param name="str">The string to be converted.</param>
         /// <returns>First char in UpperCase and rest in LowerCase.</returns>
@@ -20,7 +19,7 @@ namespace Celerik.NetCore.Util
                 return str;
 
             var firstUpper = str.First()
-                .ToString(CultureInfo.InvariantCulture)
+                .ToString()
                 .ToUpperInvariant();
 
             var restLower = str

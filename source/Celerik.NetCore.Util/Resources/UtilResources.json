@@ -1,0 +1,14 @@
+﻿{
+  "ArgumentCanNotBeEmpty": "{0} can not be empty",
+  "AssertExceptionNotThrown": "An exception of type '{0}' was expected, but was not thrown",
+  "DllNotFound": "Dll not found: '{0}'",
+  "ErrorDeserializingJson": "Error deserializing JSON to type: '{0}'",
+  "ErrorReadingEmbeddedFile": "Error reading embedded file",
+  "InvalidConnectionString": "Invalid connection string",
+  "InvalidTableName": "Invalid table name: '{0}'",
+  "TableStorageEntityExists": "An entity with PartitionKey='{0}' and RowKey='{1}' already exists",
+  "TableStorageEntityNotExists": "There is no entity with PartitionKey='{0}' and RowKey='{1}'",
+  "TableStorageException": "Error performing Table Storage operation: '{0}'. Details: {1}",
+  "TableStorageReservedName": "'{0}' is a reserved Table Storage name",
+  "TypeIsNotAnEnum": "'{0}' is not an enum"
+}
