@@ -3,7 +3,7 @@ name: build
 on: [push]
 
 env:
-  DOTNET_VERSION: 3.1.100
+  DOTNET_VERSION: 6.0.305
   SOLUTION_FILE: '**/*.sln'
   TEST_PROJECT: '**/**/*Test.csproj'
   TEST_FOLDER: './source/*.Test/'
