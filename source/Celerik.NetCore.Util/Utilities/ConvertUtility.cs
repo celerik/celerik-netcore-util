@@ -68,12 +68,6 @@ namespace Celerik.NetCore.Util
                 ? decimal.Parse(str, CultureInfo.InvariantCulture)
                 : defaultVal;
 
-
-
-
-
-
-
         /// <summary>
         /// Convert this string to an DateTime by using invariant culture.
         /// </summary>
