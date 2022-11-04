@@ -430,12 +430,12 @@ namespace Celerik.NetCore.Util.Test
             => await Client.DeleteAsync(entity: null);
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [ExpectedException(typeof(PropNullException))]
         public async Task DeleteByEntityNullPartitionKey()
             => await Client.DeleteAsync(new Person { PartitionKey = null });
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [ExpectedException(typeof(PropNullException))]
         public async Task DeleteByEntityNullRowKey()
             => await Client.DeleteAsync(new Person { RowKey = null });
 

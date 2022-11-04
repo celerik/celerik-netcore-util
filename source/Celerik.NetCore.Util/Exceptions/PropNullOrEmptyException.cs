@@ -3,7 +3,7 @@
 namespace Celerik.NetCore.Util
 {
     /// <summary>
-    /// Represents errors that occur when a required argument is
+    /// Represents errors that occur when a required property is
     /// null or empty.
     /// </summary>
     public class PropNullOrEmptyException : Exception
@@ -34,7 +34,7 @@ namespace Celerik.NetCore.Util
         /// the current exception, or a null reference if no inner exception
         /// is specified.</param>
         public PropNullOrEmptyException(string propName, Exception innerException)
-            : base(UtilResources.Get("ArgumentNullOrEmptyException", propName), innerException)
+            : base(UtilResources.Get("PropNullOrEmptyException", propName), innerException)
         {
         }
     }

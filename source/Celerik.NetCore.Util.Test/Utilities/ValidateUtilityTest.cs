@@ -44,13 +44,6 @@ namespace Celerik.NetCore.Util.Test
         public void IsValidNameInvalid(string name)
             => Assert.AreEqual(false, name.IsValidPersonName());
 
-
-
-
-
-
-
-
         [DataTestMethod]
         [DataRow("Juan123456**")]
         [DataRow("111AAAbbb###")]
@@ -80,12 +73,6 @@ namespace Celerik.NetCore.Util.Test
         [DataRow("1234-5678")]
         public void IsValidZipPlus4Invalid(string zip)
             => Assert.AreEqual(false, zip.IsValidZipPlus4());
-
-
-
-
-
-
 
         [TestMethod]
         public void IsValidBoolValidLowerTrue()
@@ -265,7 +252,5 @@ namespace Celerik.NetCore.Util.Test
 
             Assert.AreEqual(false, isValid);
         }
-
-        
     }
 }

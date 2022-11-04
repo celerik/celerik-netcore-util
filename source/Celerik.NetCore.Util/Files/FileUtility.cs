@@ -31,8 +31,15 @@ namespace Celerik.NetCore.Util
         /// <param name="fileName">The file name.</param>
         /// <returns>Full path of a file that is placed in the executing
         /// assembly directory.</returns>
+        /// <exception cref="ArgumentNullOrEmptyException">The fileName is null
+        /// or empty.</exception>
         public static string LocateFileInExecutingAssemblyDir(string fileName)
-            => $"{GetExecutingAssemblyDir()}{Path.DirectorySeparatorChar}{fileName}";
+        {
+            if (string.IsNullOrEmpty(fileName))
+                throw new ArgumentNullOrEmptyException(nameof(fileName));
+
+            return $"{GetExecutingAssemblyDir()}{Path.DirectorySeparatorChar}{fileName}";
+        }
 
         /// <summary>
         /// Checks if the passed-in fileName exists in the executing
@@ -41,6 +48,8 @@ namespace Celerik.NetCore.Util
         /// <param name="fileName">The file name.</param>
         /// <returns>True if the passed-in fileName exists in the executing
         /// assembly directory.</returns>
+        /// <exception cref="ArgumentNullOrEmptyException">The fileName is null
+        /// or empty.</exception>
         public static bool ExistsFileInExecutingAssemblyDir(string fileName)
             => File.Exists(LocateFileInExecutingAssemblyDir(fileName));
     }

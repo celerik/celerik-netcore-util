@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Celerik.NetCore.Util.Test
 {
@@ -6,20 +7,19 @@ namespace Celerik.NetCore.Util.Test
     public class JsonStringLocalizerFactoryTest
     {
         [TestMethod]
+        [Obsolete]
         public void CreateFromType()
         {
             var factory = new JsonStringLocalizerFactory("Resources");
             var localizer = factory.Create(typeof(UtilResources));
-#pragma warning disable CS0618 // Type or member is obsolete
-            var all = localizer.WithCulture(new System.Globalization.CultureInfo("es")).GetAllStrings(true);
-#pragma warning restore CS0618 // Type or member is obsolete
+            _ = localizer.WithCulture(new System.Globalization.CultureInfo("es")).GetAllStrings(true);
         }
 
         [TestMethod]
         public void CreateFromBaseName()
         {
             var factory = new JsonStringLocalizerFactory("Resources");
-            var localizer = factory.Create("Celerik.NetCore.Util", "UtilResources");
+            _ = factory.Create("Celerik.NetCore.Util", "UtilResources");
         }
     }
 }
