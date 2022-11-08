@@ -74,6 +74,8 @@ jobs:
         name: nupkg
     - name: Setup nuget
       uses: NuGet/setup-nuget@v1.0.2
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       with:
         nuget-version: latest
     - name: Add github package source
