@@ -1,9 +1,6 @@
 name: deploy
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 env:
   DOTNET_VERSION: 6.0.x
@@ -32,15 +29,6 @@ jobs:
       run: dotnet build ${{env.SOLUTION_FILE}} --configuration Release
     - name: Run unit tests
       run: dotnet test ${{env.TEST_PROJECT}}
-    - name: Generate coverage report
-      run: |
-        cd ${{env.TEST_FOLDER}}
-        dotnet test /p:CollectCoverage=true /p:CoverletOutput=../ /p:CoverletOutputFormat=lcov
-    - name: Publish coverage report to coveralls.io
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        path-to-lcov: ${{env.COVERAGE_FILE}}
 
   deploy_to_nuget:
     needs: build
@@ -56,11 +44,6 @@ jobs:
       with:
         name: nupkg
         path: package
-    - name: Publish package to nuget.org
-      run: dotnet nuget push **/*.nupkg
-           --source ${{ env.NUGET_PACKAGE_PUSH_URL }}
-           --api-key ${{ env.NUGET_PACKAGE_API_KEY }}
-           --skip-duplicate
 
   deploy_to_github:
     needs: deploy_to_nuget
