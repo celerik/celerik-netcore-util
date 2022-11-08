@@ -151,7 +151,7 @@ namespace Celerik.NetCore.Util
                 var operation = TableOperation.Insert(entity);
                 var result = await ExecuteAsync(operation);
 
-                ExceptionChecker.AssertHttp200Code(result.HttpStatusCode);
+                ExceptionThrower.AssertHttp200Code(result.HttpStatusCode);
 
                 entity = (TElement)(dynamic)result.Result;
                 return entity;
@@ -203,7 +203,7 @@ namespace Celerik.NetCore.Util
                 };
 
                 var result = await ExecuteAsync(operation);
-                ExceptionChecker.AssertHttp200Code(result.HttpStatusCode);
+                ExceptionThrower.AssertHttp200Code(result.HttpStatusCode);
 
                 entity = (TElement)(dynamic)result.Result;
                 return entity;
@@ -235,7 +235,7 @@ namespace Celerik.NetCore.Util
                 var operation = TableOperation.Delete(entity);
                 var result = await ExecuteAsync(operation);
 
-                ExceptionChecker.AssertHttp200Code(result.HttpStatusCode);
+                ExceptionThrower.AssertHttp200Code(result.HttpStatusCode);
 
                 entity = (TElement)(dynamic)result.Result;
                 return entity;
@@ -251,6 +251,10 @@ namespace Celerik.NetCore.Util
         {
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity));
+            if (entity.PartitionKey == null)
+                throw new PropNullException(nameof(entity.PartitionKey));
+            if (entity.RowKey == null)
+                throw new PropNullException(nameof(entity.RowKey));
 
             var result = await DeleteAsync(entity.PartitionKey, entity.RowKey);
             return result;

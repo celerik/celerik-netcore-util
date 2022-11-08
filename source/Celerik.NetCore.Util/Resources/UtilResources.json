@@ -1,14 +1,20 @@
 ﻿{
-  "ArgumentCanNotBeEmpty": "{0} can not be empty",
+  "ArgumentCanNotBeEmpty": "'{0}' can not be empty",
+  "ArgumentNullOrEmptyException": "'{0}' can not be null or empty",
   "AssertExceptionNotThrown": "An exception of type '{0}' was expected, but was not thrown",
+  "AssertHttp200Code": "Expecting a 2xx HttpStatusCode but received '{0}'",
   "DllNotFound": "Dll not found: '{0}'",
   "ErrorDeserializingJson": "Error deserializing JSON to type: '{0}'",
   "ErrorReadingEmbeddedFile": "Error reading embedded file",
   "InvalidConnectionString": "Invalid connection string",
   "InvalidTableName": "Invalid table name: '{0}'",
+  "MaximumExceededException": "'{0}' can not be greater than '{1}', current value is '{2}'",
+  "MinimunSubceededException": "'{0}' can not be lower than '{1}', current value is '{2}'",
+  "PropNullException": "'{0}' can not be null",
+  "PropNullOrEmptyException": "'{0}' can not be null or empty",
   "TableStorageEntityExists": "An entity with PartitionKey='{0}' and RowKey='{1}' already exists",
   "TableStorageEntityNotExists": "There is no entity with PartitionKey='{0}' and RowKey='{1}'",
-  "TableStorageException": "Error performing Table Storage operation: '{0}'. Details: {1}",
+  "TableStorageException": "Error performing Table Storage operation: '{0}'. Details: '{1}'",
   "TableStorageReservedName": "'{0}' is a reserved Table Storage name",
   "TypeIsNotAnEnum": "'{0}' is not an enum"
 }

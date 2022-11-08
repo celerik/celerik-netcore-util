@@ -20,15 +20,19 @@ namespace Celerik.NetCore.Util
         /// null, we search the resource into the calling assembly.</param>
         /// <returns>Content of the embedded file existing into the
         /// specified assembly.</returns>
+        /// <exception cref="ArgumentNullOrEmptyException">The fileName is null
+        /// or empty.</exception>
         /// <exception cref="FileNotFoundException">The embedded file could not
         /// be found.</exception>
         public static string ReadFile(string fileName, Assembly assembly = null)
         {
+            if (string.IsNullOrEmpty(fileName))
+                throw new ArgumentNullOrEmptyException(nameof(fileName));
+            if (assembly == null)
+                assembly = Assembly.GetCallingAssembly();
+
             try
             {
-                if (assembly == null)
-                    assembly = Assembly.GetCallingAssembly();
-
                 var namespce = assembly.FullName.Split(',')[0];
                 fileName = $"{namespce}.{fileName}";
 
@@ -60,6 +64,8 @@ namespace Celerik.NetCore.Util
         /// serialized without taking into account the JsonIgnore attribute.</param>
         /// <returns>Content of the embedded JSON file loaded into the
         /// specified Type.</returns>
+        /// <exception cref="ArgumentNullOrEmptyException">The fileName is null
+        /// or empty.</exception>
         /// <exception cref="FileNotFoundException">The embedded JSON file could not
         /// be found.</exception>
         /// <exception cref="FileLoadException">There was an error when trying to
@@ -68,6 +74,8 @@ namespace Celerik.NetCore.Util
         public static TOutputType ReadJson<TOutputType>(
             string fileName, Assembly assembly = null, bool serializeAll = true)
         {
+            if (string.IsNullOrEmpty(fileName))
+                throw new ArgumentNullOrEmptyException(nameof(fileName));
             if (assembly == null)
                 assembly = Assembly.GetCallingAssembly();
 

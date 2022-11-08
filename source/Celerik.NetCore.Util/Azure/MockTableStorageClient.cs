@@ -81,21 +81,20 @@ namespace Celerik.NetCore.Util
         }
 
         /// <summary>
-        /// 
+        /// Merges the source object into the target object.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="target"></param>
-        /// <param name="source"></param>
-        /// <returns></returns>
+        /// <typeparam name="T">The type of objects to be merged.</typeparam>
+        /// <param name="target">The target object.</param>
+        /// <param name="source">The source object.</param>
+        /// <returns>The merged object.</returns>
         public static T Merge<T>(T target, T source)
         {
             typeof(T)
-            .GetProperties()
-            .Select((PropertyInfo x) => new KeyValuePair<PropertyInfo, object>(x, x.GetValue(source, null)))
-            .Where((KeyValuePair<PropertyInfo, object> x) => x.Value != null).ToList()
-            .ForEach((KeyValuePair<PropertyInfo, object> x) => x.Key.SetValue(target, x.Value, null));
+                .GetProperties()
+                .Select((PropertyInfo x) => new KeyValuePair<PropertyInfo, object>(x, x.GetValue(source, null)))
+                .Where((KeyValuePair<PropertyInfo, object> x) => x.Value != null).ToList()
+                .ForEach((KeyValuePair<PropertyInfo, object> x) => x.Key.SetValue(target, x.Value, null));
 
-            //return the modified copy of Target
             return target;
         }
 

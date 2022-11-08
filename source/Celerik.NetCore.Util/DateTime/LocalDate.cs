@@ -31,17 +31,15 @@ namespace Celerik.NetCore.Util
         public LocalDate(double utcOffset)
         {
             if (utcOffset < MinUtcOffset)
-                throw new MinimunExceedException(nameof(utcOffset), MinUtcOffset, utcOffset);
+                throw new MinimunSubceededException(nameof(utcOffset), MinUtcOffset, utcOffset);
             if (utcOffset > MaxUtcOffset)
-                throw new MaximumExceedException(nameof(utcOffset), MaxUtcOffset, utcOffset);
+                throw new MaximumExceededException(nameof(utcOffset), MaxUtcOffset, utcOffset);
 
             var hours = (int)utcOffset;
             var minutes = (int)(Math.Round(utcOffset - Math.Truncate(utcOffset), 2) * 100);
 
             if (minutes > 59)
-                throw new MaximumExceedException(nameof(minutes), 59, minutes);
-            //if (minutes % 15 != 0)
-            //    throw new ArgumentException("Minutes should be a multiple of 15");
+                throw new MaximumExceededException(nameof(minutes), 59, minutes);
 
             _timeZone = TimeZoneInfo.CreateCustomTimeZone(
                 id: $"UTC {utcOffset}",
