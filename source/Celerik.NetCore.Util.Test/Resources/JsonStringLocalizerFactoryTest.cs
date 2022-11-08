@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Celerik.NetCore.Util.Test
 {
@@ -7,12 +6,11 @@ namespace Celerik.NetCore.Util.Test
     public class JsonStringLocalizerFactoryTest
     {
         [TestMethod]
-        [Obsolete]
         public void CreateFromType()
         {
             var factory = new JsonStringLocalizerFactory("Resources");
             var localizer = factory.Create(typeof(UtilResources));
-            _ = localizer.WithCulture(new System.Globalization.CultureInfo("es")).GetAllStrings(true);
+            _ = localizer.GetAllStrings(true);
         }
 
         [TestMethod]
