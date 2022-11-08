@@ -11,7 +11,7 @@ env:
   NUGET_PACKAGE_PUSH_URL: 'https://api.nuget.org/v3/index.json'
   NUGET_PACKAGE_API_KEY: ${{ secrets.NUGET_PACKAGE_API_KEY }}
   GITHUB_PACKAGE_PUSH_URL: 'https://nuget.pkg.github.com/equisoide/index.json'
-  GITHUB_PACKAGE_PUSH_USR: 'equisoide'
+  GITHUB_PACKAGE_PUSH_USR: 'celerik'
 
 jobs:
   build:
