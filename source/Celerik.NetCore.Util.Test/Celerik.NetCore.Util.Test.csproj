@@ -21,7 +21,7 @@
     <SignAssembly>false</SignAssembly>
     <Summary>Test project for Celerik.NetCore.Util.</Summary>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Title>Celerik.NetCore.Util.Test</Title>
     <Version>3.0.3</Version>
   </PropertyGroup>
