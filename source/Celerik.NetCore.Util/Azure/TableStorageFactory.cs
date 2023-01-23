@@ -27,26 +27,5 @@ namespace Celerik.NetCore.Util
                 TableStorageProvider.Mock => new MockTableStorageClient<TElement>(config),
                 _ => new AzureTableStorageClient<TElement>(config)
             };
-
-        /// <summary>
-        /// Delete the table specified by the tableNamem from ITableStorageClient instance based on the
-        /// passed-in provider.
-        /// </summary>
-        /// <typeparam name="TElement">The type of table entity.</typeparam>
-        /// <param name="config">Configuration to access the Table Storage.
-        /// </param>
-        /// <param name="provider">Defines the provider used to build the
-        /// instance. By default it is set to Azure Table Storage.</param>
-        /// <returns>ITableStorageClient instance based on the passed-in
-        /// provider.</returns>
-        public static ITableStorageClient<TElement> DeleteAsync<TElement>(
-            TableStorageConfig config,
-            TableStorageProvider provider = TableStorageProvider.Azure)
-                where TElement : ITableEntity, new()
-            => provider switch
-            {
-                TableStorageProvider.Mock => new MockTableStorageClient<TElement>(config),
-                _ => new AzureTableStorageClient<TElement>(config)
-            };
     }
 }
