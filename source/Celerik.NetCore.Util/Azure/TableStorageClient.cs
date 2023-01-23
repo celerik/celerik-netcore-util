@@ -273,8 +273,8 @@ namespace Celerik.NetCore.Util
         /// </summary>
         /// <returns>The task object representing the asynchronous operation.
         /// </returns>
-        protected virtual async Task DeleteIfExistsAsync()
-            => await Task.FromResult(0);
+        protected virtual async Task<bool> DeleteIfExistsAsync()
+            => await Task.FromResult(false);
 
         /// <summary>
         /// Executes the passed-in table operation.
