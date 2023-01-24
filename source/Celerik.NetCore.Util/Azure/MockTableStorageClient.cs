@@ -111,5 +111,9 @@ namespace Celerik.NetCore.Util
 
             return await Task.FromResult(result);
         }
+
+        /// <inheritdoc />
+        public override async Task<bool> DeleteIfExistsAsync()
+            => await Task.FromResult(true);
     }
 }
