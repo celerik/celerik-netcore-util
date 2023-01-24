@@ -23,7 +23,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>net7.0</TargetFramework>
     <Title>Celerik.NetCore.Util.Test</Title>
-    <Version>3.0.3</Version>
+    <Version>3.0.4</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

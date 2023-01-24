@@ -112,5 +112,13 @@ namespace Celerik.NetCore.Util
         /// <exception cref="TableStorageException">If there was an
         /// error performing the operation.</exception>
         Task<TElement> DeleteAsync(TElement entity);
+
+        /// <summary>
+        /// Delete the table specified by the tableName from ITableStorageClient instance based on the
+        /// passed-in provider.
+        /// </summary>
+        /// <returns>The task object representing the asynchronous operation.
+        /// </returns>
+        Task<bool> DeleteIfExistsAsync();
     }
 }
