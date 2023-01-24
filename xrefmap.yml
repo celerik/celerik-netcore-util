@@ -1,0 +1,1849 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Celerik.NetCore.Util
+  name: Celerik.NetCore.Util
+  href: api/Celerik.NetCore.Util.html
+  commentId: N:Celerik.NetCore.Util
+  fullName: Celerik.NetCore.Util
+  nameWithType: Celerik.NetCore.Util
+- uid: Celerik.NetCore.Util.ArgumentNullOrEmptyException
+  name: ArgumentNullOrEmptyException
+  href: api/Celerik.NetCore.Util.ArgumentNullOrEmptyException.html
+  commentId: T:Celerik.NetCore.Util.ArgumentNullOrEmptyException
+  fullName: Celerik.NetCore.Util.ArgumentNullOrEmptyException
+  nameWithType: ArgumentNullOrEmptyException
+- uid: Celerik.NetCore.Util.ArgumentNullOrEmptyException.#ctor
+  name: ArgumentNullOrEmptyException()
+  href: api/Celerik.NetCore.Util.ArgumentNullOrEmptyException.html#Celerik_NetCore_Util_ArgumentNullOrEmptyException__ctor
+  commentId: M:Celerik.NetCore.Util.ArgumentNullOrEmptyException.#ctor
+  fullName: Celerik.NetCore.Util.ArgumentNullOrEmptyException.ArgumentNullOrEmptyException()
+  nameWithType: ArgumentNullOrEmptyException.ArgumentNullOrEmptyException()
+- uid: Celerik.NetCore.Util.ArgumentNullOrEmptyException.#ctor(System.String)
+  name: ArgumentNullOrEmptyException(String)
+  href: api/Celerik.NetCore.Util.ArgumentNullOrEmptyException.html#Celerik_NetCore_Util_ArgumentNullOrEmptyException__ctor_System_String_
+  commentId: M:Celerik.NetCore.Util.ArgumentNullOrEmptyException.#ctor(System.String)
+  fullName: Celerik.NetCore.Util.ArgumentNullOrEmptyException.ArgumentNullOrEmptyException(System.String)
+  nameWithType: ArgumentNullOrEmptyException.ArgumentNullOrEmptyException(String)
+- uid: Celerik.NetCore.Util.ArgumentNullOrEmptyException.#ctor(System.String,System.Exception)
+  name: ArgumentNullOrEmptyException(String, Exception)
+  href: api/Celerik.NetCore.Util.ArgumentNullOrEmptyException.html#Celerik_NetCore_Util_ArgumentNullOrEmptyException__ctor_System_String_System_Exception_
+  commentId: M:Celerik.NetCore.Util.ArgumentNullOrEmptyException.#ctor(System.String,System.Exception)
+  fullName: Celerik.NetCore.Util.ArgumentNullOrEmptyException.ArgumentNullOrEmptyException(System.String, System.Exception)
+  nameWithType: ArgumentNullOrEmptyException.ArgumentNullOrEmptyException(String, Exception)
+- uid: Celerik.NetCore.Util.ArgumentNullOrEmptyException.#ctor*
+  name: ArgumentNullOrEmptyException
+  href: api/Celerik.NetCore.Util.ArgumentNullOrEmptyException.html#Celerik_NetCore_Util_ArgumentNullOrEmptyException__ctor_
+  commentId: Overload:Celerik.NetCore.Util.ArgumentNullOrEmptyException.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ArgumentNullOrEmptyException.ArgumentNullOrEmptyException
+  nameWithType: ArgumentNullOrEmptyException.ArgumentNullOrEmptyException
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1
+  name: AzureTableStorageClient<TElement>
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html
+  commentId: T:Celerik.NetCore.Util.AzureTableStorageClient`1
+  name.vb: AzureTableStorageClient(Of TElement)
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement)
+  nameWithType: AzureTableStorageClient<TElement>
+  nameWithType.vb: AzureTableStorageClient(Of TElement)
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1.#ctor(Celerik.NetCore.Util.TableStorageConfig)
+  name: AzureTableStorageClient(TableStorageConfig)
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1__ctor_Celerik_NetCore_Util_TableStorageConfig_
+  commentId: M:Celerik.NetCore.Util.AzureTableStorageClient`1.#ctor(Celerik.NetCore.Util.TableStorageConfig)
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>.AzureTableStorageClient(Celerik.NetCore.Util.TableStorageConfig)
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement).AzureTableStorageClient(Celerik.NetCore.Util.TableStorageConfig)
+  nameWithType: AzureTableStorageClient<TElement>.AzureTableStorageClient(TableStorageConfig)
+  nameWithType.vb: AzureTableStorageClient(Of TElement).AzureTableStorageClient(TableStorageConfig)
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1.#ctor*
+  name: AzureTableStorageClient
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1__ctor_
+  commentId: Overload:Celerik.NetCore.Util.AzureTableStorageClient`1.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>.AzureTableStorageClient
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement).AzureTableStorageClient
+  nameWithType: AzureTableStorageClient<TElement>.AzureTableStorageClient
+  nameWithType.vb: AzureTableStorageClient(Of TElement).AzureTableStorageClient
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1._cloudTable
+  name: _cloudTable
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1__cloudTable
+  commentId: F:Celerik.NetCore.Util.AzureTableStorageClient`1._cloudTable
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>._cloudTable
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement)._cloudTable
+  nameWithType: AzureTableStorageClient<TElement>._cloudTable
+  nameWithType.vb: AzureTableStorageClient(Of TElement)._cloudTable
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1.CreateTableIfNotExistsAsync
+  name: CreateTableIfNotExistsAsync()
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1_CreateTableIfNotExistsAsync
+  commentId: M:Celerik.NetCore.Util.AzureTableStorageClient`1.CreateTableIfNotExistsAsync
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>.CreateTableIfNotExistsAsync()
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement).CreateTableIfNotExistsAsync()
+  nameWithType: AzureTableStorageClient<TElement>.CreateTableIfNotExistsAsync()
+  nameWithType.vb: AzureTableStorageClient(Of TElement).CreateTableIfNotExistsAsync()
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1.CreateTableIfNotExistsAsync*
+  name: CreateTableIfNotExistsAsync
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1_CreateTableIfNotExistsAsync_
+  commentId: Overload:Celerik.NetCore.Util.AzureTableStorageClient`1.CreateTableIfNotExistsAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>.CreateTableIfNotExistsAsync
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement).CreateTableIfNotExistsAsync
+  nameWithType: AzureTableStorageClient<TElement>.CreateTableIfNotExistsAsync
+  nameWithType.vb: AzureTableStorageClient(Of TElement).CreateTableIfNotExistsAsync
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1.DeleteIfExistsAsync
+  name: DeleteIfExistsAsync()
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1_DeleteIfExistsAsync
+  commentId: M:Celerik.NetCore.Util.AzureTableStorageClient`1.DeleteIfExistsAsync
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>.DeleteIfExistsAsync()
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement).DeleteIfExistsAsync()
+  nameWithType: AzureTableStorageClient<TElement>.DeleteIfExistsAsync()
+  nameWithType.vb: AzureTableStorageClient(Of TElement).DeleteIfExistsAsync()
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1.DeleteIfExistsAsync*
+  name: DeleteIfExistsAsync
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1_DeleteIfExistsAsync_
+  commentId: Overload:Celerik.NetCore.Util.AzureTableStorageClient`1.DeleteIfExistsAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>.DeleteIfExistsAsync
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement).DeleteIfExistsAsync
+  nameWithType: AzureTableStorageClient<TElement>.DeleteIfExistsAsync
+  nameWithType.vb: AzureTableStorageClient(Of TElement).DeleteIfExistsAsync
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1.ExecuteAsync(TableOperation)
+  name: ExecuteAsync(TableOperation)
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1_ExecuteAsync_TableOperation_
+  commentId: M:Celerik.NetCore.Util.AzureTableStorageClient`1.ExecuteAsync(TableOperation)
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>.ExecuteAsync(TableOperation)
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement).ExecuteAsync(TableOperation)
+  nameWithType: AzureTableStorageClient<TElement>.ExecuteAsync(TableOperation)
+  nameWithType.vb: AzureTableStorageClient(Of TElement).ExecuteAsync(TableOperation)
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1.ExecuteAsync(TableQuery{`0},TableContinuationToken)
+  name: ExecuteAsync(TableQuery<TElement>, TableContinuationToken)
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1_ExecuteAsync_TableQuery__0__TableContinuationToken_
+  commentId: M:Celerik.NetCore.Util.AzureTableStorageClient`1.ExecuteAsync(TableQuery{`0},TableContinuationToken)
+  name.vb: ExecuteAsync(TableQuery(Of TElement), TableContinuationToken)
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>.ExecuteAsync(TableQuery<TElement>, TableContinuationToken)
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement).ExecuteAsync(TableQuery(Of TElement), TableContinuationToken)
+  nameWithType: AzureTableStorageClient<TElement>.ExecuteAsync(TableQuery<TElement>, TableContinuationToken)
+  nameWithType.vb: AzureTableStorageClient(Of TElement).ExecuteAsync(TableQuery(Of TElement), TableContinuationToken)
+- uid: Celerik.NetCore.Util.AzureTableStorageClient`1.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Celerik.NetCore.Util.AzureTableStorageClient-1.html#Celerik_NetCore_Util_AzureTableStorageClient_1_ExecuteAsync_
+  commentId: Overload:Celerik.NetCore.Util.AzureTableStorageClient`1.ExecuteAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.AzureTableStorageClient<TElement>.ExecuteAsync
+  fullName.vb: Celerik.NetCore.Util.AzureTableStorageClient(Of TElement).ExecuteAsync
+  nameWithType: AzureTableStorageClient<TElement>.ExecuteAsync
+  nameWithType.vb: AzureTableStorageClient(Of TElement).ExecuteAsync
+- uid: Celerik.NetCore.Util.CodeAttribute
+  name: CodeAttribute
+  href: api/Celerik.NetCore.Util.CodeAttribute.html
+  commentId: T:Celerik.NetCore.Util.CodeAttribute
+  fullName: Celerik.NetCore.Util.CodeAttribute
+  nameWithType: CodeAttribute
+- uid: Celerik.NetCore.Util.CodeAttribute.#ctor(System.String)
+  name: CodeAttribute(String)
+  href: api/Celerik.NetCore.Util.CodeAttribute.html#Celerik_NetCore_Util_CodeAttribute__ctor_System_String_
+  commentId: M:Celerik.NetCore.Util.CodeAttribute.#ctor(System.String)
+  fullName: Celerik.NetCore.Util.CodeAttribute.CodeAttribute(System.String)
+  nameWithType: CodeAttribute.CodeAttribute(String)
+- uid: Celerik.NetCore.Util.CodeAttribute.#ctor*
+  name: CodeAttribute
+  href: api/Celerik.NetCore.Util.CodeAttribute.html#Celerik_NetCore_Util_CodeAttribute__ctor_
+  commentId: Overload:Celerik.NetCore.Util.CodeAttribute.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.CodeAttribute.CodeAttribute
+  nameWithType: CodeAttribute.CodeAttribute
+- uid: Celerik.NetCore.Util.CodeAttribute.Code
+  name: Code
+  href: api/Celerik.NetCore.Util.CodeAttribute.html#Celerik_NetCore_Util_CodeAttribute_Code
+  commentId: P:Celerik.NetCore.Util.CodeAttribute.Code
+  fullName: Celerik.NetCore.Util.CodeAttribute.Code
+  nameWithType: CodeAttribute.Code
+- uid: Celerik.NetCore.Util.CodeAttribute.Code*
+  name: Code
+  href: api/Celerik.NetCore.Util.CodeAttribute.html#Celerik_NetCore_Util_CodeAttribute_Code_
+  commentId: Overload:Celerik.NetCore.Util.CodeAttribute.Code
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.CodeAttribute.Code
+  nameWithType: CodeAttribute.Code
+- uid: Celerik.NetCore.Util.ConvertUtility
+  name: ConvertUtility
+  href: api/Celerik.NetCore.Util.ConvertUtility.html
+  commentId: T:Celerik.NetCore.Util.ConvertUtility
+  fullName: Celerik.NetCore.Util.ConvertUtility
+  nameWithType: ConvertUtility
+- uid: Celerik.NetCore.Util.ConvertUtility.ToBool(System.String,System.Boolean)
+  name: ToBool(String, Boolean)
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToBool_System_String_System_Boolean_
+  commentId: M:Celerik.NetCore.Util.ConvertUtility.ToBool(System.String,System.Boolean)
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToBool(System.String, System.Boolean)
+  nameWithType: ConvertUtility.ToBool(String, Boolean)
+- uid: Celerik.NetCore.Util.ConvertUtility.ToBool*
+  name: ToBool
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToBool_
+  commentId: Overload:Celerik.NetCore.Util.ConvertUtility.ToBool
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToBool
+  nameWithType: ConvertUtility.ToBool
+- uid: Celerik.NetCore.Util.ConvertUtility.ToDateTime(System.String,System.DateTime)
+  name: ToDateTime(String, DateTime)
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToDateTime_System_String_System_DateTime_
+  commentId: M:Celerik.NetCore.Util.ConvertUtility.ToDateTime(System.String,System.DateTime)
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToDateTime(System.String, System.DateTime)
+  nameWithType: ConvertUtility.ToDateTime(String, DateTime)
+- uid: Celerik.NetCore.Util.ConvertUtility.ToDateTime*
+  name: ToDateTime
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToDateTime_
+  commentId: Overload:Celerik.NetCore.Util.ConvertUtility.ToDateTime
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToDateTime
+  nameWithType: ConvertUtility.ToDateTime
+- uid: Celerik.NetCore.Util.ConvertUtility.ToDecimalInvariant(System.String,System.Decimal)
+  name: ToDecimalInvariant(String, Decimal)
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToDecimalInvariant_System_String_System_Decimal_
+  commentId: M:Celerik.NetCore.Util.ConvertUtility.ToDecimalInvariant(System.String,System.Decimal)
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToDecimalInvariant(System.String, System.Decimal)
+  nameWithType: ConvertUtility.ToDecimalInvariant(String, Decimal)
+- uid: Celerik.NetCore.Util.ConvertUtility.ToDecimalInvariant*
+  name: ToDecimalInvariant
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToDecimalInvariant_
+  commentId: Overload:Celerik.NetCore.Util.ConvertUtility.ToDecimalInvariant
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToDecimalInvariant
+  nameWithType: ConvertUtility.ToDecimalInvariant
+- uid: Celerik.NetCore.Util.ConvertUtility.ToDouble(System.String,System.Double)
+  name: ToDouble(String, Double)
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToDouble_System_String_System_Double_
+  commentId: M:Celerik.NetCore.Util.ConvertUtility.ToDouble(System.String,System.Double)
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToDouble(System.String, System.Double)
+  nameWithType: ConvertUtility.ToDouble(String, Double)
+- uid: Celerik.NetCore.Util.ConvertUtility.ToDouble*
+  name: ToDouble
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToDouble_
+  commentId: Overload:Celerik.NetCore.Util.ConvertUtility.ToDouble
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToDouble
+  nameWithType: ConvertUtility.ToDouble
+- uid: Celerik.NetCore.Util.ConvertUtility.ToFloat(System.String,System.Single)
+  name: ToFloat(String, Single)
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToFloat_System_String_System_Single_
+  commentId: M:Celerik.NetCore.Util.ConvertUtility.ToFloat(System.String,System.Single)
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToFloat(System.String, System.Single)
+  nameWithType: ConvertUtility.ToFloat(String, Single)
+- uid: Celerik.NetCore.Util.ConvertUtility.ToFloat*
+  name: ToFloat
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToFloat_
+  commentId: Overload:Celerik.NetCore.Util.ConvertUtility.ToFloat
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToFloat
+  nameWithType: ConvertUtility.ToFloat
+- uid: Celerik.NetCore.Util.ConvertUtility.ToIntInvariant(System.String,System.Int32)
+  name: ToIntInvariant(String, Int32)
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToIntInvariant_System_String_System_Int32_
+  commentId: M:Celerik.NetCore.Util.ConvertUtility.ToIntInvariant(System.String,System.Int32)
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToIntInvariant(System.String, System.Int32)
+  nameWithType: ConvertUtility.ToIntInvariant(String, Int32)
+- uid: Celerik.NetCore.Util.ConvertUtility.ToIntInvariant*
+  name: ToIntInvariant
+  href: api/Celerik.NetCore.Util.ConvertUtility.html#Celerik_NetCore_Util_ConvertUtility_ToIntInvariant_
+  commentId: Overload:Celerik.NetCore.Util.ConvertUtility.ToIntInvariant
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ConvertUtility.ToIntInvariant
+  nameWithType: ConvertUtility.ToIntInvariant
+- uid: Celerik.NetCore.Util.CryptoUtility
+  name: CryptoUtility
+  href: api/Celerik.NetCore.Util.CryptoUtility.html
+  commentId: T:Celerik.NetCore.Util.CryptoUtility
+  fullName: Celerik.NetCore.Util.CryptoUtility
+  nameWithType: CryptoUtility
+- uid: Celerik.NetCore.Util.CryptoUtility.HashPassword(System.String)
+  name: HashPassword(String)
+  href: api/Celerik.NetCore.Util.CryptoUtility.html#Celerik_NetCore_Util_CryptoUtility_HashPassword_System_String_
+  commentId: M:Celerik.NetCore.Util.CryptoUtility.HashPassword(System.String)
+  fullName: Celerik.NetCore.Util.CryptoUtility.HashPassword(System.String)
+  nameWithType: CryptoUtility.HashPassword(String)
+- uid: Celerik.NetCore.Util.CryptoUtility.HashPassword*
+  name: HashPassword
+  href: api/Celerik.NetCore.Util.CryptoUtility.html#Celerik_NetCore_Util_CryptoUtility_HashPassword_
+  commentId: Overload:Celerik.NetCore.Util.CryptoUtility.HashPassword
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.CryptoUtility.HashPassword
+  nameWithType: CryptoUtility.HashPassword
+- uid: Celerik.NetCore.Util.CryptoUtility.VerifyHashedPassword(System.String,System.String)
+  name: VerifyHashedPassword(String, String)
+  href: api/Celerik.NetCore.Util.CryptoUtility.html#Celerik_NetCore_Util_CryptoUtility_VerifyHashedPassword_System_String_System_String_
+  commentId: M:Celerik.NetCore.Util.CryptoUtility.VerifyHashedPassword(System.String,System.String)
+  fullName: Celerik.NetCore.Util.CryptoUtility.VerifyHashedPassword(System.String, System.String)
+  nameWithType: CryptoUtility.VerifyHashedPassword(String, String)
+- uid: Celerik.NetCore.Util.CryptoUtility.VerifyHashedPassword*
+  name: VerifyHashedPassword
+  href: api/Celerik.NetCore.Util.CryptoUtility.html#Celerik_NetCore_Util_CryptoUtility_VerifyHashedPassword_
+  commentId: Overload:Celerik.NetCore.Util.CryptoUtility.VerifyHashedPassword
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.CryptoUtility.VerifyHashedPassword
+  nameWithType: CryptoUtility.VerifyHashedPassword
+- uid: Celerik.NetCore.Util.EmbeddedFileUtility
+  name: EmbeddedFileUtility
+  href: api/Celerik.NetCore.Util.EmbeddedFileUtility.html
+  commentId: T:Celerik.NetCore.Util.EmbeddedFileUtility
+  fullName: Celerik.NetCore.Util.EmbeddedFileUtility
+  nameWithType: EmbeddedFileUtility
+- uid: Celerik.NetCore.Util.EmbeddedFileUtility.ReadFile(System.String,Assembly)
+  name: ReadFile(String, Assembly)
+  href: api/Celerik.NetCore.Util.EmbeddedFileUtility.html#Celerik_NetCore_Util_EmbeddedFileUtility_ReadFile_System_String_Assembly_
+  commentId: M:Celerik.NetCore.Util.EmbeddedFileUtility.ReadFile(System.String,Assembly)
+  fullName: Celerik.NetCore.Util.EmbeddedFileUtility.ReadFile(System.String, Assembly)
+  nameWithType: EmbeddedFileUtility.ReadFile(String, Assembly)
+- uid: Celerik.NetCore.Util.EmbeddedFileUtility.ReadFile*
+  name: ReadFile
+  href: api/Celerik.NetCore.Util.EmbeddedFileUtility.html#Celerik_NetCore_Util_EmbeddedFileUtility_ReadFile_
+  commentId: Overload:Celerik.NetCore.Util.EmbeddedFileUtility.ReadFile
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EmbeddedFileUtility.ReadFile
+  nameWithType: EmbeddedFileUtility.ReadFile
+- uid: Celerik.NetCore.Util.EmbeddedFileUtility.ReadJson*
+  name: ReadJson
+  href: api/Celerik.NetCore.Util.EmbeddedFileUtility.html#Celerik_NetCore_Util_EmbeddedFileUtility_ReadJson_
+  commentId: Overload:Celerik.NetCore.Util.EmbeddedFileUtility.ReadJson
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EmbeddedFileUtility.ReadJson
+  nameWithType: EmbeddedFileUtility.ReadJson
+- uid: Celerik.NetCore.Util.EmbeddedFileUtility.ReadJson``1(System.String,Assembly,System.Boolean)
+  name: ReadJson<TOutputType>(String, Assembly, Boolean)
+  href: api/Celerik.NetCore.Util.EmbeddedFileUtility.html#Celerik_NetCore_Util_EmbeddedFileUtility_ReadJson__1_System_String_Assembly_System_Boolean_
+  commentId: M:Celerik.NetCore.Util.EmbeddedFileUtility.ReadJson``1(System.String,Assembly,System.Boolean)
+  name.vb: ReadJson(Of TOutputType)(String, Assembly, Boolean)
+  fullName: Celerik.NetCore.Util.EmbeddedFileUtility.ReadJson<TOutputType>(System.String, Assembly, System.Boolean)
+  fullName.vb: Celerik.NetCore.Util.EmbeddedFileUtility.ReadJson(Of TOutputType)(System.String, Assembly, System.Boolean)
+  nameWithType: EmbeddedFileUtility.ReadJson<TOutputType>(String, Assembly, Boolean)
+  nameWithType.vb: EmbeddedFileUtility.ReadJson(Of TOutputType)(String, Assembly, Boolean)
+- uid: Celerik.NetCore.Util.EnumDescriptionJsonConverter
+  name: EnumDescriptionJsonConverter
+  href: api/Celerik.NetCore.Util.EnumDescriptionJsonConverter.html
+  commentId: T:Celerik.NetCore.Util.EnumDescriptionJsonConverter
+  fullName: Celerik.NetCore.Util.EnumDescriptionJsonConverter
+  nameWithType: EnumDescriptionJsonConverter
+- uid: Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/Celerik.NetCore.Util.EnumDescriptionJsonConverter.html#Celerik_NetCore_Util_EnumDescriptionJsonConverter_CanConvert_System_Type_
+  commentId: M:Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanConvert(System.Type)
+  fullName: Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanConvert(System.Type)
+  nameWithType: EnumDescriptionJsonConverter.CanConvert(Type)
+- uid: Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanConvert*
+  name: CanConvert
+  href: api/Celerik.NetCore.Util.EnumDescriptionJsonConverter.html#Celerik_NetCore_Util_EnumDescriptionJsonConverter_CanConvert_
+  commentId: Overload:Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanConvert
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanConvert
+  nameWithType: EnumDescriptionJsonConverter.CanConvert
+- uid: Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanRead
+  name: CanRead
+  href: api/Celerik.NetCore.Util.EnumDescriptionJsonConverter.html#Celerik_NetCore_Util_EnumDescriptionJsonConverter_CanRead
+  commentId: P:Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanRead
+  fullName: Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanRead
+  nameWithType: EnumDescriptionJsonConverter.CanRead
+- uid: Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanRead*
+  name: CanRead
+  href: api/Celerik.NetCore.Util.EnumDescriptionJsonConverter.html#Celerik_NetCore_Util_EnumDescriptionJsonConverter_CanRead_
+  commentId: Overload:Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanRead
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumDescriptionJsonConverter.CanRead
+  nameWithType: EnumDescriptionJsonConverter.CanRead
+- uid: Celerik.NetCore.Util.EnumDescriptionJsonConverter.ReadJson(JsonReader,System.Type,System.Object,JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/Celerik.NetCore.Util.EnumDescriptionJsonConverter.html#Celerik_NetCore_Util_EnumDescriptionJsonConverter_ReadJson_JsonReader_System_Type_System_Object_JsonSerializer_
+  commentId: M:Celerik.NetCore.Util.EnumDescriptionJsonConverter.ReadJson(JsonReader,System.Type,System.Object,JsonSerializer)
+  fullName: Celerik.NetCore.Util.EnumDescriptionJsonConverter.ReadJson(JsonReader, System.Type, System.Object, JsonSerializer)
+  nameWithType: EnumDescriptionJsonConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: Celerik.NetCore.Util.EnumDescriptionJsonConverter.ReadJson*
+  name: ReadJson
+  href: api/Celerik.NetCore.Util.EnumDescriptionJsonConverter.html#Celerik_NetCore_Util_EnumDescriptionJsonConverter_ReadJson_
+  commentId: Overload:Celerik.NetCore.Util.EnumDescriptionJsonConverter.ReadJson
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumDescriptionJsonConverter.ReadJson
+  nameWithType: EnumDescriptionJsonConverter.ReadJson
+- uid: Celerik.NetCore.Util.EnumDescriptionJsonConverter.WriteJson(JsonWriter,System.Object,JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/Celerik.NetCore.Util.EnumDescriptionJsonConverter.html#Celerik_NetCore_Util_EnumDescriptionJsonConverter_WriteJson_JsonWriter_System_Object_JsonSerializer_
+  commentId: M:Celerik.NetCore.Util.EnumDescriptionJsonConverter.WriteJson(JsonWriter,System.Object,JsonSerializer)
+  fullName: Celerik.NetCore.Util.EnumDescriptionJsonConverter.WriteJson(JsonWriter, System.Object, JsonSerializer)
+  nameWithType: EnumDescriptionJsonConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: Celerik.NetCore.Util.EnumDescriptionJsonConverter.WriteJson*
+  name: WriteJson
+  href: api/Celerik.NetCore.Util.EnumDescriptionJsonConverter.html#Celerik_NetCore_Util_EnumDescriptionJsonConverter_WriteJson_
+  commentId: Overload:Celerik.NetCore.Util.EnumDescriptionJsonConverter.WriteJson
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumDescriptionJsonConverter.WriteJson
+  nameWithType: EnumDescriptionJsonConverter.WriteJson
+- uid: Celerik.NetCore.Util.EnumUtility
+  name: EnumUtility
+  href: api/Celerik.NetCore.Util.EnumUtility.html
+  commentId: T:Celerik.NetCore.Util.EnumUtility
+  fullName: Celerik.NetCore.Util.EnumUtility
+  nameWithType: EnumUtility
+- uid: Celerik.NetCore.Util.EnumUtility.GetAttribute*
+  name: GetAttribute
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetAttribute_
+  commentId: Overload:Celerik.NetCore.Util.EnumUtility.GetAttribute
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumUtility.GetAttribute
+  nameWithType: EnumUtility.GetAttribute
+- uid: Celerik.NetCore.Util.EnumUtility.GetAttribute``1(System.Enum)
+  name: GetAttribute<TAttribute>(Enum)
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetAttribute__1_System_Enum_
+  commentId: M:Celerik.NetCore.Util.EnumUtility.GetAttribute``1(System.Enum)
+  name.vb: GetAttribute(Of TAttribute)(Enum)
+  fullName: Celerik.NetCore.Util.EnumUtility.GetAttribute<TAttribute>(System.Enum)
+  fullName.vb: Celerik.NetCore.Util.EnumUtility.GetAttribute(Of TAttribute)(System.Enum)
+  nameWithType: EnumUtility.GetAttribute<TAttribute>(Enum)
+  nameWithType.vb: EnumUtility.GetAttribute(Of TAttribute)(Enum)
+- uid: Celerik.NetCore.Util.EnumUtility.GetCode(System.Enum,System.String)
+  name: GetCode(Enum, String)
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetCode_System_Enum_System_String_
+  commentId: M:Celerik.NetCore.Util.EnumUtility.GetCode(System.Enum,System.String)
+  fullName: Celerik.NetCore.Util.EnumUtility.GetCode(System.Enum, System.String)
+  nameWithType: EnumUtility.GetCode(Enum, String)
+- uid: Celerik.NetCore.Util.EnumUtility.GetCode*
+  name: GetCode
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetCode_
+  commentId: Overload:Celerik.NetCore.Util.EnumUtility.GetCode
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumUtility.GetCode
+  nameWithType: EnumUtility.GetCode
+- uid: Celerik.NetCore.Util.EnumUtility.GetCode``1(System.Int32,System.String)
+  name: GetCode<TEnum>(Int32, String)
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetCode__1_System_Int32_System_String_
+  commentId: M:Celerik.NetCore.Util.EnumUtility.GetCode``1(System.Int32,System.String)
+  name.vb: GetCode(Of TEnum)(Int32, String)
+  fullName: Celerik.NetCore.Util.EnumUtility.GetCode<TEnum>(System.Int32, System.String)
+  fullName.vb: Celerik.NetCore.Util.EnumUtility.GetCode(Of TEnum)(System.Int32, System.String)
+  nameWithType: EnumUtility.GetCode<TEnum>(Int32, String)
+  nameWithType.vb: EnumUtility.GetCode(Of TEnum)(Int32, String)
+- uid: Celerik.NetCore.Util.EnumUtility.GetDescription(System.Enum)
+  name: GetDescription(Enum)
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetDescription_System_Enum_
+  commentId: M:Celerik.NetCore.Util.EnumUtility.GetDescription(System.Enum)
+  fullName: Celerik.NetCore.Util.EnumUtility.GetDescription(System.Enum)
+  nameWithType: EnumUtility.GetDescription(Enum)
+- uid: Celerik.NetCore.Util.EnumUtility.GetDescription*
+  name: GetDescription
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetDescription_
+  commentId: Overload:Celerik.NetCore.Util.EnumUtility.GetDescription
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumUtility.GetDescription
+  nameWithType: EnumUtility.GetDescription
+- uid: Celerik.NetCore.Util.EnumUtility.GetDescription``1(System.Int32,System.String)
+  name: GetDescription<TEnum>(Int32, String)
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetDescription__1_System_Int32_System_String_
+  commentId: M:Celerik.NetCore.Util.EnumUtility.GetDescription``1(System.Int32,System.String)
+  name.vb: GetDescription(Of TEnum)(Int32, String)
+  fullName: Celerik.NetCore.Util.EnumUtility.GetDescription<TEnum>(System.Int32, System.String)
+  fullName.vb: Celerik.NetCore.Util.EnumUtility.GetDescription(Of TEnum)(System.Int32, System.String)
+  nameWithType: EnumUtility.GetDescription<TEnum>(Int32, String)
+  nameWithType.vb: EnumUtility.GetDescription(Of TEnum)(Int32, String)
+- uid: Celerik.NetCore.Util.EnumUtility.GetMax*
+  name: GetMax
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetMax_
+  commentId: Overload:Celerik.NetCore.Util.EnumUtility.GetMax
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumUtility.GetMax
+  nameWithType: EnumUtility.GetMax
+- uid: Celerik.NetCore.Util.EnumUtility.GetMax``1
+  name: GetMax<TEnum>()
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetMax__1
+  commentId: M:Celerik.NetCore.Util.EnumUtility.GetMax``1
+  name.vb: GetMax(Of TEnum)()
+  fullName: Celerik.NetCore.Util.EnumUtility.GetMax<TEnum>()
+  fullName.vb: Celerik.NetCore.Util.EnumUtility.GetMax(Of TEnum)()
+  nameWithType: EnumUtility.GetMax<TEnum>()
+  nameWithType.vb: EnumUtility.GetMax(Of TEnum)()
+- uid: Celerik.NetCore.Util.EnumUtility.GetMin*
+  name: GetMin
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetMin_
+  commentId: Overload:Celerik.NetCore.Util.EnumUtility.GetMin
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumUtility.GetMin
+  nameWithType: EnumUtility.GetMin
+- uid: Celerik.NetCore.Util.EnumUtility.GetMin``1
+  name: GetMin<TEnum>()
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetMin__1
+  commentId: M:Celerik.NetCore.Util.EnumUtility.GetMin``1
+  name.vb: GetMin(Of TEnum)()
+  fullName: Celerik.NetCore.Util.EnumUtility.GetMin<TEnum>()
+  fullName.vb: Celerik.NetCore.Util.EnumUtility.GetMin(Of TEnum)()
+  nameWithType: EnumUtility.GetMin<TEnum>()
+  nameWithType.vb: EnumUtility.GetMin(Of TEnum)()
+- uid: Celerik.NetCore.Util.EnumUtility.GetValueFromCode*
+  name: GetValueFromCode
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetValueFromCode_
+  commentId: Overload:Celerik.NetCore.Util.EnumUtility.GetValueFromCode
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumUtility.GetValueFromCode
+  nameWithType: EnumUtility.GetValueFromCode
+- uid: Celerik.NetCore.Util.EnumUtility.GetValueFromCode``1(System.String,``0)
+  name: GetValueFromCode<TEnum>(String, TEnum)
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetValueFromCode__1_System_String___0_
+  commentId: M:Celerik.NetCore.Util.EnumUtility.GetValueFromCode``1(System.String,``0)
+  name.vb: GetValueFromCode(Of TEnum)(String, TEnum)
+  fullName: Celerik.NetCore.Util.EnumUtility.GetValueFromCode<TEnum>(System.String, TEnum)
+  fullName.vb: Celerik.NetCore.Util.EnumUtility.GetValueFromCode(Of TEnum)(System.String, TEnum)
+  nameWithType: EnumUtility.GetValueFromCode<TEnum>(String, TEnum)
+  nameWithType.vb: EnumUtility.GetValueFromCode(Of TEnum)(String, TEnum)
+- uid: Celerik.NetCore.Util.EnumUtility.GetValueFromDescription*
+  name: GetValueFromDescription
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetValueFromDescription_
+  commentId: Overload:Celerik.NetCore.Util.EnumUtility.GetValueFromDescription
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumUtility.GetValueFromDescription
+  nameWithType: EnumUtility.GetValueFromDescription
+- uid: Celerik.NetCore.Util.EnumUtility.GetValueFromDescription``1(System.String,``0)
+  name: GetValueFromDescription<TEnum>(String, TEnum)
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_GetValueFromDescription__1_System_String___0_
+  commentId: M:Celerik.NetCore.Util.EnumUtility.GetValueFromDescription``1(System.String,``0)
+  name.vb: GetValueFromDescription(Of TEnum)(String, TEnum)
+  fullName: Celerik.NetCore.Util.EnumUtility.GetValueFromDescription<TEnum>(System.String, TEnum)
+  fullName.vb: Celerik.NetCore.Util.EnumUtility.GetValueFromDescription(Of TEnum)(System.String, TEnum)
+  nameWithType: EnumUtility.GetValueFromDescription<TEnum>(String, TEnum)
+  nameWithType.vb: EnumUtility.GetValueFromDescription(Of TEnum)(String, TEnum)
+- uid: Celerik.NetCore.Util.EnumUtility.ToList*
+  name: ToList
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_ToList_
+  commentId: Overload:Celerik.NetCore.Util.EnumUtility.ToList
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.EnumUtility.ToList
+  nameWithType: EnumUtility.ToList
+- uid: Celerik.NetCore.Util.EnumUtility.ToList``1
+  name: ToList<TEnum>()
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_ToList__1
+  commentId: M:Celerik.NetCore.Util.EnumUtility.ToList``1
+  name.vb: ToList(Of TEnum)()
+  fullName: Celerik.NetCore.Util.EnumUtility.ToList<TEnum>()
+  fullName.vb: Celerik.NetCore.Util.EnumUtility.ToList(Of TEnum)()
+  nameWithType: EnumUtility.ToList<TEnum>()
+  nameWithType.vb: EnumUtility.ToList(Of TEnum)()
+- uid: Celerik.NetCore.Util.EnumUtility.ToList``2(System.String,System.String,System.String)
+  name: ToList<TEnum, TList>(String, String, String)
+  href: api/Celerik.NetCore.Util.EnumUtility.html#Celerik_NetCore_Util_EnumUtility_ToList__2_System_String_System_String_System_String_
+  commentId: M:Celerik.NetCore.Util.EnumUtility.ToList``2(System.String,System.String,System.String)
+  name.vb: ToList(Of TEnum, TList)(String, String, String)
+  fullName: Celerik.NetCore.Util.EnumUtility.ToList<TEnum, TList>(System.String, System.String, System.String)
+  fullName.vb: Celerik.NetCore.Util.EnumUtility.ToList(Of TEnum, TList)(System.String, System.String, System.String)
+  nameWithType: EnumUtility.ToList<TEnum, TList>(String, String, String)
+  nameWithType.vb: EnumUtility.ToList(Of TEnum, TList)(String, String, String)
+- uid: Celerik.NetCore.Util.ExceptionThrower
+  name: ExceptionThrower
+  href: api/Celerik.NetCore.Util.ExceptionThrower.html
+  commentId: T:Celerik.NetCore.Util.ExceptionThrower
+  fullName: Celerik.NetCore.Util.ExceptionThrower
+  nameWithType: ExceptionThrower
+- uid: Celerik.NetCore.Util.ExceptionThrower.AssertHttp200Code(System.Int32)
+  name: AssertHttp200Code(Int32)
+  href: api/Celerik.NetCore.Util.ExceptionThrower.html#Celerik_NetCore_Util_ExceptionThrower_AssertHttp200Code_System_Int32_
+  commentId: M:Celerik.NetCore.Util.ExceptionThrower.AssertHttp200Code(System.Int32)
+  fullName: Celerik.NetCore.Util.ExceptionThrower.AssertHttp200Code(System.Int32)
+  nameWithType: ExceptionThrower.AssertHttp200Code(Int32)
+- uid: Celerik.NetCore.Util.ExceptionThrower.AssertHttp200Code*
+  name: AssertHttp200Code
+  href: api/Celerik.NetCore.Util.ExceptionThrower.html#Celerik_NetCore_Util_ExceptionThrower_AssertHttp200Code_
+  commentId: Overload:Celerik.NetCore.Util.ExceptionThrower.AssertHttp200Code
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ExceptionThrower.AssertHttp200Code
+  nameWithType: ExceptionThrower.AssertHttp200Code
+- uid: Celerik.NetCore.Util.FileUtility
+  name: FileUtility
+  href: api/Celerik.NetCore.Util.FileUtility.html
+  commentId: T:Celerik.NetCore.Util.FileUtility
+  fullName: Celerik.NetCore.Util.FileUtility
+  nameWithType: FileUtility
+- uid: Celerik.NetCore.Util.FileUtility.ExistsFileInExecutingAssemblyDir(System.String)
+  name: ExistsFileInExecutingAssemblyDir(String)
+  href: api/Celerik.NetCore.Util.FileUtility.html#Celerik_NetCore_Util_FileUtility_ExistsFileInExecutingAssemblyDir_System_String_
+  commentId: M:Celerik.NetCore.Util.FileUtility.ExistsFileInExecutingAssemblyDir(System.String)
+  fullName: Celerik.NetCore.Util.FileUtility.ExistsFileInExecutingAssemblyDir(System.String)
+  nameWithType: FileUtility.ExistsFileInExecutingAssemblyDir(String)
+- uid: Celerik.NetCore.Util.FileUtility.ExistsFileInExecutingAssemblyDir*
+  name: ExistsFileInExecutingAssemblyDir
+  href: api/Celerik.NetCore.Util.FileUtility.html#Celerik_NetCore_Util_FileUtility_ExistsFileInExecutingAssemblyDir_
+  commentId: Overload:Celerik.NetCore.Util.FileUtility.ExistsFileInExecutingAssemblyDir
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.FileUtility.ExistsFileInExecutingAssemblyDir
+  nameWithType: FileUtility.ExistsFileInExecutingAssemblyDir
+- uid: Celerik.NetCore.Util.FileUtility.GetExecutingAssemblyDir
+  name: GetExecutingAssemblyDir()
+  href: api/Celerik.NetCore.Util.FileUtility.html#Celerik_NetCore_Util_FileUtility_GetExecutingAssemblyDir
+  commentId: M:Celerik.NetCore.Util.FileUtility.GetExecutingAssemblyDir
+  fullName: Celerik.NetCore.Util.FileUtility.GetExecutingAssemblyDir()
+  nameWithType: FileUtility.GetExecutingAssemblyDir()
+- uid: Celerik.NetCore.Util.FileUtility.GetExecutingAssemblyDir*
+  name: GetExecutingAssemblyDir
+  href: api/Celerik.NetCore.Util.FileUtility.html#Celerik_NetCore_Util_FileUtility_GetExecutingAssemblyDir_
+  commentId: Overload:Celerik.NetCore.Util.FileUtility.GetExecutingAssemblyDir
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.FileUtility.GetExecutingAssemblyDir
+  nameWithType: FileUtility.GetExecutingAssemblyDir
+- uid: Celerik.NetCore.Util.FileUtility.LocateFileInExecutingAssemblyDir(System.String)
+  name: LocateFileInExecutingAssemblyDir(String)
+  href: api/Celerik.NetCore.Util.FileUtility.html#Celerik_NetCore_Util_FileUtility_LocateFileInExecutingAssemblyDir_System_String_
+  commentId: M:Celerik.NetCore.Util.FileUtility.LocateFileInExecutingAssemblyDir(System.String)
+  fullName: Celerik.NetCore.Util.FileUtility.LocateFileInExecutingAssemblyDir(System.String)
+  nameWithType: FileUtility.LocateFileInExecutingAssemblyDir(String)
+- uid: Celerik.NetCore.Util.FileUtility.LocateFileInExecutingAssemblyDir*
+  name: LocateFileInExecutingAssemblyDir
+  href: api/Celerik.NetCore.Util.FileUtility.html#Celerik_NetCore_Util_FileUtility_LocateFileInExecutingAssemblyDir_
+  commentId: Overload:Celerik.NetCore.Util.FileUtility.LocateFileInExecutingAssemblyDir
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.FileUtility.LocateFileInExecutingAssemblyDir
+  nameWithType: FileUtility.LocateFileInExecutingAssemblyDir
+- uid: Celerik.NetCore.Util.ITableStorageClient`1
+  name: ITableStorageClient<TElement>
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html
+  commentId: T:Celerik.NetCore.Util.ITableStorageClient`1
+  name.vb: ITableStorageClient(Of TElement)
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement)
+  nameWithType: ITableStorageClient<TElement>
+  nameWithType.vb: ITableStorageClient(Of TElement)
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.AnyAsync(System.String,System.String)
+  name: AnyAsync(String, String)
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_AnyAsync_System_String_System_String_
+  commentId: M:Celerik.NetCore.Util.ITableStorageClient`1.AnyAsync(System.String,System.String)
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.AnyAsync(System.String, System.String)
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).AnyAsync(System.String, System.String)
+  nameWithType: ITableStorageClient<TElement>.AnyAsync(String, String)
+  nameWithType.vb: ITableStorageClient(Of TElement).AnyAsync(String, String)
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.AnyAsync*
+  name: AnyAsync
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_AnyAsync_
+  commentId: Overload:Celerik.NetCore.Util.ITableStorageClient`1.AnyAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.AnyAsync
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).AnyAsync
+  nameWithType: ITableStorageClient<TElement>.AnyAsync
+  nameWithType.vb: ITableStorageClient(Of TElement).AnyAsync
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.Config
+  name: Config
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_Config
+  commentId: P:Celerik.NetCore.Util.ITableStorageClient`1.Config
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.Config
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).Config
+  nameWithType: ITableStorageClient<TElement>.Config
+  nameWithType.vb: ITableStorageClient(Of TElement).Config
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.Config*
+  name: Config
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_Config_
+  commentId: Overload:Celerik.NetCore.Util.ITableStorageClient`1.Config
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.Config
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).Config
+  nameWithType: ITableStorageClient<TElement>.Config
+  nameWithType.vb: ITableStorageClient(Of TElement).Config
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.DeleteAsync(`0)
+  name: DeleteAsync(TElement)
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_DeleteAsync__0_
+  commentId: M:Celerik.NetCore.Util.ITableStorageClient`1.DeleteAsync(`0)
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.DeleteAsync(TElement)
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).DeleteAsync(TElement)
+  nameWithType: ITableStorageClient<TElement>.DeleteAsync(TElement)
+  nameWithType.vb: ITableStorageClient(Of TElement).DeleteAsync(TElement)
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.DeleteAsync(System.String,System.String)
+  name: DeleteAsync(String, String)
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_DeleteAsync_System_String_System_String_
+  commentId: M:Celerik.NetCore.Util.ITableStorageClient`1.DeleteAsync(System.String,System.String)
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.DeleteAsync(System.String, System.String)
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).DeleteAsync(System.String, System.String)
+  nameWithType: ITableStorageClient<TElement>.DeleteAsync(String, String)
+  nameWithType.vb: ITableStorageClient(Of TElement).DeleteAsync(String, String)
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.DeleteAsync*
+  name: DeleteAsync
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_DeleteAsync_
+  commentId: Overload:Celerik.NetCore.Util.ITableStorageClient`1.DeleteAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.DeleteAsync
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).DeleteAsync
+  nameWithType: ITableStorageClient<TElement>.DeleteAsync
+  nameWithType.vb: ITableStorageClient(Of TElement).DeleteAsync
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.DeleteIfExistsAsync
+  name: DeleteIfExistsAsync()
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_DeleteIfExistsAsync
+  commentId: M:Celerik.NetCore.Util.ITableStorageClient`1.DeleteIfExistsAsync
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.DeleteIfExistsAsync()
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).DeleteIfExistsAsync()
+  nameWithType: ITableStorageClient<TElement>.DeleteIfExistsAsync()
+  nameWithType.vb: ITableStorageClient(Of TElement).DeleteIfExistsAsync()
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.DeleteIfExistsAsync*
+  name: DeleteIfExistsAsync
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_DeleteIfExistsAsync_
+  commentId: Overload:Celerik.NetCore.Util.ITableStorageClient`1.DeleteIfExistsAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.DeleteIfExistsAsync
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).DeleteIfExistsAsync
+  nameWithType: ITableStorageClient<TElement>.DeleteIfExistsAsync
+  nameWithType.vb: ITableStorageClient(Of TElement).DeleteIfExistsAsync
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.GetAsync(System.String,System.String)
+  name: GetAsync(String, String)
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_GetAsync_System_String_System_String_
+  commentId: M:Celerik.NetCore.Util.ITableStorageClient`1.GetAsync(System.String,System.String)
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.GetAsync(System.String, System.String)
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).GetAsync(System.String, System.String)
+  nameWithType: ITableStorageClient<TElement>.GetAsync(String, String)
+  nameWithType.vb: ITableStorageClient(Of TElement).GetAsync(String, String)
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.GetAsync*
+  name: GetAsync
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_GetAsync_
+  commentId: Overload:Celerik.NetCore.Util.ITableStorageClient`1.GetAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.GetAsync
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).GetAsync
+  nameWithType: ITableStorageClient<TElement>.GetAsync
+  nameWithType.vb: ITableStorageClient(Of TElement).GetAsync
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.InsertAsync(`0)
+  name: InsertAsync(TElement)
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_InsertAsync__0_
+  commentId: M:Celerik.NetCore.Util.ITableStorageClient`1.InsertAsync(`0)
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.InsertAsync(TElement)
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).InsertAsync(TElement)
+  nameWithType: ITableStorageClient<TElement>.InsertAsync(TElement)
+  nameWithType.vb: ITableStorageClient(Of TElement).InsertAsync(TElement)
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.InsertAsync*
+  name: InsertAsync
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_InsertAsync_
+  commentId: Overload:Celerik.NetCore.Util.ITableStorageClient`1.InsertAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.InsertAsync
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).InsertAsync
+  nameWithType: ITableStorageClient<TElement>.InsertAsync
+  nameWithType.vb: ITableStorageClient(Of TElement).InsertAsync
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.ListAsync(System.String)
+  name: ListAsync(String)
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_ListAsync_System_String_
+  commentId: M:Celerik.NetCore.Util.ITableStorageClient`1.ListAsync(System.String)
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.ListAsync(System.String)
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).ListAsync(System.String)
+  nameWithType: ITableStorageClient<TElement>.ListAsync(String)
+  nameWithType.vb: ITableStorageClient(Of TElement).ListAsync(String)
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.ListAsync*
+  name: ListAsync
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_ListAsync_
+  commentId: Overload:Celerik.NetCore.Util.ITableStorageClient`1.ListAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.ListAsync
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).ListAsync
+  nameWithType: ITableStorageClient<TElement>.ListAsync
+  nameWithType.vb: ITableStorageClient(Of TElement).ListAsync
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.UpdateAsync(`0,Celerik.NetCore.Util.TableStorageStrategy)
+  name: UpdateAsync(TElement, TableStorageStrategy)
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_UpdateAsync__0_Celerik_NetCore_Util_TableStorageStrategy_
+  commentId: M:Celerik.NetCore.Util.ITableStorageClient`1.UpdateAsync(`0,Celerik.NetCore.Util.TableStorageStrategy)
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.UpdateAsync(TElement, Celerik.NetCore.Util.TableStorageStrategy)
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).UpdateAsync(TElement, Celerik.NetCore.Util.TableStorageStrategy)
+  nameWithType: ITableStorageClient<TElement>.UpdateAsync(TElement, TableStorageStrategy)
+  nameWithType.vb: ITableStorageClient(Of TElement).UpdateAsync(TElement, TableStorageStrategy)
+- uid: Celerik.NetCore.Util.ITableStorageClient`1.UpdateAsync*
+  name: UpdateAsync
+  href: api/Celerik.NetCore.Util.ITableStorageClient-1.html#Celerik_NetCore_Util_ITableStorageClient_1_UpdateAsync_
+  commentId: Overload:Celerik.NetCore.Util.ITableStorageClient`1.UpdateAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ITableStorageClient<TElement>.UpdateAsync
+  fullName.vb: Celerik.NetCore.Util.ITableStorageClient(Of TElement).UpdateAsync
+  nameWithType: ITableStorageClient<TElement>.UpdateAsync
+  nameWithType.vb: ITableStorageClient(Of TElement).UpdateAsync
+- uid: Celerik.NetCore.Util.JsonStringLocalizer
+  name: JsonStringLocalizer
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html
+  commentId: T:Celerik.NetCore.Util.JsonStringLocalizer
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer
+  nameWithType: JsonStringLocalizer
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.#ctor(Assembly,System.String)
+  name: JsonStringLocalizer(Assembly, String)
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer__ctor_Assembly_System_String_
+  commentId: M:Celerik.NetCore.Util.JsonStringLocalizer.#ctor(Assembly,System.String)
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.JsonStringLocalizer(Assembly, System.String)
+  nameWithType: JsonStringLocalizer.JsonStringLocalizer(Assembly, String)
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.#ctor(Assembly,System.String,CultureInfo)
+  name: JsonStringLocalizer(Assembly, String, CultureInfo)
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer__ctor_Assembly_System_String_CultureInfo_
+  commentId: M:Celerik.NetCore.Util.JsonStringLocalizer.#ctor(Assembly,System.String,CultureInfo)
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.JsonStringLocalizer(Assembly, System.String, CultureInfo)
+  nameWithType: JsonStringLocalizer.JsonStringLocalizer(Assembly, String, CultureInfo)
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.#ctor*
+  name: JsonStringLocalizer
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer__ctor_
+  commentId: Overload:Celerik.NetCore.Util.JsonStringLocalizer.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.JsonStringLocalizer
+  nameWithType: JsonStringLocalizer.JsonStringLocalizer
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.GetAllStrings(System.Boolean)
+  name: GetAllStrings(Boolean)
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer_GetAllStrings_System_Boolean_
+  commentId: M:Celerik.NetCore.Util.JsonStringLocalizer.GetAllStrings(System.Boolean)
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.GetAllStrings(System.Boolean)
+  nameWithType: JsonStringLocalizer.GetAllStrings(Boolean)
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.GetAllStrings*
+  name: GetAllStrings
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer_GetAllStrings_
+  commentId: Overload:Celerik.NetCore.Util.JsonStringLocalizer.GetAllStrings
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.GetAllStrings
+  nameWithType: JsonStringLocalizer.GetAllStrings
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.Item(System.String)
+  name: Item[String]
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer_Item_System_String_
+  commentId: P:Celerik.NetCore.Util.JsonStringLocalizer.Item(System.String)
+  name.vb: Item(String)
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.Item[System.String]
+  fullName.vb: Celerik.NetCore.Util.JsonStringLocalizer.Item(System.String)
+  nameWithType: JsonStringLocalizer.Item[String]
+  nameWithType.vb: JsonStringLocalizer.Item(String)
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.Item(System.String,System.Object[])
+  name: Item[String, Object[]]
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer_Item_System_String_System_Object___
+  commentId: P:Celerik.NetCore.Util.JsonStringLocalizer.Item(System.String,System.Object[])
+  name.vb: Item(String, Object())
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.Item[System.String, System.Object[]]
+  fullName.vb: Celerik.NetCore.Util.JsonStringLocalizer.Item(System.String, System.Object())
+  nameWithType: JsonStringLocalizer.Item[String, Object[]]
+  nameWithType.vb: JsonStringLocalizer.Item(String, Object())
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.Item*
+  name: Item
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer_Item_
+  commentId: Overload:Celerik.NetCore.Util.JsonStringLocalizer.Item
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.Item
+  nameWithType: JsonStringLocalizer.Item
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.WithCulture(CultureInfo)
+  name: WithCulture(CultureInfo)
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer_WithCulture_CultureInfo_
+  commentId: M:Celerik.NetCore.Util.JsonStringLocalizer.WithCulture(CultureInfo)
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.WithCulture(CultureInfo)
+  nameWithType: JsonStringLocalizer.WithCulture(CultureInfo)
+- uid: Celerik.NetCore.Util.JsonStringLocalizer.WithCulture*
+  name: WithCulture
+  href: api/Celerik.NetCore.Util.JsonStringLocalizer.html#Celerik_NetCore_Util_JsonStringLocalizer_WithCulture_
+  commentId: Overload:Celerik.NetCore.Util.JsonStringLocalizer.WithCulture
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.JsonStringLocalizer.WithCulture
+  nameWithType: JsonStringLocalizer.WithCulture
+- uid: Celerik.NetCore.Util.JsonStringLocalizerFactory
+  name: JsonStringLocalizerFactory
+  href: api/Celerik.NetCore.Util.JsonStringLocalizerFactory.html
+  commentId: T:Celerik.NetCore.Util.JsonStringLocalizerFactory
+  fullName: Celerik.NetCore.Util.JsonStringLocalizerFactory
+  nameWithType: JsonStringLocalizerFactory
+- uid: Celerik.NetCore.Util.JsonStringLocalizerFactory.#ctor(System.String)
+  name: JsonStringLocalizerFactory(String)
+  href: api/Celerik.NetCore.Util.JsonStringLocalizerFactory.html#Celerik_NetCore_Util_JsonStringLocalizerFactory__ctor_System_String_
+  commentId: M:Celerik.NetCore.Util.JsonStringLocalizerFactory.#ctor(System.String)
+  fullName: Celerik.NetCore.Util.JsonStringLocalizerFactory.JsonStringLocalizerFactory(System.String)
+  nameWithType: JsonStringLocalizerFactory.JsonStringLocalizerFactory(String)
+- uid: Celerik.NetCore.Util.JsonStringLocalizerFactory.#ctor*
+  name: JsonStringLocalizerFactory
+  href: api/Celerik.NetCore.Util.JsonStringLocalizerFactory.html#Celerik_NetCore_Util_JsonStringLocalizerFactory__ctor_
+  commentId: Overload:Celerik.NetCore.Util.JsonStringLocalizerFactory.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.JsonStringLocalizerFactory.JsonStringLocalizerFactory
+  nameWithType: JsonStringLocalizerFactory.JsonStringLocalizerFactory
+- uid: Celerik.NetCore.Util.JsonStringLocalizerFactory.Create(System.String,System.String)
+  name: Create(String, String)
+  href: api/Celerik.NetCore.Util.JsonStringLocalizerFactory.html#Celerik_NetCore_Util_JsonStringLocalizerFactory_Create_System_String_System_String_
+  commentId: M:Celerik.NetCore.Util.JsonStringLocalizerFactory.Create(System.String,System.String)
+  fullName: Celerik.NetCore.Util.JsonStringLocalizerFactory.Create(System.String, System.String)
+  nameWithType: JsonStringLocalizerFactory.Create(String, String)
+- uid: Celerik.NetCore.Util.JsonStringLocalizerFactory.Create(System.Type)
+  name: Create(Type)
+  href: api/Celerik.NetCore.Util.JsonStringLocalizerFactory.html#Celerik_NetCore_Util_JsonStringLocalizerFactory_Create_System_Type_
+  commentId: M:Celerik.NetCore.Util.JsonStringLocalizerFactory.Create(System.Type)
+  fullName: Celerik.NetCore.Util.JsonStringLocalizerFactory.Create(System.Type)
+  nameWithType: JsonStringLocalizerFactory.Create(Type)
+- uid: Celerik.NetCore.Util.JsonStringLocalizerFactory.Create*
+  name: Create
+  href: api/Celerik.NetCore.Util.JsonStringLocalizerFactory.html#Celerik_NetCore_Util_JsonStringLocalizerFactory_Create_
+  commentId: Overload:Celerik.NetCore.Util.JsonStringLocalizerFactory.Create
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.JsonStringLocalizerFactory.Create
+  nameWithType: JsonStringLocalizerFactory.Create
+- uid: Celerik.NetCore.Util.LocalDate
+  name: LocalDate
+  href: api/Celerik.NetCore.Util.LocalDate.html
+  commentId: T:Celerik.NetCore.Util.LocalDate
+  fullName: Celerik.NetCore.Util.LocalDate
+  nameWithType: LocalDate
+- uid: Celerik.NetCore.Util.LocalDate.#ctor(System.Double)
+  name: LocalDate(Double)
+  href: api/Celerik.NetCore.Util.LocalDate.html#Celerik_NetCore_Util_LocalDate__ctor_System_Double_
+  commentId: M:Celerik.NetCore.Util.LocalDate.#ctor(System.Double)
+  fullName: Celerik.NetCore.Util.LocalDate.LocalDate(System.Double)
+  nameWithType: LocalDate.LocalDate(Double)
+- uid: Celerik.NetCore.Util.LocalDate.#ctor*
+  name: LocalDate
+  href: api/Celerik.NetCore.Util.LocalDate.html#Celerik_NetCore_Util_LocalDate__ctor_
+  commentId: Overload:Celerik.NetCore.Util.LocalDate.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.LocalDate.LocalDate
+  nameWithType: LocalDate.LocalDate
+- uid: Celerik.NetCore.Util.LocalDate.FromSystemTime(System.DateTime)
+  name: FromSystemTime(DateTime)
+  href: api/Celerik.NetCore.Util.LocalDate.html#Celerik_NetCore_Util_LocalDate_FromSystemTime_System_DateTime_
+  commentId: M:Celerik.NetCore.Util.LocalDate.FromSystemTime(System.DateTime)
+  fullName: Celerik.NetCore.Util.LocalDate.FromSystemTime(System.DateTime)
+  nameWithType: LocalDate.FromSystemTime(DateTime)
+- uid: Celerik.NetCore.Util.LocalDate.FromSystemTime*
+  name: FromSystemTime
+  href: api/Celerik.NetCore.Util.LocalDate.html#Celerik_NetCore_Util_LocalDate_FromSystemTime_
+  commentId: Overload:Celerik.NetCore.Util.LocalDate.FromSystemTime
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.LocalDate.FromSystemTime
+  nameWithType: LocalDate.FromSystemTime
+- uid: Celerik.NetCore.Util.LocalDate.Now
+  name: Now
+  href: api/Celerik.NetCore.Util.LocalDate.html#Celerik_NetCore_Util_LocalDate_Now
+  commentId: P:Celerik.NetCore.Util.LocalDate.Now
+  fullName: Celerik.NetCore.Util.LocalDate.Now
+  nameWithType: LocalDate.Now
+- uid: Celerik.NetCore.Util.LocalDate.Now*
+  name: Now
+  href: api/Celerik.NetCore.Util.LocalDate.html#Celerik_NetCore_Util_LocalDate_Now_
+  commentId: Overload:Celerik.NetCore.Util.LocalDate.Now
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.LocalDate.Now
+  nameWithType: LocalDate.Now
+- uid: Celerik.NetCore.Util.MaximumExceededException
+  name: MaximumExceededException
+  href: api/Celerik.NetCore.Util.MaximumExceededException.html
+  commentId: T:Celerik.NetCore.Util.MaximumExceededException
+  fullName: Celerik.NetCore.Util.MaximumExceededException
+  nameWithType: MaximumExceededException
+- uid: Celerik.NetCore.Util.MaximumExceededException.#ctor
+  name: MaximumExceededException()
+  href: api/Celerik.NetCore.Util.MaximumExceededException.html#Celerik_NetCore_Util_MaximumExceededException__ctor
+  commentId: M:Celerik.NetCore.Util.MaximumExceededException.#ctor
+  fullName: Celerik.NetCore.Util.MaximumExceededException.MaximumExceededException()
+  nameWithType: MaximumExceededException.MaximumExceededException()
+- uid: Celerik.NetCore.Util.MaximumExceededException.#ctor(System.String)
+  name: MaximumExceededException(String)
+  href: api/Celerik.NetCore.Util.MaximumExceededException.html#Celerik_NetCore_Util_MaximumExceededException__ctor_System_String_
+  commentId: M:Celerik.NetCore.Util.MaximumExceededException.#ctor(System.String)
+  fullName: Celerik.NetCore.Util.MaximumExceededException.MaximumExceededException(System.String)
+  nameWithType: MaximumExceededException.MaximumExceededException(String)
+- uid: Celerik.NetCore.Util.MaximumExceededException.#ctor(System.String,System.Exception)
+  name: MaximumExceededException(String, Exception)
+  href: api/Celerik.NetCore.Util.MaximumExceededException.html#Celerik_NetCore_Util_MaximumExceededException__ctor_System_String_System_Exception_
+  commentId: M:Celerik.NetCore.Util.MaximumExceededException.#ctor(System.String,System.Exception)
+  fullName: Celerik.NetCore.Util.MaximumExceededException.MaximumExceededException(System.String, System.Exception)
+  nameWithType: MaximumExceededException.MaximumExceededException(String, Exception)
+- uid: Celerik.NetCore.Util.MaximumExceededException.#ctor(System.String,System.Object,System.Object)
+  name: MaximumExceededException(String, Object, Object)
+  href: api/Celerik.NetCore.Util.MaximumExceededException.html#Celerik_NetCore_Util_MaximumExceededException__ctor_System_String_System_Object_System_Object_
+  commentId: M:Celerik.NetCore.Util.MaximumExceededException.#ctor(System.String,System.Object,System.Object)
+  fullName: Celerik.NetCore.Util.MaximumExceededException.MaximumExceededException(System.String, System.Object, System.Object)
+  nameWithType: MaximumExceededException.MaximumExceededException(String, Object, Object)
+- uid: Celerik.NetCore.Util.MaximumExceededException.#ctor*
+  name: MaximumExceededException
+  href: api/Celerik.NetCore.Util.MaximumExceededException.html#Celerik_NetCore_Util_MaximumExceededException__ctor_
+  commentId: Overload:Celerik.NetCore.Util.MaximumExceededException.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.MaximumExceededException.MaximumExceededException
+  nameWithType: MaximumExceededException.MaximumExceededException
+- uid: Celerik.NetCore.Util.MinimunSubceededException
+  name: MinimunSubceededException
+  href: api/Celerik.NetCore.Util.MinimunSubceededException.html
+  commentId: T:Celerik.NetCore.Util.MinimunSubceededException
+  fullName: Celerik.NetCore.Util.MinimunSubceededException
+  nameWithType: MinimunSubceededException
+- uid: Celerik.NetCore.Util.MinimunSubceededException.#ctor
+  name: MinimunSubceededException()
+  href: api/Celerik.NetCore.Util.MinimunSubceededException.html#Celerik_NetCore_Util_MinimunSubceededException__ctor
+  commentId: M:Celerik.NetCore.Util.MinimunSubceededException.#ctor
+  fullName: Celerik.NetCore.Util.MinimunSubceededException.MinimunSubceededException()
+  nameWithType: MinimunSubceededException.MinimunSubceededException()
+- uid: Celerik.NetCore.Util.MinimunSubceededException.#ctor(System.String)
+  name: MinimunSubceededException(String)
+  href: api/Celerik.NetCore.Util.MinimunSubceededException.html#Celerik_NetCore_Util_MinimunSubceededException__ctor_System_String_
+  commentId: M:Celerik.NetCore.Util.MinimunSubceededException.#ctor(System.String)
+  fullName: Celerik.NetCore.Util.MinimunSubceededException.MinimunSubceededException(System.String)
+  nameWithType: MinimunSubceededException.MinimunSubceededException(String)
+- uid: Celerik.NetCore.Util.MinimunSubceededException.#ctor(System.String,System.Exception)
+  name: MinimunSubceededException(String, Exception)
+  href: api/Celerik.NetCore.Util.MinimunSubceededException.html#Celerik_NetCore_Util_MinimunSubceededException__ctor_System_String_System_Exception_
+  commentId: M:Celerik.NetCore.Util.MinimunSubceededException.#ctor(System.String,System.Exception)
+  fullName: Celerik.NetCore.Util.MinimunSubceededException.MinimunSubceededException(System.String, System.Exception)
+  nameWithType: MinimunSubceededException.MinimunSubceededException(String, Exception)
+- uid: Celerik.NetCore.Util.MinimunSubceededException.#ctor(System.String,System.Object,System.Object)
+  name: MinimunSubceededException(String, Object, Object)
+  href: api/Celerik.NetCore.Util.MinimunSubceededException.html#Celerik_NetCore_Util_MinimunSubceededException__ctor_System_String_System_Object_System_Object_
+  commentId: M:Celerik.NetCore.Util.MinimunSubceededException.#ctor(System.String,System.Object,System.Object)
+  fullName: Celerik.NetCore.Util.MinimunSubceededException.MinimunSubceededException(System.String, System.Object, System.Object)
+  nameWithType: MinimunSubceededException.MinimunSubceededException(String, Object, Object)
+- uid: Celerik.NetCore.Util.MinimunSubceededException.#ctor*
+  name: MinimunSubceededException
+  href: api/Celerik.NetCore.Util.MinimunSubceededException.html#Celerik_NetCore_Util_MinimunSubceededException__ctor_
+  commentId: Overload:Celerik.NetCore.Util.MinimunSubceededException.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.MinimunSubceededException.MinimunSubceededException
+  nameWithType: MinimunSubceededException.MinimunSubceededException
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1
+  name: MockTableStorageClient<TElement>
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html
+  commentId: T:Celerik.NetCore.Util.MockTableStorageClient`1
+  name.vb: MockTableStorageClient(Of TElement)
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement)
+  nameWithType: MockTableStorageClient<TElement>
+  nameWithType.vb: MockTableStorageClient(Of TElement)
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1.#ctor(Celerik.NetCore.Util.TableStorageConfig)
+  name: MockTableStorageClient(TableStorageConfig)
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html#Celerik_NetCore_Util_MockTableStorageClient_1__ctor_Celerik_NetCore_Util_TableStorageConfig_
+  commentId: M:Celerik.NetCore.Util.MockTableStorageClient`1.#ctor(Celerik.NetCore.Util.TableStorageConfig)
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>.MockTableStorageClient(Celerik.NetCore.Util.TableStorageConfig)
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement).MockTableStorageClient(Celerik.NetCore.Util.TableStorageConfig)
+  nameWithType: MockTableStorageClient<TElement>.MockTableStorageClient(TableStorageConfig)
+  nameWithType.vb: MockTableStorageClient(Of TElement).MockTableStorageClient(TableStorageConfig)
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1.#ctor*
+  name: MockTableStorageClient
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html#Celerik_NetCore_Util_MockTableStorageClient_1__ctor_
+  commentId: Overload:Celerik.NetCore.Util.MockTableStorageClient`1.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>.MockTableStorageClient
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement).MockTableStorageClient
+  nameWithType: MockTableStorageClient<TElement>.MockTableStorageClient
+  nameWithType.vb: MockTableStorageClient(Of TElement).MockTableStorageClient
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1.DeleteIfExistsAsync
+  name: DeleteIfExistsAsync()
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html#Celerik_NetCore_Util_MockTableStorageClient_1_DeleteIfExistsAsync
+  commentId: M:Celerik.NetCore.Util.MockTableStorageClient`1.DeleteIfExistsAsync
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>.DeleteIfExistsAsync()
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement).DeleteIfExistsAsync()
+  nameWithType: MockTableStorageClient<TElement>.DeleteIfExistsAsync()
+  nameWithType.vb: MockTableStorageClient(Of TElement).DeleteIfExistsAsync()
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1.DeleteIfExistsAsync*
+  name: DeleteIfExistsAsync
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html#Celerik_NetCore_Util_MockTableStorageClient_1_DeleteIfExistsAsync_
+  commentId: Overload:Celerik.NetCore.Util.MockTableStorageClient`1.DeleteIfExistsAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>.DeleteIfExistsAsync
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement).DeleteIfExistsAsync
+  nameWithType: MockTableStorageClient<TElement>.DeleteIfExistsAsync
+  nameWithType.vb: MockTableStorageClient(Of TElement).DeleteIfExistsAsync
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1.ExecuteAsync(TableOperation)
+  name: ExecuteAsync(TableOperation)
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html#Celerik_NetCore_Util_MockTableStorageClient_1_ExecuteAsync_TableOperation_
+  commentId: M:Celerik.NetCore.Util.MockTableStorageClient`1.ExecuteAsync(TableOperation)
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>.ExecuteAsync(TableOperation)
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement).ExecuteAsync(TableOperation)
+  nameWithType: MockTableStorageClient<TElement>.ExecuteAsync(TableOperation)
+  nameWithType.vb: MockTableStorageClient(Of TElement).ExecuteAsync(TableOperation)
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1.ExecuteAsync(TableQuery{`0},TableContinuationToken)
+  name: ExecuteAsync(TableQuery<TElement>, TableContinuationToken)
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html#Celerik_NetCore_Util_MockTableStorageClient_1_ExecuteAsync_TableQuery__0__TableContinuationToken_
+  commentId: M:Celerik.NetCore.Util.MockTableStorageClient`1.ExecuteAsync(TableQuery{`0},TableContinuationToken)
+  name.vb: ExecuteAsync(TableQuery(Of TElement), TableContinuationToken)
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>.ExecuteAsync(TableQuery<TElement>, TableContinuationToken)
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement).ExecuteAsync(TableQuery(Of TElement), TableContinuationToken)
+  nameWithType: MockTableStorageClient<TElement>.ExecuteAsync(TableQuery<TElement>, TableContinuationToken)
+  nameWithType.vb: MockTableStorageClient(Of TElement).ExecuteAsync(TableQuery(Of TElement), TableContinuationToken)
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html#Celerik_NetCore_Util_MockTableStorageClient_1_ExecuteAsync_
+  commentId: Overload:Celerik.NetCore.Util.MockTableStorageClient`1.ExecuteAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>.ExecuteAsync
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement).ExecuteAsync
+  nameWithType: MockTableStorageClient<TElement>.ExecuteAsync
+  nameWithType.vb: MockTableStorageClient(Of TElement).ExecuteAsync
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1.Merge*
+  name: Merge
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html#Celerik_NetCore_Util_MockTableStorageClient_1_Merge_
+  commentId: Overload:Celerik.NetCore.Util.MockTableStorageClient`1.Merge
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>.Merge
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement).Merge
+  nameWithType: MockTableStorageClient<TElement>.Merge
+  nameWithType.vb: MockTableStorageClient(Of TElement).Merge
+- uid: Celerik.NetCore.Util.MockTableStorageClient`1.Merge``1(``0,``0)
+  name: Merge<T>(T, T)
+  href: api/Celerik.NetCore.Util.MockTableStorageClient-1.html#Celerik_NetCore_Util_MockTableStorageClient_1_Merge__1___0___0_
+  commentId: M:Celerik.NetCore.Util.MockTableStorageClient`1.Merge``1(``0,``0)
+  name.vb: Merge(Of T)(T, T)
+  fullName: Celerik.NetCore.Util.MockTableStorageClient<TElement>.Merge<T>(T, T)
+  fullName.vb: Celerik.NetCore.Util.MockTableStorageClient(Of TElement).Merge(Of T)(T, T)
+  nameWithType: MockTableStorageClient<TElement>.Merge<T>(T, T)
+  nameWithType.vb: MockTableStorageClient(Of TElement).Merge(Of T)(T, T)
+- uid: Celerik.NetCore.Util.PropNullException
+  name: PropNullException
+  href: api/Celerik.NetCore.Util.PropNullException.html
+  commentId: T:Celerik.NetCore.Util.PropNullException
+  fullName: Celerik.NetCore.Util.PropNullException
+  nameWithType: PropNullException
+- uid: Celerik.NetCore.Util.PropNullException.#ctor
+  name: PropNullException()
+  href: api/Celerik.NetCore.Util.PropNullException.html#Celerik_NetCore_Util_PropNullException__ctor
+  commentId: M:Celerik.NetCore.Util.PropNullException.#ctor
+  fullName: Celerik.NetCore.Util.PropNullException.PropNullException()
+  nameWithType: PropNullException.PropNullException()
+- uid: Celerik.NetCore.Util.PropNullException.#ctor(System.String)
+  name: PropNullException(String)
+  href: api/Celerik.NetCore.Util.PropNullException.html#Celerik_NetCore_Util_PropNullException__ctor_System_String_
+  commentId: M:Celerik.NetCore.Util.PropNullException.#ctor(System.String)
+  fullName: Celerik.NetCore.Util.PropNullException.PropNullException(System.String)
+  nameWithType: PropNullException.PropNullException(String)
+- uid: Celerik.NetCore.Util.PropNullException.#ctor(System.String,System.Exception)
+  name: PropNullException(String, Exception)
+  href: api/Celerik.NetCore.Util.PropNullException.html#Celerik_NetCore_Util_PropNullException__ctor_System_String_System_Exception_
+  commentId: M:Celerik.NetCore.Util.PropNullException.#ctor(System.String,System.Exception)
+  fullName: Celerik.NetCore.Util.PropNullException.PropNullException(System.String, System.Exception)
+  nameWithType: PropNullException.PropNullException(String, Exception)
+- uid: Celerik.NetCore.Util.PropNullException.#ctor*
+  name: PropNullException
+  href: api/Celerik.NetCore.Util.PropNullException.html#Celerik_NetCore_Util_PropNullException__ctor_
+  commentId: Overload:Celerik.NetCore.Util.PropNullException.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.PropNullException.PropNullException
+  nameWithType: PropNullException.PropNullException
+- uid: Celerik.NetCore.Util.PropNullOrEmptyException
+  name: PropNullOrEmptyException
+  href: api/Celerik.NetCore.Util.PropNullOrEmptyException.html
+  commentId: T:Celerik.NetCore.Util.PropNullOrEmptyException
+  fullName: Celerik.NetCore.Util.PropNullOrEmptyException
+  nameWithType: PropNullOrEmptyException
+- uid: Celerik.NetCore.Util.PropNullOrEmptyException.#ctor
+  name: PropNullOrEmptyException()
+  href: api/Celerik.NetCore.Util.PropNullOrEmptyException.html#Celerik_NetCore_Util_PropNullOrEmptyException__ctor
+  commentId: M:Celerik.NetCore.Util.PropNullOrEmptyException.#ctor
+  fullName: Celerik.NetCore.Util.PropNullOrEmptyException.PropNullOrEmptyException()
+  nameWithType: PropNullOrEmptyException.PropNullOrEmptyException()
+- uid: Celerik.NetCore.Util.PropNullOrEmptyException.#ctor(System.String)
+  name: PropNullOrEmptyException(String)
+  href: api/Celerik.NetCore.Util.PropNullOrEmptyException.html#Celerik_NetCore_Util_PropNullOrEmptyException__ctor_System_String_
+  commentId: M:Celerik.NetCore.Util.PropNullOrEmptyException.#ctor(System.String)
+  fullName: Celerik.NetCore.Util.PropNullOrEmptyException.PropNullOrEmptyException(System.String)
+  nameWithType: PropNullOrEmptyException.PropNullOrEmptyException(String)
+- uid: Celerik.NetCore.Util.PropNullOrEmptyException.#ctor(System.String,System.Exception)
+  name: PropNullOrEmptyException(String, Exception)
+  href: api/Celerik.NetCore.Util.PropNullOrEmptyException.html#Celerik_NetCore_Util_PropNullOrEmptyException__ctor_System_String_System_Exception_
+  commentId: M:Celerik.NetCore.Util.PropNullOrEmptyException.#ctor(System.String,System.Exception)
+  fullName: Celerik.NetCore.Util.PropNullOrEmptyException.PropNullOrEmptyException(System.String, System.Exception)
+  nameWithType: PropNullOrEmptyException.PropNullOrEmptyException(String, Exception)
+- uid: Celerik.NetCore.Util.PropNullOrEmptyException.#ctor*
+  name: PropNullOrEmptyException
+  href: api/Celerik.NetCore.Util.PropNullOrEmptyException.html#Celerik_NetCore_Util_PropNullOrEmptyException__ctor_
+  commentId: Overload:Celerik.NetCore.Util.PropNullOrEmptyException.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.PropNullOrEmptyException.PropNullOrEmptyException
+  nameWithType: PropNullOrEmptyException.PropNullOrEmptyException
+- uid: Celerik.NetCore.Util.QueryUtility
+  name: QueryUtility
+  href: api/Celerik.NetCore.Util.QueryUtility.html
+  commentId: T:Celerik.NetCore.Util.QueryUtility
+  fullName: Celerik.NetCore.Util.QueryUtility
+  nameWithType: QueryUtility
+- uid: Celerik.NetCore.Util.QueryUtility.OrderBy*
+  name: OrderBy
+  href: api/Celerik.NetCore.Util.QueryUtility.html#Celerik_NetCore_Util_QueryUtility_OrderBy_
+  commentId: Overload:Celerik.NetCore.Util.QueryUtility.OrderBy
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.QueryUtility.OrderBy
+  nameWithType: QueryUtility.OrderBy
+- uid: Celerik.NetCore.Util.QueryUtility.OrderBy``1(IQueryable{``0},System.String)
+  name: OrderBy<TEntity>(IQueryable<TEntity>, String)
+  href: api/Celerik.NetCore.Util.QueryUtility.html#Celerik_NetCore_Util_QueryUtility_OrderBy__1_IQueryable___0__System_String_
+  commentId: M:Celerik.NetCore.Util.QueryUtility.OrderBy``1(IQueryable{``0},System.String)
+  name.vb: OrderBy(Of TEntity)(IQueryable(Of TEntity), String)
+  fullName: Celerik.NetCore.Util.QueryUtility.OrderBy<TEntity>(IQueryable<TEntity>, System.String)
+  fullName.vb: Celerik.NetCore.Util.QueryUtility.OrderBy(Of TEntity)(IQueryable(Of TEntity), System.String)
+  nameWithType: QueryUtility.OrderBy<TEntity>(IQueryable<TEntity>, String)
+  nameWithType.vb: QueryUtility.OrderBy(Of TEntity)(IQueryable(Of TEntity), String)
+- uid: Celerik.NetCore.Util.QueryUtility.OrderByDescending*
+  name: OrderByDescending
+  href: api/Celerik.NetCore.Util.QueryUtility.html#Celerik_NetCore_Util_QueryUtility_OrderByDescending_
+  commentId: Overload:Celerik.NetCore.Util.QueryUtility.OrderByDescending
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.QueryUtility.OrderByDescending
+  nameWithType: QueryUtility.OrderByDescending
+- uid: Celerik.NetCore.Util.QueryUtility.OrderByDescending``1(IQueryable{``0},System.String)
+  name: OrderByDescending<TEntity>(IQueryable<TEntity>, String)
+  href: api/Celerik.NetCore.Util.QueryUtility.html#Celerik_NetCore_Util_QueryUtility_OrderByDescending__1_IQueryable___0__System_String_
+  commentId: M:Celerik.NetCore.Util.QueryUtility.OrderByDescending``1(IQueryable{``0},System.String)
+  name.vb: OrderByDescending(Of TEntity)(IQueryable(Of TEntity), String)
+  fullName: Celerik.NetCore.Util.QueryUtility.OrderByDescending<TEntity>(IQueryable<TEntity>, System.String)
+  fullName.vb: Celerik.NetCore.Util.QueryUtility.OrderByDescending(Of TEntity)(IQueryable(Of TEntity), System.String)
+  nameWithType: QueryUtility.OrderByDescending<TEntity>(IQueryable<TEntity>, String)
+  nameWithType.vb: QueryUtility.OrderByDescending(Of TEntity)(IQueryable(Of TEntity), String)
+- uid: Celerik.NetCore.Util.QueryUtility.ThenBy*
+  name: ThenBy
+  href: api/Celerik.NetCore.Util.QueryUtility.html#Celerik_NetCore_Util_QueryUtility_ThenBy_
+  commentId: Overload:Celerik.NetCore.Util.QueryUtility.ThenBy
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.QueryUtility.ThenBy
+  nameWithType: QueryUtility.ThenBy
+- uid: Celerik.NetCore.Util.QueryUtility.ThenBy``1(IOrderedQueryable{``0},System.String)
+  name: ThenBy<TEntity>(IOrderedQueryable<TEntity>, String)
+  href: api/Celerik.NetCore.Util.QueryUtility.html#Celerik_NetCore_Util_QueryUtility_ThenBy__1_IOrderedQueryable___0__System_String_
+  commentId: M:Celerik.NetCore.Util.QueryUtility.ThenBy``1(IOrderedQueryable{``0},System.String)
+  name.vb: ThenBy(Of TEntity)(IOrderedQueryable(Of TEntity), String)
+  fullName: Celerik.NetCore.Util.QueryUtility.ThenBy<TEntity>(IOrderedQueryable<TEntity>, System.String)
+  fullName.vb: Celerik.NetCore.Util.QueryUtility.ThenBy(Of TEntity)(IOrderedQueryable(Of TEntity), System.String)
+  nameWithType: QueryUtility.ThenBy<TEntity>(IOrderedQueryable<TEntity>, String)
+  nameWithType.vb: QueryUtility.ThenBy(Of TEntity)(IOrderedQueryable(Of TEntity), String)
+- uid: Celerik.NetCore.Util.QueryUtility.ThenByDescending*
+  name: ThenByDescending
+  href: api/Celerik.NetCore.Util.QueryUtility.html#Celerik_NetCore_Util_QueryUtility_ThenByDescending_
+  commentId: Overload:Celerik.NetCore.Util.QueryUtility.ThenByDescending
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.QueryUtility.ThenByDescending
+  nameWithType: QueryUtility.ThenByDescending
+- uid: Celerik.NetCore.Util.QueryUtility.ThenByDescending``1(IOrderedQueryable{``0},System.String)
+  name: ThenByDescending<TEntity>(IOrderedQueryable<TEntity>, String)
+  href: api/Celerik.NetCore.Util.QueryUtility.html#Celerik_NetCore_Util_QueryUtility_ThenByDescending__1_IOrderedQueryable___0__System_String_
+  commentId: M:Celerik.NetCore.Util.QueryUtility.ThenByDescending``1(IOrderedQueryable{``0},System.String)
+  name.vb: ThenByDescending(Of TEntity)(IOrderedQueryable(Of TEntity), String)
+  fullName: Celerik.NetCore.Util.QueryUtility.ThenByDescending<TEntity>(IOrderedQueryable<TEntity>, System.String)
+  fullName.vb: Celerik.NetCore.Util.QueryUtility.ThenByDescending(Of TEntity)(IOrderedQueryable(Of TEntity), System.String)
+  nameWithType: QueryUtility.ThenByDescending<TEntity>(IOrderedQueryable<TEntity>, String)
+  nameWithType.vb: QueryUtility.ThenByDescending(Of TEntity)(IOrderedQueryable(Of TEntity), String)
+- uid: Celerik.NetCore.Util.SerializeAllContractResolver
+  name: SerializeAllContractResolver
+  href: api/Celerik.NetCore.Util.SerializeAllContractResolver.html
+  commentId: T:Celerik.NetCore.Util.SerializeAllContractResolver
+  fullName: Celerik.NetCore.Util.SerializeAllContractResolver
+  nameWithType: SerializeAllContractResolver
+- uid: Celerik.NetCore.Util.SerializeAllContractResolver.CreateProperties(System.Type,MemberSerialization)
+  name: CreateProperties(Type, MemberSerialization)
+  href: api/Celerik.NetCore.Util.SerializeAllContractResolver.html#Celerik_NetCore_Util_SerializeAllContractResolver_CreateProperties_System_Type_MemberSerialization_
+  commentId: M:Celerik.NetCore.Util.SerializeAllContractResolver.CreateProperties(System.Type,MemberSerialization)
+  fullName: Celerik.NetCore.Util.SerializeAllContractResolver.CreateProperties(System.Type, MemberSerialization)
+  nameWithType: SerializeAllContractResolver.CreateProperties(Type, MemberSerialization)
+- uid: Celerik.NetCore.Util.SerializeAllContractResolver.CreateProperties*
+  name: CreateProperties
+  href: api/Celerik.NetCore.Util.SerializeAllContractResolver.html#Celerik_NetCore_Util_SerializeAllContractResolver_CreateProperties_
+  commentId: Overload:Celerik.NetCore.Util.SerializeAllContractResolver.CreateProperties
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.SerializeAllContractResolver.CreateProperties
+  nameWithType: SerializeAllContractResolver.CreateProperties
+- uid: Celerik.NetCore.Util.StackTraceUtility
+  name: StackTraceUtility
+  href: api/Celerik.NetCore.Util.StackTraceUtility.html
+  commentId: T:Celerik.NetCore.Util.StackTraceUtility
+  fullName: Celerik.NetCore.Util.StackTraceUtility
+  nameWithType: StackTraceUtility
+- uid: Celerik.NetCore.Util.StackTraceUtility.GetMethodName(StackTrace)
+  name: GetMethodName(StackTrace)
+  href: api/Celerik.NetCore.Util.StackTraceUtility.html#Celerik_NetCore_Util_StackTraceUtility_GetMethodName_StackTrace_
+  commentId: M:Celerik.NetCore.Util.StackTraceUtility.GetMethodName(StackTrace)
+  fullName: Celerik.NetCore.Util.StackTraceUtility.GetMethodName(StackTrace)
+  nameWithType: StackTraceUtility.GetMethodName(StackTrace)
+- uid: Celerik.NetCore.Util.StackTraceUtility.GetMethodName*
+  name: GetMethodName
+  href: api/Celerik.NetCore.Util.StackTraceUtility.html#Celerik_NetCore_Util_StackTraceUtility_GetMethodName_
+  commentId: Overload:Celerik.NetCore.Util.StackTraceUtility.GetMethodName
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.StackTraceUtility.GetMethodName
+  nameWithType: StackTraceUtility.GetMethodName
+- uid: Celerik.NetCore.Util.StringUtility
+  name: StringUtility
+  href: api/Celerik.NetCore.Util.StringUtility.html
+  commentId: T:Celerik.NetCore.Util.StringUtility
+  fullName: Celerik.NetCore.Util.StringUtility
+  nameWithType: StringUtility
+- uid: Celerik.NetCore.Util.StringUtility.FirstUpperRestLower(System.String)
+  name: FirstUpperRestLower(String)
+  href: api/Celerik.NetCore.Util.StringUtility.html#Celerik_NetCore_Util_StringUtility_FirstUpperRestLower_System_String_
+  commentId: M:Celerik.NetCore.Util.StringUtility.FirstUpperRestLower(System.String)
+  fullName: Celerik.NetCore.Util.StringUtility.FirstUpperRestLower(System.String)
+  nameWithType: StringUtility.FirstUpperRestLower(String)
+- uid: Celerik.NetCore.Util.StringUtility.FirstUpperRestLower*
+  name: FirstUpperRestLower
+  href: api/Celerik.NetCore.Util.StringUtility.html#Celerik_NetCore_Util_StringUtility_FirstUpperRestLower_
+  commentId: Overload:Celerik.NetCore.Util.StringUtility.FirstUpperRestLower
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.StringUtility.FirstUpperRestLower
+  nameWithType: StringUtility.FirstUpperRestLower
+- uid: Celerik.NetCore.Util.TableStorageClient`1
+  name: TableStorageClient<TElement>
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html
+  commentId: T:Celerik.NetCore.Util.TableStorageClient`1
+  name.vb: TableStorageClient(Of TElement)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement)
+  nameWithType: TableStorageClient<TElement>
+  nameWithType.vb: TableStorageClient(Of TElement)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.#ctor(Celerik.NetCore.Util.TableStorageConfig)
+  name: TableStorageClient(TableStorageConfig)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1__ctor_Celerik_NetCore_Util_TableStorageConfig_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.#ctor(Celerik.NetCore.Util.TableStorageConfig)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.TableStorageClient(Celerik.NetCore.Util.TableStorageConfig)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).TableStorageClient(Celerik.NetCore.Util.TableStorageConfig)
+  nameWithType: TableStorageClient<TElement>.TableStorageClient(TableStorageConfig)
+  nameWithType.vb: TableStorageClient(Of TElement).TableStorageClient(TableStorageConfig)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.#ctor*
+  name: TableStorageClient
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1__ctor_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.TableStorageClient
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).TableStorageClient
+  nameWithType: TableStorageClient<TElement>.TableStorageClient
+  nameWithType.vb: TableStorageClient(Of TElement).TableStorageClient
+- uid: Celerik.NetCore.Util.TableStorageClient`1.AnyAsync(System.String,System.String)
+  name: AnyAsync(String, String)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_AnyAsync_System_String_System_String_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.AnyAsync(System.String,System.String)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.AnyAsync(System.String, System.String)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).AnyAsync(System.String, System.String)
+  nameWithType: TableStorageClient<TElement>.AnyAsync(String, String)
+  nameWithType.vb: TableStorageClient(Of TElement).AnyAsync(String, String)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.AnyAsync*
+  name: AnyAsync
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_AnyAsync_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.AnyAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.AnyAsync
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).AnyAsync
+  nameWithType: TableStorageClient<TElement>.AnyAsync
+  nameWithType.vb: TableStorageClient(Of TElement).AnyAsync
+- uid: Celerik.NetCore.Util.TableStorageClient`1.Config
+  name: Config
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_Config
+  commentId: P:Celerik.NetCore.Util.TableStorageClient`1.Config
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.Config
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).Config
+  nameWithType: TableStorageClient<TElement>.Config
+  nameWithType.vb: TableStorageClient(Of TElement).Config
+- uid: Celerik.NetCore.Util.TableStorageClient`1.Config*
+  name: Config
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_Config_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.Config
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.Config
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).Config
+  nameWithType: TableStorageClient<TElement>.Config
+  nameWithType.vb: TableStorageClient(Of TElement).Config
+- uid: Celerik.NetCore.Util.TableStorageClient`1.CreateTableIfNotExistsAsync
+  name: CreateTableIfNotExistsAsync()
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_CreateTableIfNotExistsAsync
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.CreateTableIfNotExistsAsync
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.CreateTableIfNotExistsAsync()
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).CreateTableIfNotExistsAsync()
+  nameWithType: TableStorageClient<TElement>.CreateTableIfNotExistsAsync()
+  nameWithType.vb: TableStorageClient(Of TElement).CreateTableIfNotExistsAsync()
+- uid: Celerik.NetCore.Util.TableStorageClient`1.CreateTableIfNotExistsAsync*
+  name: CreateTableIfNotExistsAsync
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_CreateTableIfNotExistsAsync_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.CreateTableIfNotExistsAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.CreateTableIfNotExistsAsync
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).CreateTableIfNotExistsAsync
+  nameWithType: TableStorageClient<TElement>.CreateTableIfNotExistsAsync
+  nameWithType.vb: TableStorageClient(Of TElement).CreateTableIfNotExistsAsync
+- uid: Celerik.NetCore.Util.TableStorageClient`1.DeleteAsync(`0)
+  name: DeleteAsync(TElement)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_DeleteAsync__0_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.DeleteAsync(`0)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.DeleteAsync(TElement)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).DeleteAsync(TElement)
+  nameWithType: TableStorageClient<TElement>.DeleteAsync(TElement)
+  nameWithType.vb: TableStorageClient(Of TElement).DeleteAsync(TElement)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.DeleteAsync(System.String,System.String)
+  name: DeleteAsync(String, String)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_DeleteAsync_System_String_System_String_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.DeleteAsync(System.String,System.String)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.DeleteAsync(System.String, System.String)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).DeleteAsync(System.String, System.String)
+  nameWithType: TableStorageClient<TElement>.DeleteAsync(String, String)
+  nameWithType.vb: TableStorageClient(Of TElement).DeleteAsync(String, String)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.DeleteAsync*
+  name: DeleteAsync
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_DeleteAsync_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.DeleteAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.DeleteAsync
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).DeleteAsync
+  nameWithType: TableStorageClient<TElement>.DeleteAsync
+  nameWithType.vb: TableStorageClient(Of TElement).DeleteAsync
+- uid: Celerik.NetCore.Util.TableStorageClient`1.DeleteIfExistsAsync
+  name: DeleteIfExistsAsync()
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_DeleteIfExistsAsync
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.DeleteIfExistsAsync
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.DeleteIfExistsAsync()
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).DeleteIfExistsAsync()
+  nameWithType: TableStorageClient<TElement>.DeleteIfExistsAsync()
+  nameWithType.vb: TableStorageClient(Of TElement).DeleteIfExistsAsync()
+- uid: Celerik.NetCore.Util.TableStorageClient`1.DeleteIfExistsAsync*
+  name: DeleteIfExistsAsync
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_DeleteIfExistsAsync_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.DeleteIfExistsAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.DeleteIfExistsAsync
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).DeleteIfExistsAsync
+  nameWithType: TableStorageClient<TElement>.DeleteIfExistsAsync
+  nameWithType.vb: TableStorageClient(Of TElement).DeleteIfExistsAsync
+- uid: Celerik.NetCore.Util.TableStorageClient`1.ExecuteAsync(TableOperation)
+  name: ExecuteAsync(TableOperation)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_ExecuteAsync_TableOperation_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.ExecuteAsync(TableOperation)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.ExecuteAsync(TableOperation)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).ExecuteAsync(TableOperation)
+  nameWithType: TableStorageClient<TElement>.ExecuteAsync(TableOperation)
+  nameWithType.vb: TableStorageClient(Of TElement).ExecuteAsync(TableOperation)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.ExecuteAsync(TableQuery{`0},TableContinuationToken)
+  name: ExecuteAsync(TableQuery<TElement>, TableContinuationToken)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_ExecuteAsync_TableQuery__0__TableContinuationToken_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.ExecuteAsync(TableQuery{`0},TableContinuationToken)
+  name.vb: ExecuteAsync(TableQuery(Of TElement), TableContinuationToken)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.ExecuteAsync(TableQuery<TElement>, TableContinuationToken)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).ExecuteAsync(TableQuery(Of TElement), TableContinuationToken)
+  nameWithType: TableStorageClient<TElement>.ExecuteAsync(TableQuery<TElement>, TableContinuationToken)
+  nameWithType.vb: TableStorageClient(Of TElement).ExecuteAsync(TableQuery(Of TElement), TableContinuationToken)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_ExecuteAsync_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.ExecuteAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.ExecuteAsync
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).ExecuteAsync
+  nameWithType: TableStorageClient<TElement>.ExecuteAsync
+  nameWithType.vb: TableStorageClient(Of TElement).ExecuteAsync
+- uid: Celerik.NetCore.Util.TableStorageClient`1.GetAsync(System.String,System.String)
+  name: GetAsync(String, String)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_GetAsync_System_String_System_String_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.GetAsync(System.String,System.String)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.GetAsync(System.String, System.String)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).GetAsync(System.String, System.String)
+  nameWithType: TableStorageClient<TElement>.GetAsync(String, String)
+  nameWithType.vb: TableStorageClient(Of TElement).GetAsync(String, String)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.GetAsync*
+  name: GetAsync
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_GetAsync_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.GetAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.GetAsync
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).GetAsync
+  nameWithType: TableStorageClient<TElement>.GetAsync
+  nameWithType.vb: TableStorageClient(Of TElement).GetAsync
+- uid: Celerik.NetCore.Util.TableStorageClient`1.InsertAsync(`0)
+  name: InsertAsync(TElement)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_InsertAsync__0_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.InsertAsync(`0)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.InsertAsync(TElement)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).InsertAsync(TElement)
+  nameWithType: TableStorageClient<TElement>.InsertAsync(TElement)
+  nameWithType.vb: TableStorageClient(Of TElement).InsertAsync(TElement)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.InsertAsync*
+  name: InsertAsync
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_InsertAsync_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.InsertAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.InsertAsync
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).InsertAsync
+  nameWithType: TableStorageClient<TElement>.InsertAsync
+  nameWithType.vb: TableStorageClient(Of TElement).InsertAsync
+- uid: Celerik.NetCore.Util.TableStorageClient`1.ListAsync(System.String)
+  name: ListAsync(String)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_ListAsync_System_String_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.ListAsync(System.String)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.ListAsync(System.String)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).ListAsync(System.String)
+  nameWithType: TableStorageClient<TElement>.ListAsync(String)
+  nameWithType.vb: TableStorageClient(Of TElement).ListAsync(String)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.ListAsync*
+  name: ListAsync
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_ListAsync_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.ListAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.ListAsync
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).ListAsync
+  nameWithType: TableStorageClient<TElement>.ListAsync
+  nameWithType.vb: TableStorageClient(Of TElement).ListAsync
+- uid: Celerik.NetCore.Util.TableStorageClient`1.UpdateAsync(`0,Celerik.NetCore.Util.TableStorageStrategy)
+  name: UpdateAsync(TElement, TableStorageStrategy)
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_UpdateAsync__0_Celerik_NetCore_Util_TableStorageStrategy_
+  commentId: M:Celerik.NetCore.Util.TableStorageClient`1.UpdateAsync(`0,Celerik.NetCore.Util.TableStorageStrategy)
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.UpdateAsync(TElement, Celerik.NetCore.Util.TableStorageStrategy)
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).UpdateAsync(TElement, Celerik.NetCore.Util.TableStorageStrategy)
+  nameWithType: TableStorageClient<TElement>.UpdateAsync(TElement, TableStorageStrategy)
+  nameWithType.vb: TableStorageClient(Of TElement).UpdateAsync(TElement, TableStorageStrategy)
+- uid: Celerik.NetCore.Util.TableStorageClient`1.UpdateAsync*
+  name: UpdateAsync
+  href: api/Celerik.NetCore.Util.TableStorageClient-1.html#Celerik_NetCore_Util_TableStorageClient_1_UpdateAsync_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageClient`1.UpdateAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageClient<TElement>.UpdateAsync
+  fullName.vb: Celerik.NetCore.Util.TableStorageClient(Of TElement).UpdateAsync
+  nameWithType: TableStorageClient<TElement>.UpdateAsync
+  nameWithType.vb: TableStorageClient(Of TElement).UpdateAsync
+- uid: Celerik.NetCore.Util.TableStorageConfig
+  name: TableStorageConfig
+  href: api/Celerik.NetCore.Util.TableStorageConfig.html
+  commentId: T:Celerik.NetCore.Util.TableStorageConfig
+  fullName: Celerik.NetCore.Util.TableStorageConfig
+  nameWithType: TableStorageConfig
+- uid: Celerik.NetCore.Util.TableStorageConfig.ConnectionString
+  name: ConnectionString
+  href: api/Celerik.NetCore.Util.TableStorageConfig.html#Celerik_NetCore_Util_TableStorageConfig_ConnectionString
+  commentId: P:Celerik.NetCore.Util.TableStorageConfig.ConnectionString
+  fullName: Celerik.NetCore.Util.TableStorageConfig.ConnectionString
+  nameWithType: TableStorageConfig.ConnectionString
+- uid: Celerik.NetCore.Util.TableStorageConfig.ConnectionString*
+  name: ConnectionString
+  href: api/Celerik.NetCore.Util.TableStorageConfig.html#Celerik_NetCore_Util_TableStorageConfig_ConnectionString_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageConfig.ConnectionString
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageConfig.ConnectionString
+  nameWithType: TableStorageConfig.ConnectionString
+- uid: Celerik.NetCore.Util.TableStorageConfig.TableName
+  name: TableName
+  href: api/Celerik.NetCore.Util.TableStorageConfig.html#Celerik_NetCore_Util_TableStorageConfig_TableName
+  commentId: P:Celerik.NetCore.Util.TableStorageConfig.TableName
+  fullName: Celerik.NetCore.Util.TableStorageConfig.TableName
+  nameWithType: TableStorageConfig.TableName
+- uid: Celerik.NetCore.Util.TableStorageConfig.TableName*
+  name: TableName
+  href: api/Celerik.NetCore.Util.TableStorageConfig.html#Celerik_NetCore_Util_TableStorageConfig_TableName_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageConfig.TableName
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageConfig.TableName
+  nameWithType: TableStorageConfig.TableName
+- uid: Celerik.NetCore.Util.TableStorageException
+  name: TableStorageException
+  href: api/Celerik.NetCore.Util.TableStorageException.html
+  commentId: T:Celerik.NetCore.Util.TableStorageException
+  fullName: Celerik.NetCore.Util.TableStorageException
+  nameWithType: TableStorageException
+- uid: Celerik.NetCore.Util.TableStorageException.#ctor(System.String,System.Exception)
+  name: TableStorageException(String, Exception)
+  href: api/Celerik.NetCore.Util.TableStorageException.html#Celerik_NetCore_Util_TableStorageException__ctor_System_String_System_Exception_
+  commentId: M:Celerik.NetCore.Util.TableStorageException.#ctor(System.String,System.Exception)
+  fullName: Celerik.NetCore.Util.TableStorageException.TableStorageException(System.String, System.Exception)
+  nameWithType: TableStorageException.TableStorageException(String, Exception)
+- uid: Celerik.NetCore.Util.TableStorageException.#ctor*
+  name: TableStorageException
+  href: api/Celerik.NetCore.Util.TableStorageException.html#Celerik_NetCore_Util_TableStorageException__ctor_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageException.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageException.TableStorageException
+  nameWithType: TableStorageException.TableStorageException
+- uid: Celerik.NetCore.Util.TableStorageFactory
+  name: TableStorageFactory
+  href: api/Celerik.NetCore.Util.TableStorageFactory.html
+  commentId: T:Celerik.NetCore.Util.TableStorageFactory
+  fullName: Celerik.NetCore.Util.TableStorageFactory
+  nameWithType: TableStorageFactory
+- uid: Celerik.NetCore.Util.TableStorageFactory.Create*
+  name: Create
+  href: api/Celerik.NetCore.Util.TableStorageFactory.html#Celerik_NetCore_Util_TableStorageFactory_Create_
+  commentId: Overload:Celerik.NetCore.Util.TableStorageFactory.Create
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.TableStorageFactory.Create
+  nameWithType: TableStorageFactory.Create
+- uid: Celerik.NetCore.Util.TableStorageFactory.Create``1(Celerik.NetCore.Util.TableStorageConfig,Celerik.NetCore.Util.TableStorageProvider)
+  name: Create<TElement>(TableStorageConfig, TableStorageProvider)
+  href: api/Celerik.NetCore.Util.TableStorageFactory.html#Celerik_NetCore_Util_TableStorageFactory_Create__1_Celerik_NetCore_Util_TableStorageConfig_Celerik_NetCore_Util_TableStorageProvider_
+  commentId: M:Celerik.NetCore.Util.TableStorageFactory.Create``1(Celerik.NetCore.Util.TableStorageConfig,Celerik.NetCore.Util.TableStorageProvider)
+  name.vb: Create(Of TElement)(TableStorageConfig, TableStorageProvider)
+  fullName: Celerik.NetCore.Util.TableStorageFactory.Create<TElement>(Celerik.NetCore.Util.TableStorageConfig, Celerik.NetCore.Util.TableStorageProvider)
+  fullName.vb: Celerik.NetCore.Util.TableStorageFactory.Create(Of TElement)(Celerik.NetCore.Util.TableStorageConfig, Celerik.NetCore.Util.TableStorageProvider)
+  nameWithType: TableStorageFactory.Create<TElement>(TableStorageConfig, TableStorageProvider)
+  nameWithType.vb: TableStorageFactory.Create(Of TElement)(TableStorageConfig, TableStorageProvider)
+- uid: Celerik.NetCore.Util.TableStorageProvider
+  name: TableStorageProvider
+  href: api/Celerik.NetCore.Util.TableStorageProvider.html
+  commentId: T:Celerik.NetCore.Util.TableStorageProvider
+  fullName: Celerik.NetCore.Util.TableStorageProvider
+  nameWithType: TableStorageProvider
+- uid: Celerik.NetCore.Util.TableStorageProvider.Azure
+  name: Azure
+  href: api/Celerik.NetCore.Util.TableStorageProvider.html#Celerik_NetCore_Util_TableStorageProvider_Azure
+  commentId: F:Celerik.NetCore.Util.TableStorageProvider.Azure
+  fullName: Celerik.NetCore.Util.TableStorageProvider.Azure
+  nameWithType: TableStorageProvider.Azure
+- uid: Celerik.NetCore.Util.TableStorageProvider.Mock
+  name: Mock
+  href: api/Celerik.NetCore.Util.TableStorageProvider.html#Celerik_NetCore_Util_TableStorageProvider_Mock
+  commentId: F:Celerik.NetCore.Util.TableStorageProvider.Mock
+  fullName: Celerik.NetCore.Util.TableStorageProvider.Mock
+  nameWithType: TableStorageProvider.Mock
+- uid: Celerik.NetCore.Util.TableStorageStrategy
+  name: TableStorageStrategy
+  href: api/Celerik.NetCore.Util.TableStorageStrategy.html
+  commentId: T:Celerik.NetCore.Util.TableStorageStrategy
+  fullName: Celerik.NetCore.Util.TableStorageStrategy
+  nameWithType: TableStorageStrategy
+- uid: Celerik.NetCore.Util.TableStorageStrategy.InsertOrMerge
+  name: InsertOrMerge
+  href: api/Celerik.NetCore.Util.TableStorageStrategy.html#Celerik_NetCore_Util_TableStorageStrategy_InsertOrMerge
+  commentId: F:Celerik.NetCore.Util.TableStorageStrategy.InsertOrMerge
+  fullName: Celerik.NetCore.Util.TableStorageStrategy.InsertOrMerge
+  nameWithType: TableStorageStrategy.InsertOrMerge
+- uid: Celerik.NetCore.Util.TableStorageStrategy.InsertOrReplace
+  name: InsertOrReplace
+  href: api/Celerik.NetCore.Util.TableStorageStrategy.html#Celerik_NetCore_Util_TableStorageStrategy_InsertOrReplace
+  commentId: F:Celerik.NetCore.Util.TableStorageStrategy.InsertOrReplace
+  fullName: Celerik.NetCore.Util.TableStorageStrategy.InsertOrReplace
+  nameWithType: TableStorageStrategy.InsertOrReplace
+- uid: Celerik.NetCore.Util.TableStorageStrategy.Merge
+  name: Merge
+  href: api/Celerik.NetCore.Util.TableStorageStrategy.html#Celerik_NetCore_Util_TableStorageStrategy_Merge
+  commentId: F:Celerik.NetCore.Util.TableStorageStrategy.Merge
+  fullName: Celerik.NetCore.Util.TableStorageStrategy.Merge
+  nameWithType: TableStorageStrategy.Merge
+- uid: Celerik.NetCore.Util.TableStorageStrategy.Replace
+  name: Replace
+  href: api/Celerik.NetCore.Util.TableStorageStrategy.html#Celerik_NetCore_Util_TableStorageStrategy_Replace
+  commentId: F:Celerik.NetCore.Util.TableStorageStrategy.Replace
+  fullName: Celerik.NetCore.Util.TableStorageStrategy.Replace
+  nameWithType: TableStorageStrategy.Replace
+- uid: Celerik.NetCore.Util.UtilResources
+  name: UtilResources
+  href: api/Celerik.NetCore.Util.UtilResources.html
+  commentId: T:Celerik.NetCore.Util.UtilResources
+  fullName: Celerik.NetCore.Util.UtilResources
+  nameWithType: UtilResources
+- uid: Celerik.NetCore.Util.UtilResources.Factory
+  name: Factory
+  href: api/Celerik.NetCore.Util.UtilResources.html#Celerik_NetCore_Util_UtilResources_Factory
+  commentId: P:Celerik.NetCore.Util.UtilResources.Factory
+  fullName: Celerik.NetCore.Util.UtilResources.Factory
+  nameWithType: UtilResources.Factory
+- uid: Celerik.NetCore.Util.UtilResources.Factory*
+  name: Factory
+  href: api/Celerik.NetCore.Util.UtilResources.html#Celerik_NetCore_Util_UtilResources_Factory_
+  commentId: Overload:Celerik.NetCore.Util.UtilResources.Factory
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.UtilResources.Factory
+  nameWithType: UtilResources.Factory
+- uid: Celerik.NetCore.Util.UtilResources.Get(System.String)
+  name: Get(String)
+  href: api/Celerik.NetCore.Util.UtilResources.html#Celerik_NetCore_Util_UtilResources_Get_System_String_
+  commentId: M:Celerik.NetCore.Util.UtilResources.Get(System.String)
+  fullName: Celerik.NetCore.Util.UtilResources.Get(System.String)
+  nameWithType: UtilResources.Get(String)
+- uid: Celerik.NetCore.Util.UtilResources.Get(System.String,System.Object[])
+  name: Get(String, Object[])
+  href: api/Celerik.NetCore.Util.UtilResources.html#Celerik_NetCore_Util_UtilResources_Get_System_String_System_Object___
+  commentId: M:Celerik.NetCore.Util.UtilResources.Get(System.String,System.Object[])
+  name.vb: Get(String, Object())
+  fullName: Celerik.NetCore.Util.UtilResources.Get(System.String, System.Object[])
+  fullName.vb: Celerik.NetCore.Util.UtilResources.Get(System.String, System.Object())
+  nameWithType: UtilResources.Get(String, Object[])
+  nameWithType.vb: UtilResources.Get(String, Object())
+- uid: Celerik.NetCore.Util.UtilResources.Get*
+  name: Get
+  href: api/Celerik.NetCore.Util.UtilResources.html#Celerik_NetCore_Util_UtilResources_Get_
+  commentId: Overload:Celerik.NetCore.Util.UtilResources.Get
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.UtilResources.Get
+  nameWithType: UtilResources.Get
+- uid: Celerik.NetCore.Util.UtilResources.Initialize(IStringLocalizerFactory)
+  name: Initialize(IStringLocalizerFactory)
+  href: api/Celerik.NetCore.Util.UtilResources.html#Celerik_NetCore_Util_UtilResources_Initialize_IStringLocalizerFactory_
+  commentId: M:Celerik.NetCore.Util.UtilResources.Initialize(IStringLocalizerFactory)
+  fullName: Celerik.NetCore.Util.UtilResources.Initialize(IStringLocalizerFactory)
+  nameWithType: UtilResources.Initialize(IStringLocalizerFactory)
+- uid: Celerik.NetCore.Util.UtilResources.Initialize*
+  name: Initialize
+  href: api/Celerik.NetCore.Util.UtilResources.html#Celerik_NetCore_Util_UtilResources_Initialize_
+  commentId: Overload:Celerik.NetCore.Util.UtilResources.Initialize
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.UtilResources.Initialize
+  nameWithType: UtilResources.Initialize
+- uid: Celerik.NetCore.Util.ValidateUtility
+  name: ValidateUtility
+  href: api/Celerik.NetCore.Util.ValidateUtility.html
+  commentId: T:Celerik.NetCore.Util.ValidateUtility
+  fullName: Celerik.NetCore.Util.ValidateUtility
+  nameWithType: ValidateUtility
+- uid: Celerik.NetCore.Util.ValidateUtility.EmailRegex
+  name: EmailRegex
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_EmailRegex
+  commentId: F:Celerik.NetCore.Util.ValidateUtility.EmailRegex
+  fullName: Celerik.NetCore.Util.ValidateUtility.EmailRegex
+  nameWithType: ValidateUtility.EmailRegex
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidBool(System.String)
+  name: IsValidBool(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidBool_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidBool(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidBool(System.String)
+  nameWithType: ValidateUtility.IsValidBool(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidBool*
+  name: IsValidBool
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidBool_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidBool
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidBool
+  nameWithType: ValidateUtility.IsValidBool
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidDateInvariant(System.String)
+  name: IsValidDateInvariant(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidDateInvariant_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidDateInvariant(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidDateInvariant(System.String)
+  nameWithType: ValidateUtility.IsValidDateInvariant(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidDateInvariant*
+  name: IsValidDateInvariant
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidDateInvariant_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidDateInvariant
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidDateInvariant
+  nameWithType: ValidateUtility.IsValidDateInvariant
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidDecimalInvariant(System.String)
+  name: IsValidDecimalInvariant(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidDecimalInvariant_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidDecimalInvariant(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidDecimalInvariant(System.String)
+  nameWithType: ValidateUtility.IsValidDecimalInvariant(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidDecimalInvariant*
+  name: IsValidDecimalInvariant
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidDecimalInvariant_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidDecimalInvariant
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidDecimalInvariant
+  nameWithType: ValidateUtility.IsValidDecimalInvariant
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidDoubleInvariant(System.String)
+  name: IsValidDoubleInvariant(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidDoubleInvariant_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidDoubleInvariant(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidDoubleInvariant(System.String)
+  nameWithType: ValidateUtility.IsValidDoubleInvariant(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidDoubleInvariant*
+  name: IsValidDoubleInvariant
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidDoubleInvariant_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidDoubleInvariant
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidDoubleInvariant
+  nameWithType: ValidateUtility.IsValidDoubleInvariant
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidEmail(System.String)
+  name: IsValidEmail(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidEmail_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidEmail(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidEmail(System.String)
+  nameWithType: ValidateUtility.IsValidEmail(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidEmail*
+  name: IsValidEmail
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidEmail_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidEmail
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidEmail
+  nameWithType: ValidateUtility.IsValidEmail
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidFloatInvariant(System.String)
+  name: IsValidFloatInvariant(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidFloatInvariant_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidFloatInvariant(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidFloatInvariant(System.String)
+  nameWithType: ValidateUtility.IsValidFloatInvariant(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidFloatInvariant*
+  name: IsValidFloatInvariant
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidFloatInvariant_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidFloatInvariant
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidFloatInvariant
+  nameWithType: ValidateUtility.IsValidFloatInvariant
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidInternationalPhone(System.String)
+  name: IsValidInternationalPhone(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidInternationalPhone_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidInternationalPhone(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidInternationalPhone(System.String)
+  nameWithType: ValidateUtility.IsValidInternationalPhone(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidInternationalPhone*
+  name: IsValidInternationalPhone
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidInternationalPhone_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidInternationalPhone
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidInternationalPhone
+  nameWithType: ValidateUtility.IsValidInternationalPhone
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidIntInvariant(System.String)
+  name: IsValidIntInvariant(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidIntInvariant_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidIntInvariant(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidIntInvariant(System.String)
+  nameWithType: ValidateUtility.IsValidIntInvariant(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidIntInvariant*
+  name: IsValidIntInvariant
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidIntInvariant_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidIntInvariant
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidIntInvariant
+  nameWithType: ValidateUtility.IsValidIntInvariant
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidPersonName(System.String)
+  name: IsValidPersonName(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidPersonName_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidPersonName(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidPersonName(System.String)
+  nameWithType: ValidateUtility.IsValidPersonName(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidPersonName*
+  name: IsValidPersonName
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidPersonName_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidPersonName
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidPersonName
+  nameWithType: ValidateUtility.IsValidPersonName
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidStandardPassword(System.String)
+  name: IsValidStandardPassword(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidStandardPassword_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidStandardPassword(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidStandardPassword(System.String)
+  nameWithType: ValidateUtility.IsValidStandardPassword(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidStandardPassword*
+  name: IsValidStandardPassword
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidStandardPassword_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidStandardPassword
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidStandardPassword
+  nameWithType: ValidateUtility.IsValidStandardPassword
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidTableName(System.String)
+  name: IsValidTableName(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidTableName_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidTableName(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidTableName(System.String)
+  nameWithType: ValidateUtility.IsValidTableName(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidTableName*
+  name: IsValidTableName
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidTableName_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidTableName
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidTableName
+  nameWithType: ValidateUtility.IsValidTableName
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidUrl(System.String)
+  name: IsValidUrl(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidUrl_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidUrl(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidUrl(System.String)
+  nameWithType: ValidateUtility.IsValidUrl(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidUrl*
+  name: IsValidUrl
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidUrl_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidUrl
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidUrl
+  nameWithType: ValidateUtility.IsValidUrl
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidZipPlus4(System.String)
+  name: IsValidZipPlus4(String)
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidZipPlus4_System_String_
+  commentId: M:Celerik.NetCore.Util.ValidateUtility.IsValidZipPlus4(System.String)
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidZipPlus4(System.String)
+  nameWithType: ValidateUtility.IsValidZipPlus4(String)
+- uid: Celerik.NetCore.Util.ValidateUtility.IsValidZipPlus4*
+  name: IsValidZipPlus4
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_IsValidZipPlus4_
+  commentId: Overload:Celerik.NetCore.Util.ValidateUtility.IsValidZipPlus4
+  isSpec: "True"
+  fullName: Celerik.NetCore.Util.ValidateUtility.IsValidZipPlus4
+  nameWithType: ValidateUtility.IsValidZipPlus4
+- uid: Celerik.NetCore.Util.ValidateUtility.PersonNameRegex
+  name: PersonNameRegex
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_PersonNameRegex
+  commentId: F:Celerik.NetCore.Util.ValidateUtility.PersonNameRegex
+  fullName: Celerik.NetCore.Util.ValidateUtility.PersonNameRegex
+  nameWithType: ValidateUtility.PersonNameRegex
+- uid: Celerik.NetCore.Util.ValidateUtility.StandardPasswordRegex
+  name: StandardPasswordRegex
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_StandardPasswordRegex
+  commentId: F:Celerik.NetCore.Util.ValidateUtility.StandardPasswordRegex
+  fullName: Celerik.NetCore.Util.ValidateUtility.StandardPasswordRegex
+  nameWithType: ValidateUtility.StandardPasswordRegex
+- uid: Celerik.NetCore.Util.ValidateUtility.TableNameRegex
+  name: TableNameRegex
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_TableNameRegex
+  commentId: F:Celerik.NetCore.Util.ValidateUtility.TableNameRegex
+  fullName: Celerik.NetCore.Util.ValidateUtility.TableNameRegex
+  nameWithType: ValidateUtility.TableNameRegex
+- uid: Celerik.NetCore.Util.ValidateUtility.ZipPlus4Regex
+  name: ZipPlus4Regex
+  href: api/Celerik.NetCore.Util.ValidateUtility.html#Celerik_NetCore_Util_ValidateUtility_ZipPlus4Regex
+  commentId: F:Celerik.NetCore.Util.ValidateUtility.ZipPlus4Regex
+  fullName: Celerik.NetCore.Util.ValidateUtility.ZipPlus4Regex
+  nameWithType: ValidateUtility.ZipPlus4Regex

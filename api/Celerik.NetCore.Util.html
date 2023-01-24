@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Celerik.NetCore.Util
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Celerik.NetCore.Util
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Celerik.NetCore.Util">
+  
+  <h1 id="Celerik_NetCore_Util" data-uid="Celerik.NetCore.Util" class="text-break">Namespace Celerik.NetCore.Util
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Celerik.NetCore.Util.ArgumentNullOrEmptyException.html">ArgumentNullOrEmptyException</a></h4>
+      <section><p>Represents errors that occur when a required argument is
+null or empty.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.AzureTableStorageClient-1.html">AzureTableStorageClient&lt;TElement&gt;</a></h4>
+      <section><p>Implementation of the ITableStorageClient interface by
+using an Azure Table Storage.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.CodeAttribute.html">CodeAttribute</a></h4>
+      <section><p>Defines a custom Code attribute.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.ConvertUtility.html">ConvertUtility</a></h4>
+      <section><p>Provides conversion utilities.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.CryptoUtility.html">CryptoUtility</a></h4>
+      <section><p>Provides cryptography utilities.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.EmbeddedFileUtility.html">EmbeddedFileUtility</a></h4>
+      <section><p>Provides embedded file utilities.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.EnumDescriptionJsonConverter.html">EnumDescriptionJsonConverter</a></h4>
+      <section><p>Serializes an Enum value to its corresponding DescriptionAttribute.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.EnumUtility.html">EnumUtility</a></h4>
+      <section><p>Provides enum utilities.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.ExceptionThrower.html">ExceptionThrower</a></h4>
+      <section><p>Utility to throw exceptions when a condition is matched.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.FileUtility.html">FileUtility</a></h4>
+      <section><p>Provides file utilities.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.JsonStringLocalizer.html">JsonStringLocalizer</a></h4>
+      <section><p>Represents a service that provides localized strings using
+.json Files in replace of .resx files.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.JsonStringLocalizerFactory.html">JsonStringLocalizerFactory</a></h4>
+      <section><p>Represents a factory that creates JsonStringLocalizer instances.</p>
+<p>JsonStringLocalizer is a replacement of the .resx files
+system, using .json files instead.</p>
+<p>When working with JSON resource files, take into account the
+following instructions:</p>
+<ol>
+<li>Create a folder in your project to hold all JSON resource
+files. The recommended name for this folder is &quot;Resources&quot;.</li>
+<li>Create the TypeName class. This is a static class (can be
+empty) placed in the resources folder. This class will be
+used to resolve the assembly where resource files are
+contained, and also to resolve the base file name of your
+resource files. The Recomended name for this class is
+&quot;{SomePrefix}Resources.cs&quot;. E.g.: &quot;UtilResources.cs&quot;.</li>
+<li>Create your JSON resources files in your resources folder,
+you should set them as embedded resources and name those
+files following these conventions:
+<ul>
+<li>&quot;TypeName.json&quot;</li>
+<li>&quot;TypeName-language.json&quot;</li>
+<li>&quot;TypeName-language-country.json&quot;</li>
+<li>&quot;TypeName-language-country-region.json&quot;</li>
+</ul>
+</li>
+<li>Resource strings are resolved from most specif to less
+specific cultures, so if no file for a culture is found,
+TypeName.json might be used to resolve your strings. The
+recomendation is to put in this file all your localized
+strings in &quot;English&quot; language, that way english will be
+the default resource culture.</li>
+<li>A good example of JSON resource files for a project
+supporting English and Spanish could be as follow:
+<ul>
+<li>UtilResources.cs</li>
+<li>UtilResources.json (default culture: english strings)</li>
+<li>UtilResources-es.json</li>
+</ul>
+</li>
+</ol>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.LocalDate.html">LocalDate</a></h4>
+      <section><p>Class to represent the localized DateTime of a particular time zone.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.MaximumExceededException.html">MaximumExceededException</a></h4>
+      <section><p>Represents errors that occur when a maximum value is exceeded.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.MinimunSubceededException.html">MinimunSubceededException</a></h4>
+      <section><p>Represents errors that occur when a minimum value is subceeded.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.MockTableStorageClient-1.html">MockTableStorageClient&lt;TElement&gt;</a></h4>
+      <section><p>Implementation of the ITableStorageClient interface by
+using Mock Data.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.PropNullException.html">PropNullException</a></h4>
+      <section><p>Represents errors that occur when a required property is
+null or empty.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.PropNullOrEmptyException.html">PropNullOrEmptyException</a></h4>
+      <section><p>Represents errors that occur when a required property is
+null or empty.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.QueryUtility.html">QueryUtility</a></h4>
+      <section><p>Provides query utilities.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.SerializeAllContractResolver.html">SerializeAllContractResolver</a></h4>
+      <section><p>Contract resolver to serialize all props in an object by not
+taking into account the JsonIgnore attribute.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.StackTraceUtility.html">StackTraceUtility</a></h4>
+      <section><p>Provides stack trace utilities.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.StringUtility.html">StringUtility</a></h4>
+      <section><p>Provides string utilities.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.TableStorageClient-1.html">TableStorageClient&lt;TElement&gt;</a></h4>
+      <section><p>Base class for all services implementing the ITableStorageClient
+interface.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.TableStorageConfig.html">TableStorageConfig</a></h4>
+      <section><p>Defines the configuration needed to access a Table Storage.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.TableStorageException.html">TableStorageException</a></h4>
+      <section><p>Represents errors that occur when performing Table Storage
+operations.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.TableStorageFactory.html">TableStorageFactory</a></h4>
+      <section><p>Factory to create ITableStorageClient instances.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.UtilResources.html">UtilResources</a></h4>
+      <section><p>Provides localized strings for this layer. By default,
+a JsonStringLocalizerFactory is used.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.ValidateUtility.html">ValidateUtility</a></h4>
+      <section><p>Provides validation utilities.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Celerik.NetCore.Util.ITableStorageClient-1.html">ITableStorageClient&lt;TElement&gt;</a></h4>
+      <section><p>Interface definition to read data from and write data to a
+Table Storage.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Celerik.NetCore.Util.TableStorageProvider.html">TableStorageProvider</a></h4>
+      <section><p>Defines the different table storage providers.</p>
+</section>
+      <h4><a class="xref" href="Celerik.NetCore.Util.TableStorageStrategy.html">TableStorageStrategy</a></h4>
+      <section><p>Defines the possible strategies when updating an entity in
+a Table Storage.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
