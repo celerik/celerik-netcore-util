@@ -44,6 +44,10 @@ namespace Celerik.NetCore.Util
         }
 
         /// <inheritdoc />
+        protected override async Task<bool> DeleteIfExistsAsync()
+            => await _cloudTable.DeleteIfExistsAsync();
+
+        /// <inheritdoc />
         protected override async Task<TableResult> ExecuteAsync(TableOperation operation)
             => await _cloudTable.ExecuteAsync(operation);
 
